@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate manuscript figures from prisma_counts.json and map_counts.json (no hard-coded counts)."""
+"""Generate manuscript figures from screening/prisma2020.json and master_counts.json (no hard-coded counts)."""
 import json, pathlib
 import matplotlib
 matplotlib.use("Agg")
@@ -9,8 +9,8 @@ from matplotlib.patches import FancyBboxPatch
 HERE = pathlib.Path(__file__).resolve().parent
 OUT = HERE.parent / "manuscript" / "figures"
 OUT.mkdir(parents=True, exist_ok=True)
-P = json.loads((HERE / "prisma_counts.json").read_text())
-M = json.loads((HERE / "map_counts.json").read_text())
+P = json.loads((HERE.parent / "screening" / "prisma2020.json").read_text())
+M = json.loads((HERE / "master_counts.json").read_text())
 
 INK, INK2, MUTED, GRID, SURF = "#0b0b0b", "#52514e", "#8a8984", "#e4e3df", "#ffffff"
 S1, S2, S3 = "#2a78d6", "#eb6834", "#1baf7a"  # validated categorical slots 1-3
@@ -29,29 +29,42 @@ def arrow(ax, x1, y1, x2, y2):
 
 
 def fig_flow():
-    fig, ax = plt.subplots(figsize=(7.2, 6.4)); ax.set_xlim(0, 10); ax.set_ylim(0, 10); ax.axis("off")
-    L, W = 0.4, 5.0
-    box(ax, L, 8.6, W, 1.1, f"Records identified in logged\nweb-search batches (9 Oct 2026)\nn = {P['records_identified_websearch_batches']}")
-    box(ax, L, 6.9, W, 0.9, f"Records after duplicate removal\nn = {P['records_screened']}")
-    box(ax, 6.0, 6.9, 3.6, 0.9, f"Duplicates removed\nn = {P['duplicates_removed']}", fc=SURF)
-    box(ax, L, 5.0, W, 1.1, f"Records screened on title, abstract and\nretrievable metadata\nn = {P['records_screened']}")
-    excl = (f"Excluded n = {P['excluded_E6_unverifiable_metadata'] + P['excluded_E1_out_of_scope'] + P['excluded_E3_non_archival']}\n"
-            f"E6 unverifiable metadata: {P['excluded_E6_unverifiable_metadata']}\n"
-            f"E1 out of scope: {P['excluded_E1_out_of_scope']}\n"
-            f"E3 non-archival forum post: {P['excluded_E3_non_archival']}")
-    box(ax, 6.0, 4.75, 3.6, 1.6, excl, fc=SURF)
-    box(ax, L, 3.1, W, 1.1, f"Eligible publications\nn = {P['sources_included_in_evidence_map'] + P['contextual_references_not_charted']}")
-    box(ax, 6.0, 3.1, 3.6, 1.1, f"Contextual / methodological\nreferences (not charted)\nn = {P['contextual_references_not_charted']}", fc=SURF)
-    t = M["by_type"]
-    box(ax, L, 0.9, W, 1.5, f"Sources charted in the evidence map\nn = {P['sources_included_in_evidence_map']}\n"
-        f"preprints {t['Preprint']} | peer-reviewed {t['Peer-reviewed']}\ngrey literature {t['Grey literature']}*",
-        fc="#e8f1fb", ec=S1, bold=False)
-    for y1, y2 in ((8.6, 7.8), (6.9, 6.1), (5.0, 4.2), (3.1, 2.4)):
-        arrow(ax, L + W / 2, y1, L + W / 2, y2)
-    for y in (7.35, 5.55, 3.65):
-        arrow(ax, L + W, y, 6.0, y)
-    ax.text(0.4, 0.25, "*Source type assigned by evidence/chart.py; all counts reproduced by evidence/screen.py and chart.py.",
-            fontsize=7, color=INK2)
+    """PRISMA 2020 flow with a databases column and an other-methods column (counts from screening/prisma2020.json)."""
+    fbox = lambda *a, **k: box(*a, **{"fs": 7.3, **k})
+    d, o, t = P["databases"], P["other_methods"], M["by_type"]
+    src = d["identified_by_source"]
+    fig, ax = plt.subplots(figsize=(7.6, 7.4)); ax.set_xlim(0, 12); ax.set_ylim(0, 12); ax.axis("off")
+    ax.text(1.8, 11.85, "Identification via databases", ha="center", fontsize=9, fontweight="bold", color=S1)
+    ax.text(9.55, 11.85, "Identification via other methods", ha="center", fontsize=9, fontweight="bold", color=S2)
+    fbox(ax, 0.1, 9.9, 3.4, 1.6, f"Records identified (9 Oct 2026)\nn = {d['identified_total']}\nScopus {src['Scopus']} | arXiv {src['arXiv']}\n"
+        f"Semantic Scholar {src['SemanticScholar']}", fc="#e8f1fb", ec=S1)
+    fbox(ax, 3.75, 9.9, 3.1, 1.6, f"Removed before screening\nduplicates (automatic):\n{d['duplicates_removed_automatic']}\n"
+        f"version duplicates\n(manual): {d['version_duplicates_removed_manual']}", fc=SURF)
+    fbox(ax, 7.2, 9.9, 4.7, 1.6, f"Records identified in 25 logged\nweb-search batches n = {o['identified_web_batches']}\n"
+        f"duplicates within batches removed: {o['duplicates_within_web']}\nunique web records n = {o['web_records']}", fc="#fdeee7", ec=S2)
+    fbox(ax, 0.1, 7.5, 3.4, 1.4, f"Records screened\n(title and abstract)\nn = {d['records_screened']}")
+    fbox(ax, 3.75, 6.95, 3.1, 2.5, f"Records excluded n = {d['final_excluded']}\nstage 1 rule-based: {d['excluded_stage1_rule']}\n"
+        f"(audited sample, then\nrescue screen: {d['excluded_rescue_screen']})\nstage 2 title/abstract: {d['excluded_stage2_title_abstract']}\n"
+        f"reinstated at\nreconciliation: {d['excluded_stage1_rule'] + d['excluded_rescue_screen'] + d['excluded_stage2_title_abstract'] - d['final_excluded']}", fc=SURF, fs=7.0)
+    fbox(ax, 7.2, 7.5, 4.7, 1.4, f"Already retrieved by the database\nsearch (counted there) n = {o['already_retrieved_by_databases']}\n"
+        f"Records assessed n = {o['records_assessed']}")
+    ex = o["excluded_by_code"]
+    fbox(ax, 7.2, 5.1, 4.7, 1.6, f"Records excluded n = {sum(ex.values())}\nE6 unverifiable metadata: {ex['E6']}\n"
+        f"E1 out of scope: {ex['E1']}\nE3 non-archival post: {ex['E3']}", fc=SURF)
+    fbox(ax, 0.1, 4.2, 3.4, 1.5, f"Eligible records\nn = {d['final_included'] + d['final_context']}")
+    fbox(ax, 3.75, 4.2, 3.1, 1.5, f"Contextual or\nmethodological references\n(not charted) n = {d['final_context']}", fc=SURF)
+    fbox(ax, 7.2, 3.0, 4.7, 1.5, f"Eligible records n = {o['final_included'] + o['final_context']}\n"
+        f"contextual references\n(not charted): {o['final_context']}")
+    fbox(ax, 1.6, 0.35, 8.8, 1.8, f"Studies included in the evidence map  n = {P['total_included']}\n"
+        f"via databases {d['final_included']} | via other methods only {o['final_included']}\n"
+        f"preprints {t['Preprint']} | peer-reviewed {t['Peer-reviewed']} | grey literature {t['Grey literature']}",
+        fc="#e8f1fb", ec=S1, bold=True, fs=8)
+    for x in (1.8,):
+        arrow(ax, x, 9.9, x, 8.9); arrow(ax, x, 7.5, x, 5.7); arrow(ax, x, 4.2, x, 2.15)
+    arrow(ax, 9.55, 9.9, 9.55, 8.9); arrow(ax, 9.55, 7.5, 9.55, 6.7); arrow(ax, 9.55, 5.1, 9.55, 4.5); arrow(ax, 9.55, 3.0, 9.55, 2.15)
+    arrow(ax, 3.5, 10.7, 3.75, 10.7); arrow(ax, 3.5, 8.2, 3.75, 8.2); arrow(ax, 3.5, 4.95, 3.75, 4.95)
+    ax.text(0.1, -0.15, "Records found by both routes are counted once, in the databases column. All counts are generated by "
+            "search/dedup.py and screening/merge.py.", fontsize=6.5, color=INK2)
     fig.savefig(OUT / "fig1_selection_flow.png", dpi=300, bbox_inches="tight", facecolor=SURF); plt.close(fig)
 
 
@@ -85,8 +98,8 @@ def fig_years():
         ax.bar(years, vals, bottom=bottom, color=c, width=0.6, label=name, edgecolor=SURF, linewidth=2)
         bottom = [b + v for b, v in zip(bottom, vals)]
     for x, b in zip(years, bottom):
-        ax.text(x, b + 1.5, str(b), ha="center", fontsize=8, color=INK)
-    ax.set_ylabel("Charted sources (n)"); ax.spines[["top", "right"]].set_visible(False)
+        ax.text(x, b + 2, str(b), ha="center", fontsize=8, color=INK)
+    ax.set_ylabel("Included studies (n)"); ax.spines[["top", "right"]].set_visible(False)
     ax.yaxis.grid(True, color=GRID, lw=0.6); ax.set_axisbelow(True)
     ax.legend(frameon=False, fontsize=8, loc="upper left")
     ax.text(1.0, -0.22, "2026 covers January to early October only.", transform=ax.transAxes, ha="right", fontsize=7, color=INK2)
@@ -112,7 +125,7 @@ def fig_map():
     ax.set_xticks([x - 0.5 for x in range(1, len(methods))], minor=True); ax.set_yticks([y - 0.5 for y in range(1, len(layers))], minor=True)
     ax.grid(which="minor", color=SURF, lw=2); ax.tick_params(which="both", length=0)
     for s in ax.spines.values(): s.set_visible(False)
-    cb = fig.colorbar(im, ax=ax, fraction=0.03, pad=0.02); cb.outline.set_visible(False); cb.set_label("Charted sources (n)", fontsize=8)
+    cb = fig.colorbar(im, ax=ax, fraction=0.03, pad=0.02); cb.outline.set_visible(False); cb.set_label("Included studies (n)", fontsize=8)
     fig.savefig(OUT / "fig3_evidence_map.png", dpi=300, bbox_inches="tight", facecolor=SURF); plt.close(fig)
 
 

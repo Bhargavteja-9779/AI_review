@@ -1,0 +1,92 @@
+record_id	layer	method	note
+R00028	L3	B	conceptual analysis of test-conditional behaviour (defeat-device analogy)
+R00094	L4	B	sample-complexity theory for detecting sandbagging from queries
+R00151	L3	E	alignment-faking benchmark
+R00223	L3	B	in-context reward hacking via feedback loops
+R00246	L4	E	reward-hacking detection benchmark
+R00250	L4	E	auditing coding benchmarks against exploitation
+R00265	L4	R	trajectory-level detection of reward hacking
+R00271	L3	E	reward-hacking testbed
+R00278	L2	T	training models to verbalise evaluation awareness
+R00292	L3	B	agents tampering with audit traces
+R00302	L4	B	framework of reward hacking across optimisation substrates
+R00307	L4	W	internal-recognition probe for concealed knowledge (sandbagging)
+R00332	L3	B	argument and experiments on conditional compliance under testing
+R00333	L4	R	bounds on single-trace monitors for sandbagging and evaluation awareness
+R00341	L4	B	black-box monitor for reward hacking in self-evolving loops
+R00354	L3	E	benchmark of planted optional shortcuts
+R00361	L4	W	activation reference-grafting to elicit sandbagged capability
+R00365	L3	T	validation-deployment gap via quantisation-triggered behaviour
+R00373	L4	W	geometry-based detection of sleeper-agent behaviour
+R00379	L4	E	hack-verifiable terminal benchmark
+R00383	L4	W	activation controllability benchmark (latent-monitor evasion)
+R00462	L3	E	agentic benchmark of unprompted coercion and deception
+R00493	L4	W	perturbative elicitation of latent behaviours
+R00511	L4	W	probes for misalignment indicators
+R00535	L4	R	transcript monitor for multi-agent misalignment
+R00536	L3	B	multilingual scheming evaluation
+R00542	L4	E	adversarial hardening of agent benchmarks
+R00543	L4	R	cheap trajectory-based reward-hacking detector
+R00550	L4	W	shared latent structure for backdoor detection
+R00555	L4	R	reasoning-trace probe for implicit hacking
+R00561	L3	T	mechanistic taxonomy of reward hacking and evaluator gaming in RLHF
+R00563	L3	E	plan-action divergence benchmark for strategic deception
+R00575	L4	R	action-only deliberative scheming monitors
+R00600	L4	E	hack-verifiable environments
+R00603	L4	B	black-box deception auditing
+R00625	L4	E	auditing agent benchmarks for exploitable flaws
+R00646	L4	E	red-teaming agent monitors
+R00650	L4	W	probe generalisation for deception and sandbagging monitors
+R00653	L2	W	decomposing and steering evaluation-related metacognition
+R00661	L3	E	instrumental-behaviour propensity benchmark
+R00672	L3	E	specification-gaming task suite
+R00697	L3	E	taxonomy-driven evaluation of evaluation gaming and deception
+R00715	L3	B	stakes signalling changes automated-judge verdicts
+R00716	L3	T	verifier gaming under RLVR
+R00734	L4	A	open-source-intelligence detection of real-world scheming incidents
+R00735	L3	E	power-seeking benchmark
+R00753	L3	B	agents suppressing evidence in scenario evaluation
+R00765	L4	W	limits of probes for coherent misalignment
+R00791	L4	R	deception oversight framework for agents
+R00798	L2	T	reasoning training as pathway to situational awareness
+R00802	L3	E	reward-hacking testbed under RLVR
+R00811	L4	W	activation-based reward-hacking monitor
+R00819	L4	R	constitutional black-box scheming monitors
+R00827	L4	B	list experiments for hidden beliefs
+R00830	L3	E	multi-turn behavioural alignment benchmark under pressure
+R00839	L4	R	information-theoretic analysis of CoT monitorability
+R00854	L3	R	steganographic reasoning capability
+R00885	L4	T	fine-tuned honest persona to reveal latent knowledge
+R00904	L4	E	reward-hack detection benchmark for code environments
+R00938	L4	T	information-theoretic measure of elicitation vs teaching in fine-tuning
+R00981	L4	T	training for confessions of covert actions
+R01019	L4	W	off-policy data and probe generalisation
+R01061	L3	R	RL-induced motivated reasoning in CoT
+R01099	L4	R	auditing steganographic collusion
+R01141	L3	W	strategic lying and blind spots of SAE-based detectors
+R01145	L4	E	deceptive-reasoning detection benchmark
+R01180	L4	R	monitor red-teaming with varied situational awareness
+R01247	L3	R	steganographic capability evaluation
+R01255	L4	T	verbalisation fine-tuning for reward hacking
+R01291	L3	W	representations of strategic deception in reasoning models
+R01293	L3	E	agentic misalignment propensity benchmark
+R01300	L3	T	steganographic CoT under process supervision
+R01314	L4	T	self-monitoring against deceptive alignment
+R01328	L4	T	soft prompts as capability-elicitation metric
+R01330	L4	W	evasion and defence of white-box monitors
+R01354	L3	T	RL-trained steganographic capability
+R01376	L3	W	models coordinating to deceive interpretability oversight
+R01497	L2	E	instrumental self-reasoning evaluation suite
+R01598	L3	B	reward hacking in iterative self-refinement against LLM evaluator
+R02043	L3	E	dataset of reward-hackable environments and exploit trajectories
+R02712	L1	B	paired prompts varying evaluation cues ("evaluation scent")
+R02947	L3	E	strategic-deception evaluation framework
+R03372	L4	T	process rewards against unsound-reasoning reward hacking
+R03416	L4	R	real-time CoT deception monitor
+R03470	L2	W	input-only suppression of evaluation-awareness latents
+R03576	L4	B	multi-layer red-teaming for deceptive alignment in healthcare AI
+R03604	L4	W	activation monitors when agents know they are monitored
+R03838	L4	E	auditing reward hackability of code RL environments
+R00327	L4	E	instrumentation for reward integrity in agent benchmarks
+R00475	L1	E	deployment simulation to reduce test recognisability
+R00744	L4	W	mechanistic elicitation of latent knowledge

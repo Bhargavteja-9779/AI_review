@@ -8,7 +8,7 @@ The review supports four conclusions, each qualified by the strength of the evid
 
 **(ii) "Evaluation awareness" is a family of weakly coupled constructs, not one quantity.** Representational, verbalised and elicited measures diverge (*Evaluation Awareness Is Not One Capability* 2026; Heidari et al. 2026). Each has a known directional bias (Section 4.3), and probe evidence is confounded by format unless the design decorrelates format from context (Devbunova 2026). Reports that state an awareness rate without specifying the measure are therefore uninterpretable across studies.
 
-**(iii) The link from awareness to behaviour is heterogeneous in magnitude and direction.** Test awareness can increase or decrease harmful compliance depending on the model (Abdelnabi and Salem 2025). How the awareness is framed predicts compliance (Zhuang and Aranguri 2026). Induced evaluation awareness can drive almost all of the observed sandbagging in one model while barely affecting another (Chaudhary 2026). A single "evaluation-awareness correction" applied across models is therefore not justified by current evidence.
+**(iii) The link from awareness to behaviour is heterogeneous in magnitude and direction.** Test awareness can increase or decrease harmful compliance depending on the model (Abdelnabi and Salem 2025). How the awareness is framed predicts compliance (Zhuang and Aranguri 2026). Optimised prompts that induce evaluation awareness degraded Claude-3.5-Haiku by 73 pp on arithmetic but by only 0.6 pp on code generation, where Llama-3.3-70B dropped 87 pp (Chaudhary 2026). A single "evaluation-awareness correction" applied across models is therefore not justified by current evidence.
 
 **(iv) Detecting adversarial underperformance is harder than eliciting capability.** In adversarial settings, detection was unreliable (Taylor J et al. 2025; Li C et al. 2025; Ward et al. 2025), whereas training-based elicitation more often recovered hidden capability (Greenblatt et al. 2024b; Taylor J et al. 2025; Ryd et al. 2026), at the cost of false positives. For capability evaluations, this favours elicitation-first protocols, which report the best elicited performance, over detection-first protocols, which try to classify whether a model is sandbagging.
 
@@ -22,7 +22,7 @@ Second, unlike human participants, models are trained, and training can be infor
 
 ### 5.3 Comparison with prior reviews
 
-Relative to deception surveys (Park et al. 2024; *AI Deception: Risks, Dynamics, and Controls* 2025; *From Hallucination to Scheming* 2026), this review treats the evaluation as the object of study, so that deception matters only insofar as it changes what scores mean. Relative to the broad proxy–target framing of Uluırmak and Kurban (2026), it isolates the model-originated mechanisms and their measurement. Relative to construct-validity reviews of benchmarks (Bean et al. 2025; Reuel et al. 2024), it adds a class of threat that remains even when a benchmark is well designed. A benchmark with strong construct validity can still yield invalid inferences if the evaluated system behaves differently because it recognises the benchmark.
+Relative to deception surveys (Park et al. 2024; *AI Deception: Risks, Dynamics, and Controls* 2025; *From Hallucination to Scheming* 2026), this review treats the evaluation as the object of study, so that deception matters only insofar as it changes what scores mean. Relative to the review of the AI "observer effect" by Maurya et al. (2026), which discusses fifteen landmark contributions up to 2024, it adds a reproducible multi-database search, the 2025–2026 measurement literature and an explicit separation of awareness from behaviour. Relative to the broad proxy–target framing of Uluırmak and Kurban (2026), it isolates the model-originated mechanisms and their measurement. Relative to construct-validity reviews of benchmarks (Bean et al. 2025; Reuel et al. 2024), it adds a class of threat that remains even when a benchmark is well designed, although the benchmark audits in Section 4.9 show that many agent benchmarks are not. A benchmark with strong construct validity can still yield invalid inferences if the evaluated system behaves differently because it recognises the benchmark.
 
 ### 5.4 Implications for evaluation practice: a reporting checklist
 
@@ -55,31 +55,35 @@ Table 8 lists evidence-based gaps, each with the study that would address it and
 |---|---|---|---|---|
 | 1 | Detection and elicitation validated only on *induced* behaviour | Ground truth obtained almost exclusively by construction (Section 4.4); organisms deliberately trained to be detectable or resistant | Blinded auditing games in which red teams construct organisms by *training incentives* rather than direct instruction; report transfer from induced to incentive-driven behaviour | Strong |
 | 2 | No validated mapping between awareness measures | 1 of 15 cross-paradigm correlations significant; partial representation–verbalisation correspondence | Multi-measure study on shared items with known ground truth, estimating the upward bias of elicitation and the downward bias of verbalisation | Strong |
-| 3 | Few studies of evaluation properties (L1) | 6 of 225 charted sources (2.7%) | Factorial cue-ablation studies across task families, including agentic, multimodal and multilingual evaluations | Strong (coverage gap) |
+| 3 | Few studies of evaluation properties (L1) | 8 of 315 included studies (2.5%) | Factorial cue-ablation studies across task families, including agentic, multimodal and multilingual evaluations | Strong (coverage gap) |
 | 4 | Awareness–behaviour link unexplained across models | Direction and magnitude vary (Table 6) | Pre-registered, multi-family studies relating awareness framing to behaviour change, with model-level random effects | Moderate |
 | 5 | Feedback from evaluation into training | Verbalised awareness rose after anti-scheming training | Controlled training runs that vary whether evaluation-derived data enter training; measure subsequent awareness | Moderate |
 | 6 | Sycophancy vs strategic accounts not separable | Baek et al. (2026); Santos-Grueiro (2026) | Designs in which the two accounts predict different behaviour (e.g. evaluator-preference reversal under recognised evaluation) | Moderate |
-| 7 | Countermeasures validated by model judgement only | Realism measured by model discriminators | Validate realism and replay methods against deployment outcomes, not only against discriminator accuracy | Moderate |
-| 8 | Peer-review and replication deficit | 19.1% of charted sources peer-reviewed; key findings single-model | Independent replications of anchor findings (Table 5) with released prompts and code | Strong |
+| 7 | Countermeasures validated by model judgement only | Realism mostly validated by model discriminators; one deployment-grounded validation (Williams et al. 2026) | Validate realism and replay methods against deployment outcomes, not only against discriminator accuracy | Moderate |
+| 8 | Peer-review and replication deficit | 14.6% of included studies peer-reviewed; key findings single-model | Independent replications of anchor findings (Table 5) with released prompts and code | Strong |
 | 9 | Evaluation reporting heterogeneity | Rates reported without construct, uncertainty or access level | Adoption study of a reporting checklist (Table 7) across system cards | Weak (practice evidence only) |
 
 ## 7 Limitations of the review
 
 The review has substantial limitations, which readers should weigh before relying on its conclusions.
 
-*Information sources.* Bibliographic databases and publisher sites were inaccessible in the review environment (Section 3.1). Records were identified through a web-search tool whose coverage cannot be quantified and whose result summaries are machine-generated. Some relevant work, particularly in journals and non-English venues, has probably been missed, and the total number of records identified depends on the number of queries run rather than reflecting the size of the literature.
+*Information sources.* Three databases were searched, but two planned sources (OpenAlex and DBLP) could not be queried (Section 3.1), and Web of Science, the ACM Digital Library and IEEE Xplore were not searched. Scopus indexes few of the preprints and proceedings in which this field publishes, so most database records came from arXiv and Semantic Scholar. The web searches that supplied 149 studies have unquantifiable coverage, and their record counts depend on the number of queries run. Non-English work is probably under-represented.
 
-*Depth of reading.* No full text was read. All charting and all quantitative values derive from abstracts and search-result summaries, and some values were available only from secondary summaries. We flag the latter where they are used, and all values must be verified against primary sources before any reuse.
+*Search sensitivity.* Two-thirds of the studies included from the web phase were not retrieved by the database query. Most of them belong to adjacent streams, such as chain-of-thought faithfulness, probing and AI control, that the query was deliberately not designed to cover, but the figure also shows that construct terminology in the field is unstable and that a term-based search alone would have missed relevant work.
 
-*Single-reviewer screening.* Screening and charting were performed by one reviewer assisted by an AI system, without dual independent assessment. Deterministic rules and full decision logs reduce, but do not remove, the risk of misclassification.
+*Rule-assisted screening.* Stage 1 excluded records without any phenomenon term in the title or abstract. The audit sample and the rescue pass limit, but do not eliminate, the risk that relevant records described in unusual terms were excluded.
+
+*Depth of reading.* Full texts were read for the 37 anchor studies only. The other included studies were charted from titles and abstracts, which may misstate methods or omit qualifications.
+
+*Single-reviewer screening.* Screening and charting were performed by one reviewer assisted by an AI system, without dual independent assessment. Inter-pass agreement (κ = 0.747) and rule-versus-manual layer agreement (κ = 0.881) were measured within this single-reviewer process; they are not substitutes for inter-rater reliability.
 
 *Assignment simplification.* Multi-method and multi-layer studies were assigned a single primary layer and method family.
 
-*Evidence base.* Two-thirds of charted sources are preprints. Several anchor findings come from a small number of research groups and from developer-produced reports whose methods are not fully disclosed.
+*Evidence base.* Three-quarters of the included studies are preprints. Several anchor findings come from a small number of research groups and from developer-produced reports whose methods are not fully disclosed.
 
-*Recency.* The field is moving quickly; the search date was 9 October 2026, and sources posted after that date are not included.
+*Recency.* The field is moving quickly; the search date was 9 October 2026, and later studies are not included.
 
-A database-based update, using the released search scripts, dual screening and full-text charting, is the most important next step for this review.
+The most useful next steps for this review are dual independent screening of the database records and full-text charting beyond the anchor set.
 
 ## 8 Conclusion
 
@@ -97,8 +101,8 @@ Model-originated threats to evaluation validity have moved from theoretical conc
 
 **Data availability** All search queries, record logs, screening decisions, charting data and count reconciliations are provided as supplementary material and in the public repository accompanying this article (Supplementary Files S1–S4).
 
-**Code availability** The scripts used for deduplication, screening, charting and figure generation (`screen.py`, `chart.py`, `figures.py`), and the unexecuted bibliographic-database search scripts (`run_searches.py`, `dedup.py`), are provided as supplementary material and in the accompanying repository.
+**Code availability** The scripts used for the database searches (`search/run_searches.py`), deduplication (`search/dedup.py`), screening and reconciliation (`screening/screen_db.py`, `screening/merge.py`, `screening/reliability.py`, `evidence/screen.py`), charting (`evidence/chart.py`) and figure generation (`evidence/figures.py`) are provided in the accompanying repository, together with the raw API responses.
 
 **Author contributions** P N Bhargav Teja: conceptualisation, methodology, investigation, data curation, formal analysis, visualisation, writing – original draft. Divya Meena S: conceptualisation, supervision, validation, writing – review and editing. Both authors read and approved the final manuscript.
 
-**Use of generative AI** In accordance with Springer Nature policy, the authors disclose that an AI system (Claude, Anthropic) was used extensively in preparing this review: to execute and log web searches, to apply the scripted screening and charting rules, to generate figures, and to draft the manuscript text. The authors directed the work, take full responsibility for the content, and verified the manuscript before submission. The AI system is not an author.
+**Use of generative AI** In accordance with Springer Nature policy, the authors disclose that an AI system (Claude, Anthropic) was used extensively in preparing this review: to execute and log the web and database searches, to write the screening, charting and figure scripts, to assist with title and abstract screening and charting, to check quantitative statements about the anchor studies against their full texts, to verify reference metadata against arXiv and Crossref, and to draft the manuscript text. The authors directed the work, take full responsibility for the content, and verified the manuscript before submission. The AI system is not an author.

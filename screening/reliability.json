@@ -1,0 +1,27 @@
+{
+  "stage1_audit": {
+    "sample": 120,
+    "false_negatives": 1,
+    "rate": 0.0083,
+    "wilson95": [
+      0.0015,
+      0.0457
+    ]
+  },
+  "layer_assignment_anchor": {
+    "n": 37,
+    "agreement": 0.919,
+    "cohen_kappa": 0.881,
+    "disagreements": [
+      "arXiv:2605.23055",
+      "arXiv:2511.09904",
+      "arXiv:2604.28182"
+    ]
+  },
+  "interpass_screening": {
+    "overlap_n": 90,
+    "agreement": 0.933,
+    "cohen_kappa": 0.747,
+    "note": "agreement between web-metadata screening pass (first) and database title/abstract screening pass (second) on records identified by both; discordant n=6 resolved by consensus re-reading"
+  }
+}

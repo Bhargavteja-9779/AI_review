@@ -1,0 +1,55 @@
+{
+  "protocol_version": "0.2",
+  "frozen": true,
+  "date_from": "2019-01-01",
+  "notes": "A = system terms; B_specific = phenomenon terms specific enough alone; B_broad = need evaluation context C. v0.2 adds model-originated threats (strategic deception/dishonesty, deceptive alignment) to B_specific and reward hacking/specification gaming to B_broad, matching the broadened scope.",
+  "A": [
+    "language model",
+    "language models",
+    "LLM",
+    "LLMs",
+    "foundation model",
+    "frontier model",
+    "AI agent",
+    "AI system"
+  ],
+  "B_specific": [
+    "evaluation awareness",
+    "eval awareness",
+    "test awareness",
+    "sandbagging",
+    "strategic underperformance",
+    "alignment faking",
+    "evaluation faking",
+    "observer effect",
+    "evaluation gaming",
+    "under-elicitation",
+    "password-locked",
+    "hidden capabilities",
+    "evaluation-awareness",
+    "strategic deception",
+    "strategic dishonesty",
+    "deceptive alignment"
+  ],
+  "B_broad": [
+    "situational awareness",
+    "scheming",
+    "capability elicitation",
+    "reward hacking",
+    "specification gaming"
+  ],
+  "C": [
+    "evaluation",
+    "benchmark",
+    "test",
+    "assessment",
+    "audit"
+  ],
+  "arxiv_categories": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG",
+    "cs.CR"
+  ],
+  "frozen_on": "2026-10-09"
+}

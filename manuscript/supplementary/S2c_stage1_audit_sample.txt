@@ -1,0 +1,120 @@
+1 R03321 MGA-KGF: A Multi-Granularity Adaptive Knowledge Graph Fusion Framework for Heterogeneous Multi-Source Smart Gr
+2 R03843 Inverse design of intermediate band solar cell via a joint drift-diffusion simulator and deep reinforcement le
+3 R01167 Decoupling the "What" and "Where" With Polar Coordinate Positional Embeddings
+4 R02395 Beyond the Status Quo: A Contemporary Survey of Advances and Challenges in Audio Captioning
+5 R00817 ClinCoT: Clinical-Aware Visual Chain-of-Thought for Medical Vision Language Models
+6 R01829 TypeT5: Seq2seq Type Inference using Static Analysis
+7 R00445 ToolGuardian: Declarative Security for AI Agent-Tool Interactions
+8 R01128 LLM Watermark Evasion via Bias Inversion
+9 R03311 An Autonomous Decision-Making Method for Unmanned Vehicle Based on the Collaboration of Large Language Model a
+10 R03237 FlowTracer: A Tool for Uncovering Network Path Usage Imbalance in AI Training Clusters
+11 R02738 Digitalizing English-language CT Interpretation for Positive Haemorrhage Evaluation Reporting: the DECIPHER st
+12 R02394 Automatic Segmentation of 3D CT scans with SAM2 using a zero-shot approach
+13 R01343 PWC-MoE: Privacy-Aware Wireless Collaborative Mixture of Experts
+14 R00507 Heuresis: Search Strategies for Autonomous AI Research Agents Across Quality, Diversity and Novelty
+15 R02398 LLM-enabled adaptive scheduling in IoT sensing for optimized network performance
+16 R03376 Robust and Efficient Watermarking of Large Language Models Using Error Correction Codes
+17 R03320 Cost Accounting Education with ChatGPT and Its Implications
+18 R01479 GAS: Generative Auto-bidding with Post-training Search
+19 R01493 CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding
+20 R01860 Squeezeformer: An Efficient Transformer for Automatic Speech Recognition
+21 R01683 Bias-Augmented Consistency Training Reduces Biased Reasoning in Chain-of-Thought
+22 R02745 Adversarial Robustness in Multilingual and Code-Mixed NLP: Insights From Indian Language Settings
+23 R02058 SQ-LoRA: Memory-Efficient Language Model Compression Through Stable-Rank-Guided Quantization for Edge Computin
+24 R02072 Data-Efficient Tabular Classification with Transformer-Based Small Language Models
+25 R02450 ZeROf-Offload: forward-gradient scheme for efficient full parameter fine-tuning of billion-scale language mode
+26 R03207 Longitudinal modality prediction learns gene regulatory patterns: insights from a single-cell competition
+27 R00153 Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models
+28 R02706 Generative AI-Powered Document Processing at Scale with Fraud Detection for Large Financial Organizations
+29 R02421 Instruction Finetuning to Attribute Language Stage, Dialect, and Provenance Region to Historical Church Slavic
+30 R02134 Simulating Complex Immediate Textual Variation with Large Language Models
+31 R01175 Aligning Reasoning LLMs for Materials Discovery with Physics-aware Rejection Sampling
+32 R02348 Unsupervised Domain Adaptation for SAR Target Classification Based on the SAR-ATR-X Foundation Model
+33 R02256 AiF: Accelerating On-Device LLM Inference Using In-Flash Processing
+34 R01118 BeyondBench: Contamination-Resistant Evaluation of Reasoning in Language Models
+35 R02901 StAR: Segment Anything Reasoner
+36 R02693 PROBE: Dense Process Rewards with Observation Evidence for Tool-Augmented Visual Reasoning
+37 R01551 UniSumEval: Towards Unified, Fine-Grained, Multi-Dimensional Summarization Evaluation for LLMs
+38 R03267 Unveiling the Pruning Risks on Privacy Vulnerabilities of Deep Neural Networks
+39 R03683 Towards Energy-Efficient LLM Inferencing on Analog Devices via Algorithm-Hardware Co-Design
+40 R01850 Complexity-Based Prompting for Multi-Step Reasoning
+41 R02827 Leveraging Generative AI for Proactive Customer Churn Management in the Telecommunications Sector
+42 R02404 Secure electronic health record access control via blockchain, dual-attribute encryption, and large language m
+43 R01942 Check Your Work: Structured Checklist Feedback for Improving Large Language Models
+44 R01863 Automatic Spoken Language Identification using a Time-Delay Neural Network
+45 R01110 Large Language Models Can Perform Automatic Modulation Classification via Discretized Self-supervised Candidat
+46 R02523 Enhancing Facial Expression Recognition With AI Agents: A Semisupervised Guided Adaptive $\beta$-VAE Coupled W
+47 R02169 Large Language Model and Fuzzy Metric Integration in Assignment Grading for Introduction to Programming Type o
+48 R00489 On the Limits of Support-Preserving Alignment and Bounded Filtering
+49 R03665 Symphony-Coord: Emergent Coordination in Decentralized Agent Systems
+50 R01251 SafeMobile: Chain-level Jailbreak Detection and Automated Evaluation for Multimodal Mobile Agents
+51 R02477 UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval
+52 R02774 MOBFinder: a tool for mobilization typing of plasmid metagenomic fragments based on a language model
+53 R02942 LLM-based assessment of HTTPS cybersecurity awareness: Dataset from moroccan web users and webmasters
+54 R03294 AdaptiCare: A Psychological Counseling Dialogue Enhancement Framework Based on Multi-Agent Collaboration
+55 R01914 Automating Text Naturalness Evaluation of NLG Systems
+56 R02260 Prompting Wireless Networks: Reinforced In-Context Learning for Power Control
+57 R02734 TCellPredX: A Novel Approach for Accurate Prediction of Hepatitis C Virus Linear T Cell Epitopes
+58 R02067 BAPS: A Fine-Grained Low-Precision Scheme for Softmax in Attention via Block-Aware Precision reScaling
+59 R03144 SURDS: Benchmarking Spatial Understanding and Reasoning in Driving Scenarios with Vision Language Models
+60 R00502 Comparing BERT Sentence-Pair Classification and Few-Shot LLM Prompting for Detecting Threat and Solution Frami
+61 R02185 We, the Robots? Regulating Artificial Intelligence and the Limits of the Law by SIMON CHESTERMAN [Cambridge Un
+62 R00677 Beyond Compaction: Structured Context Eviction for Long-Horizon Agents
+63 R00527 OdysSim: Building Foundation Models for Human Behavior Simulation
+64 R02157 Toward Multi-Layer Networking for Satellite Network Operations
+65 R03090 Human factors challenges for the safe use of artificial intelligence in patient care
+66 R00068 An LLM-Based Decision-Support System for Mitigating Document-Induced Human Error Risks in Flight Test Occupati
+67 R02073 First Experimental Demonstration of Disturb-Free 3D Vertical 1T-nC-1T Ferroelectric-based KV Cache with Co-Opt
+68 R02244 Bias Preservation in Machine Learning: The Legality of Fairness Metrics Under EU Non-Discrimination Law
+69 R02616 BLADE: Bandit-Guided Diffusion Model Inference for Industrial IoT
+70 R03352 ARC 'Challenge' Is Not That Challenging
+71 R02583 Design of Intelligent Generation Algorithm for 500kV Substation Main Wiring Scheme Based on Large Language Mod
+72 R01165 TableMind: An Autonomous Programmatic Agent for Tool-Augmented Table Reasoning
+73 R00134 AISStream-MCP: A Real-Time Memory-Augmented Question-Answering System for Maritime Operations
+74 R02641 Safe and Adaptive Cloud Healing: Verifying LLM-Generated Recovery Plans with a Neural-Symbolic World Model
+75 R01872 KMIR: A Benchmark for Evaluating Knowledge Memorization, Identification and Reasoning Abilities of Language Mo
+76 R03250 Causal Language Model Aided Sequential Decoding With Natural Redundancy
+77 R02750 HACO: Hedged Agent Computing for Reliable LLM Systems
+78 R02878 Enhancing DCIM Efficiency with Multi-Storage-Row Architecture for Edge AI Workloads
+79 R01970 Towards a holistic framework for multimodal LLM in 3D brain CT radiology report generation
+80 R00441 A Cybersecurity MLPS Large Language Model with Multi-Path Retrieval Fusion
+81 R01599 Codec-ASR: Training Performant Automatic Speech Recognition Systems with Discrete Speech Representations
+82 R03554 Modelling and simulation of quadcopter UAV based on PID control
+83 R03392 Beyond accuracy: quantifying explainability for cognitive load assessment from smartphone-derived iPPG
+84 R01035 Simulating the Visual World with Artificial Intelligence: A Roadmap
+85 R01761 Controllable Multi-document Summarization: Coverage & Coherence Intuitive Policy with Large Language Model Bas
+86 R02765 CUJBench: Benchmarking LLM-Agent on Cross-Modal Failure Diagnosis from Browser to Backend
+87 R03810 Decoding Deceptive Topologies: Heterogeneous Graph Fusion and Cyclic Verification for Complex Narratives
+88 R00082 A Reinforcement Learning Framework for Robust and Secure LLM Watermarking
+89 R00028 Defeat Devices in AI Systems
+90 R02014 SAFe: Segment-guided Aggregation of Feature Densities for Anomaly-aware Segmentation
+91 R01824 Outlier Suppression+: Accurate quantization of large language models by equivalent and optimal shifting and sc
+92 R02713 SAFE: Situation-Aware Fault Evidence Diagnosis with KG-Guided LLM Reasoning for Satellite Fault Root Cause Ana
+93 R03377 A Reflective Storytelling Agent for Older Adults: Integrating Argumentation Schemes and Argument Mining in LLM
+94 R00558 EvalStop: Using World Feedback to Detect and Correct Reward Overoptimization in Multi-Tenant RLHF Platforms
+95 R01172 How Real Is AI Tutoring? Comparing Simulated and Human Dialogues in One-on-One Instruction
+96 R01661 Rumour Evaluation with Very Large Language Models
+97 R03753 SMPLer-X: Scaling Up Expressive Human Pose and Shape Estimation
+98 R03109 Benchmarking LLMs for ARR Area Assignment: Evidence and Implications for Assignment Strategies
+99 R02670 A Structured Resilience Assessment Cycle and Its Agentic Implementation: The A-RAS System for Electrical Infra
+100 R00452 LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications
+101 R00658 Vaporizer: Breaking Watermarking Schemes for Large Language Model Outputs
+102 R03180 AI-Empowered Teaching of Chemistry Literature Searching: Paradigm Restructuring, Practical Pathways, and Core 
+103 R00823 InnerQ: Hardware-Aware Tuning-Free Quantization of KV Cache for Large Language Models
+104 R02916 The Trustworthy Model Context Protocol (MCP) Registry: An Architectural Blueprint for Cryptographic Provenance
+105 R02108 IGAA: Intent-Driven General Agentic AI for Edge Services Scheduling using Generative Meta Learning
+106 R01366 Advancing Embodied Agent Security: From Safety Benchmarks to Input Moderation
+107 R01986 LiveProteinBench: A Contamination-Free Benchmark for Assessing Models'Specialized Capabilities in Protein Scie
+108 R00180 Ask a Strong LLM Judge when Your Reward Model is Uncertain
+109 R00406 Explicit Boundary Markers for Subword Vocabularies
+110 R03835 MSU-Bench: Towards Speaker-Centric Understanding in Conversational Multi-Speaker Scenarios
+111 R02037 SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval
+112 R03608 RIG-RAG: A GraphRAG Inspired Approach to Agentic Cloud Infrastructure
+113 R01686 MobiLlama: Towards Accurate and Lightweight Fully Transparent GPT
+114 R01679 Duwak: Dual Watermarks in Large Language Models
+115 R01351 ComPO: Preference Alignment via Comparison Oracles
+116 R01920 SongNet: Rigid Formats Controlled Text Generation
+117 R01198 AdaptFlow: Adaptive Workflow Optimization via Meta-Learning
+118 R01340 Constrained Edge AI Deployment: Fine-Tuning vs Distillation for LLM Compression
+119 R01756 Octopus: Embodied Vision-Language Programmer from Environmental Feedback
+120 R02065 Mercury: Multipath Spraying for Joint Congestion and Reordering Control in RDMA

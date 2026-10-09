@@ -1,0 +1,35 @@
+{
+  "databases": {
+    "identified_by_source": {
+      "Scopus": 244,
+      "arXiv": 1721,
+      "SemanticScholar": 3684
+    },
+    "identified_total": 5649,
+    "duplicates_removed_automatic": 1796,
+    "version_duplicates_removed_manual": 30,
+    "records_screened": 3823,
+    "excluded_stage1_rule": 2813,
+    "excluded_rescue_screen": 372,
+    "excluded_stage2_title_abstract": 316,
+    "final_excluded": 3500,
+    "final_context": 157,
+    "final_included": 166
+  },
+  "other_methods": {
+    "identified_web_batches": 422,
+    "duplicates_within_web": 4,
+    "web_records": 418,
+    "already_retrieved_by_databases": 90,
+    "records_assessed": 328,
+    "excluded_by_code": {
+      "E3": 21,
+      "E1": 10,
+      "E6": 17
+    },
+    "final_context": 131,
+    "final_included": 149
+  },
+  "total_included": 315,
+  "total_context": 288
+}
