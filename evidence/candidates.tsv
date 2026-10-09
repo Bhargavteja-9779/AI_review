@@ -68,14 +68,14 @@ arXiv:2307.13702	Measuring Faithfulness in Chain-of-Thought Reasoning	Lanham	202
 arXiv:2601.07663	Reasoning Models Will Sometimes Lie About Their Reasoning	NR	2026	arXiv preprint	B3-q4	title+id	cot-faithfulness
 grey:anthropic2025sonnet45	System Card: Claude Sonnet 4.5	Anthropic	2025	system card	B3-q5	title	system-card
 arXiv:2607.27518	Automated Transcript Analysis for Detecting Flaws in Agentic Benchmarks	NR	2026	arXiv preprint	B3-q5	title+id	benchmark-validity
-grey:lynch2025	Agentic Misalignment: How LLMs Could Be Insider Threats	Lynch	2025	report/arXiv	B3-q6	title	agentic-misalignment
+arXiv:2510.05179	Agentic Misalignment: How LLMs Could Be Insider Threats	Lynch	2025	arXiv preprint	B3-q6/B13-q4	title+id+authors	agentic-misalignment
 arXiv:2510.05192	Adapting Insider Risk mitigations for Agentic Misalignment: an empirical study	NR	2025	arXiv preprint	B3-q6	title+id	agentic-misalignment
 arXiv:2512.09742	Weird Generalization and Inductive Backdoors: New Ways to Corrupt LLMs	NR	2025	arXiv preprint	B3-q6	title+id	conditional-behaviour-backdoor
 arXiv:2509.14260	Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs (v1: Shutdown Resistance in Large Language Models)	Schlatter	2025	arXiv preprint	B3-q6/B9-q4	title+id+authors	shutdown-resistance
 arXiv:2406.10162	Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models	Denison	2024	arXiv preprint	B3-q7	title+id+authors	reward-hacking-eval
 arXiv:2411.03336	Towards evaluations-based safety cases for AI scheming	Balesni	2024	arXiv preprint	B3-q7	title+id+authors	safety-cases
 arXiv:2312.06942	AI Control: Improving Safety Despite Intentional Subversion	Greenblatt	2024	ICML 2024 (PMLR 235:16295-16336)	B3-q8	title+id+venue	control-eval
-grey:ctrlz2025	Ctrl-Z: Controlling AI Agents via Resampling	Bhatt (Redwood Research)	2025	arXiv preprint	B3-q8	title (id unverified)	control-eval
+arXiv:2504.10374	Ctrl-Z: Controlling AI Agents via Resampling	Bhatt	2025	arXiv preprint	B3-q8/B19-q3	title+id	control-eval
 arXiv:2608.13547	QuoteBench: How Matched Scores Can Hide Command-Path Failures	NR	2026	arXiv preprint	B3-q8	title+id	benchmark-validity
 arXiv:2511.04703	Measuring What Matters: Construct Validity in Large Language Model Benchmarks	Bean	2025	NeurIPS 2025	B4-q1	title+id+venue	benchmark-validity
 arXiv:2411.12990	BetterBench: Assessing AI Benchmarks, Uncovering Issues, and Establishing Best Practices	Reuel	2024	NeurIPS 2024 Datasets & Benchmarks	B4-q1	title+id+venue	benchmark-validity
@@ -113,7 +113,7 @@ grey:openai2025gpt5	GPT-5 System Card	OpenAI	2025	system card	B5-q3	title	system
 grey:anthropic2026opus46	System Card: Claude Opus 4.6	Anthropic	2026	system card	B5-q3	title	system-card
 grey:anthropic2025opus45	System Card: Claude Opus 4.5	Anthropic	2025	system card	B5-q3	title	system-card
 grey:anthropic2025opus4	System Card: Claude Opus 4 & Claude Sonnet 4	Anthropic	2025	system card	B5-q3	title	system-card
-arXiv:2601.03267	(Ivanov et al. evaluation-awareness related; title NR)	Ivanov	2026	arXiv preprint	B5-q3	id only — VERIFY	awareness-measurement
+arXiv:2601.03267	OpenAI GPT-5 System Card	OpenAI	2025	system card (arXiv version)	B5-q3/B12-q2	title+id	system-card
 arXiv:2501.11120	Tell me about yourself: LLMs are aware of their learned behaviors	Betley	2025	ICLR 2025	B5-q4	title+id+venue	situational-awareness
 acl:2024.findings-emnlp.464	Towards Benchmarking Situational Awareness of Large Language Models: Comprehensive Benchmark, Evaluation and Analysis (SA-Bench)	Tang	2024	Findings of EMNLP 2024	B5-q4	title+venue	situational-awareness (environment sense; exclude E1)
 arXiv:2609.06059	DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents	NR	2026	arXiv preprint	B5-q5	title+id	eval-realism
@@ -147,11 +147,10 @@ arXiv:2605.26438	LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awa
 arXiv:2608.27340	Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance	Zhuang	2026	arXiv preprint; ICML 2026 listing	B7-q2	title+id+authors	awareness-behaviour
 icml2026:unverbalized	Toward Dealing with Unverbalized Eval Awareness	NR	2026	ICML 2026 listing	B7-q2	title	awareness-measurement
 icml2026:montoya	Towards Measuring and Detecting Unverbalized Evaluation Awareness	Montoya	2026	ICML 2026 listing	B7-q2	title+authors	awareness-measurement
-grey:verbinflates	Verbalized eval awareness inflates measured safety	NR	2026	LessWrong post	B7-q2	title	awareness-behaviour
 grey:verblittle	Verbalised evaluation awareness in language models has little effect on their behaviour	NR	2026	LessWrong post	B7-q2	title	awareness-behaviour
 grey:implanting	Measuring non-verbalised eval awareness by implanting eval awareness	NR	2026	Alignment Forum post	B7-q2	title	awareness-measurement
 grey:reprosteer	Reproducing steering against evaluation awareness in a large open-weight model	NR	2026	LessWrong post	B7-q2	title	countermeasure-steering
-nips2025ws:pre	Probe-Rewrite-Evaluate: A Workflow for Reliable Benchmarks and Quantifying Evaluation Awareness	NR	2025	NeurIPS 2025 workshop	B7-q2	title+venue	eval-realism-countermeasure
+arXiv:2509.00591	Probe-Rewrite-Evaluate: A Workflow for Reliable Benchmarks and Quantifying Evaluation Awareness	Xiong	2025	arXiv preprint; NeurIPS 2025 workshop	B7-q2/B17-q1	title+id+authors	eval-realism-countermeasure
 arXiv:2509.18058	Strategic Dishonesty Can Undermine AI Safety Evaluations of Frontier LLMs	Panfilov	2026	ICLR 2026	B7-q3	title+id+authors+venue	eval-validity-deception
 icml2026ws:semler	Evaluation Awareness as a Threat to External Validity in AI Evaluations	Semler	2026	ICML 2026 TAIG workshop	B7-q4	title+author	awareness-conceptual (adjacent position)
 arXiv:2608.00794	Measurement Without Validity: The Compounding Reliability Problem in Agentic AI Evaluation	NR	2026	arXiv preprint	B7-q4	title+id	eval-validity
@@ -222,3 +221,183 @@ arXiv:1912.05511	Measurement and Fairness	Jacobs	2021	ACM FAccT 2021	B11-q4	titl
 arXiv:2111.15366	AI and the Everything in the Whole Wide World Benchmark	Raji	2021	NeurIPS 2021 Datasets & Benchmarks	B11-q4	title+id+venue	methods-theory
 journal:messick1995	Validity of psychological assessment: Validation of inferences from persons' responses and performances as scientific inquiry into score meaning	Messick	1995	American Psychologist 50(9):741-749	B11-q4	title+venue	methods-theory
 arXiv:2602.16763	When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation	NR	2026	arXiv preprint	B11-q4	title+id	benchmark-validity
+arXiv:2312.11671	Evaluating Language-Model Agents on Realistic Autonomous Tasks	Kinniment	2023	arXiv preprint	B12-q1	title+id	dangerous-capability-eval
+arXiv:2505.01420	Evaluating Frontier Models for Stealth and Situational Awareness	Phuong	2025	arXiv preprint; IASEAI proceedings	B12-q1	title+id+venue	scheming-eval
+arXiv:2507.06261	Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities	Gemini Team	2025	technical report	B12-q2	title+id	system-card
+arXiv:2604.21964	Lessons from External Review of DeepMind's Scheming Inability Safety Case	NR	2026	arXiv preprint	B12-q2	title+id	safety-cases
+grey:openai2025pf	Preparedness Framework (Version 2)	OpenAI	2025	policy document	B12-q2	title	policy
+grey:anthropic2025rsp	Responsible Scaling Policy (Version 2.2)	Anthropic	2025	policy document	B12-q2	title	policy
+grey:gdm2025fsf	Frontier Safety Framework	Google DeepMind	2025	policy document	B12-q2	title	policy
+arXiv:2605.29729	Realistic honeypot evaluations for scheming propensity	Krakovna	2026	arXiv preprint	B12-q3	title+id+authors	honeypot-eval
+grey:openai2025scheming	Detecting and reducing scheming in AI models	OpenAI; Apollo Research	2025	organisation report	B12-q3	title	scheming-eval
+arXiv:2503.03750	The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems	Ren	2025	arXiv preprint	B12-q4	title+id+authors	honesty-eval
+arXiv:2510.15501	DeceptionBench: A Comprehensive Benchmark for AI Deception Behaviors in Real-world Scenarios	Huang	2025	NeurIPS 2025 Datasets & Benchmarks	B12-q4	title+id+venue	deception-eval
+arXiv:2504.13707	OpenDeception: Benchmarking and Investigating AI Deceptive Behaviors	Wu	2025	arXiv preprint	B12-q4	title+id+authors	deception-eval
+arXiv:2310.13548	Towards Understanding Sycophancy in Language Models	Sharma	2024	ICLR 2024	B13-q1	title+id+venue	sycophancy
+arXiv:2212.09251	Discovering Language Model Behaviors with Model-Written Evaluations	Perez	2023	Findings of ACL 2023 pp.13387-13434	B13-q1	title+id+venue	model-written-evals
+arXiv:2504.20879	The Leaderboard Illusion	Singh	2025	NeurIPS 2025	B13-q2	title+id+venue	benchmark-validity
+arXiv:2310.17623	Proving Test Set Contamination in Black Box Language Models	Oren	2024	ICLR 2024	B13-q2	title+id+venue	adjacent-contamination
+arXiv:2608.15326	The Benchmark Trap: Structures of Power and Injustice in AI Evaluations	NR	2026	arXiv preprint	B13-q2	title+id	benchmark-validity
+arXiv:2609.11028	BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure	NR	2026	arXiv preprint	B13-q2	title+id	eval-integrity
+arXiv:2510.21460	Risk Management for Mitigating Benchmark Failure Modes: BenchRisk	NR	2025	arXiv preprint	B13-q2	title+id	benchmark-validity
+arXiv:2604.22082	Removing Sandbagging in LLMs by Training with Weak Supervision	NR	2026	arXiv preprint	B13-q3	title+id	sandbagging-countermeasure
+arXiv:2410.13215	Balancing Label Quantity and Quality for Scalable Elicitation	NR	2024	arXiv preprint	B13-q3	title+id	elicitation
+arXiv:2605.12908	The Mechanism of Weak-to-Strong Generalization: Feature Elicitation from Latent Knowledge	NR	2026	arXiv preprint	B13-q3	title+id	elicitation (marginal)
+arXiv:2605.17314	Weak-to-Strong Elicitation via Mismatched Wrong Drafts	Deng	2026	arXiv preprint	B13-q3	title+id	elicitation (marginal; exclude E1)
+arXiv:2605.05835	Evaluation Awareness in Language Models Has Limited Effect on Behaviour	NR	2026	arXiv preprint	B14-q1	title+id	awareness-behaviour
+arXiv:2609.35409	AwarenessBench: Assessing Cognitive Capabilities of Language Models	NR	2026	arXiv preprint	B14-q1	title+id	exclude E1 (different construct)
+arXiv:2606.08892	Diffuse AI Control on Fuzzy Tasks	NR	2026	arXiv preprint	B14-q2	title+id	control-sandbagging
+arXiv:2604.16812	Introspection Adapters: Training LLMs to Report Their Learned Behaviors	NR	2026	arXiv preprint	B14-q2	title+id	sandbagging-detection
+arXiv:2602.11328	Evaluating Alignment of Behavioral Dispositions in LLMs	NR	2026	arXiv preprint	B14-q3	title+id	alignment-eval-method
+arXiv:2608.28945	Automated Researchers Can Reliably Mitigate Alignment Failures	NR	2026	arXiv preprint	B14-q3	title+id	alignment-eval-method
+arXiv:2512.04062	Eval Factsheets: A Structured Framework for Documenting AI Evaluations	NR	2025	arXiv preprint	B14-q3	title+id	eval-reporting
+arXiv:2608.25460	Training Alignment Auditors via Reinforcement Learning	Rosu	2026	arXiv preprint	B14-q3	title+id+authors	eval-realism
+arXiv:2509.12936	Rethinking the Evaluation of Alignment Methods: Insights into Diversity, Generalisation, and Safety	NR	2025	arXiv preprint	B14-q3	title+id	alignment-eval-method
+arXiv:2602.05656	On the Limits of Behavioral Alignment: Formal Verifiability and the Problem of Normative Indistinguishability (v1: Alignment Verifiability in Large Language Models: Normative Indistinguishability under Behavioral Evaluation)	Santos-Grueiro	2026	arXiv preprint	B14-q3/B15-q1	title+id+authors	eval-validity-theory
+grey:anthropic2026amsummer	Agentic Misalignment in Summer 2026	Anthropic	2026	Alignment Science blog	B14-q3	title	agentic-misalignment
+arXiv:2609.06649	Inducing Emergent Misalignment from Reward Hacks with Iterative DPO	NR	2026	arXiv preprint	B14-q3	title+id	reward-hacking
+arXiv:2607.10455	ANCHOR: Automated Alignment Auditing for CLI Agents on Real-World Harm	NR	2026	arXiv preprint	B14-q3	title+id	alignment-audit
+arXiv:2605.30322	Gram: Assessing sabotage propensities via automated alignment auditing	NR (Google DeepMind)	2026	arXiv preprint	B14-q3	title+id	sabotage-eval
+arXiv:2601.09688	DeepResearchEval: An Automated Framework for Deep Research Task Construction and Agentic Evaluation	NR	2026	arXiv preprint	B14-q3	title+id	exclude E1
+arXiv:2602.08449	When Evaluation Becomes a Side Channel: Regime Leakage and Structural Mitigations for Alignment Assessment	NR	2026	arXiv preprint	B15-q1	title+id	eval-validity-theory
+grey:iasr2026	International AI Safety Report 2026	Bengio (chair)	2026	government-commissioned report	B15-q2	title	policy-evidence
+grey:fli2025index	AI Safety Index (Summer 2025; Winter 2025)	Future of Life Institute	2025	index report	B15-q2	title	policy-evidence
+arXiv:2310.11324	Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting	Sclar	2024	ICLR 2024	B15-q3	title+id+venue	eval-reliability
+arXiv:2401.00595	State of What Art? A Call for Multi-Prompt LLM Evaluation	Mizrahi	2024	TACL 12:933-949	B15-q3	title+id+venue	eval-reliability
+grey:templeton2024	Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet	Templeton	2024	Transformer Circuits Thread	B15-q4	title+venue	white-box-methods
+grey:bricken2023	Towards Monosemanticity: Decomposing Language Models With Dictionary Learning	Bricken	2023	Transformer Circuits Thread	B15-q4	title+venue	white-box-methods
+arXiv:2503.05613	A Survey on Sparse Autoencoders: Interpreting the Internal Mechanisms of Large Language Models	NR	2025	arXiv preprint	B15-q4	title+id	white-box-methods
+icml2026:saesanity	Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?	NR	2026	ICML 2026	B15-q4	title+venue	white-box-validity
+arXiv:2406.04093	Scaling and evaluating sparse autoencoders	Gao	2024	arXiv preprint	B15-q4	title+id	white-box-methods
+arXiv:2512.15674	Activation Oracles: Training and Evaluating LLMs as General-Purpose Activation Explainers	Karvonen	2025	arXiv preprint	B15-q4	title+id+authors	white-box-methods
+arXiv:2607.23379	When Activation Oracles Learn Not to Read: Concept-Specific Blind Spots in Fine-Tuned Oracles	NR	2026	arXiv preprint	B15-q4	title+id	white-box-validity
+grey:goodfire2026	Verbalized eval awareness inflates measured safety	Goodfire	2026	research post	B15-q4	title (same as grey:verbinflates)	awareness-behaviour
+grey:whereweare	Where we are on evaluation awareness	NR	2026	LessWrong post	B15-q4	title	awareness-overview
+grey:callscience	Call for Science of Eval Awareness (+ Research Directions)	NR	2026	LessWrong post	B15-q4	title	awareness-overview
+grey:schemingrealism	It's hard to make scheming evals look realistic for LLMs	NR	2025	LessWrong post	B16-q1	title	eval-realism
+arXiv:2507.02825	Establishing Best Practices for Building Rigorous Agentic Benchmarks	Zhu	2025	NeurIPS 2025 Datasets & Benchmarks	B16-q2	title+id+venue	benchmark-validity
+arXiv:2410.06992	SWE-Bench+: Enhanced Coding Benchmark for LLMs	Aleithan	2024	arXiv preprint	B16-q2	title+id	benchmark-validity
+arXiv:2609.08149	(SWE-Bench Pro anti-hacking controls; title NR)	NR	2026	arXiv preprint	B16-q2	id only — VERIFY	reward-hacking-countermeasure
+arXiv:2105.14111	Goal Misgeneralization in Deep Reinforcement Learning	Langosco	2022	ICML 2022	B16-q3	title+id+venue	background-theory
+arXiv:2210.01790	Goal Misgeneralization: Why Correct Specifications Aren't Enough For Correct Goals	Shah	2022	arXiv preprint	B16-q3	authors only in search (title/id from memory: VERIFY)	background-theory
+grey:krakovna2020	Specification gaming: the flip side of AI ingenuity	Krakovna	2020	DeepMind blog + examples list	B16-q3	description	background-theory
+arXiv:1906.01820	Risks from Learned Optimization in Advanced Machine Learning Systems	Hubinger	2019	arXiv preprint	B16-q3	title+id+authors	background-theory
+arXiv:2311.08379	Scheming AIs: Will AIs fake alignment during training in order to get power?	Carlsmith	2023	arXiv preprint	B16-q4	title+id+author	background-theory
+arXiv:2209.00626	The Alignment Problem from a Deep Learning Perspective	Ngo	2024	ICLR 2024	B16-q4	title+id+venue	background-theory
+arXiv:2504.20084	AI Awareness	NR	2025	arXiv preprint	B17-q1	title+id	situational-awareness-review
+arXiv:2501.08156	Are DeepSeek R1 And Other Reasoning Models More Faithful?	Chua	2025	ICLR 2025 workshop	B17-q2	title+id+authors	cot-faithfulness
+arXiv:2603.22582	Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?	NR	2026	arXiv preprint	B17-q2	title+id	cot-faithfulness
+acl:2025.chomps-main.2	Examining the Faithfulness of Deepseek R1's Chain-of-Thought Reasoning	Cornish	2025	CHOMPS 2025 workshop (ACL Anthology)	B17-q2	title+venue	cot-faithfulness
+arXiv:2405.20947	OR-Bench: An Over-Refusal Benchmark for Large Language Models	Cui	2024	arXiv preprint	B17-q3	title+id	safety-eval-validity
+arXiv:2605.05427	The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models	NR	2026	arXiv preprint	B17-q3	title+id	safety-eval-validity
+arXiv:2609.02707	Door-in-the-Face Requests and Refusal Behaviour in Large Language Models	NR	2026	arXiv preprint	B17-q3	title+id	safety-eval-validity
+arXiv:2505.08054	FalseReject: A Resource for Improving Contextual Safety and Mitigating Over-Refusals in LLMs via Structured Reasoning	NR	2025	arXiv preprint	B17-q3	title+id	safety-eval-validity
+arXiv:2510.08158	Beyond Over-Refusal: Scenario-Based Diagnostics and Post-Hoc Mitigation for Exaggerated Refusals in LLMs	NR	2025	arXiv preprint	B17-q3	title+id	safety-eval-validity
+arXiv:2404.05399	SafetyPrompts: A Systematic Review of Open Datasets for Evaluating and Improving Large Language Model Safety	Röttger	2025	AAAI 2025	B17-q3	title+id+venue	prior-review-adjacent
+arXiv:2409.18025	An Adversarial Perspective on Machine Unlearning for AI Safety	Łucki	2025	TMLR 2025	B17-q4	title+id+venue	hidden-capability-unlearning
+arXiv:2408.00761	Tamper-Resistant Safeguards for Open-Weight LLMs	Tamirisa	2025	ICLR 2025	B17-q4	title+id+venue	hidden-capability-unlearning
+arXiv:2407.17447	FLRT: Fluent Student-Teacher Redteaming	Thompson	2024	arXiv preprint	B17-q4	title+id	exclude E1 (jailbreak method)
+arXiv:2411.12103	(unlearning robustness: 5-shot prompting/rephrasing recovers unlearned knowledge; title NR)	NR	2024	arXiv preprint	B17-q4	id only — VERIFY	hidden-capability-unlearning
+arXiv:2508.04451	Automatic LLM Red Teaming	NR	2025	arXiv preprint	B17-q4	title+id	exclude E1
+arXiv:2604.21159	Adaptive Instruction Composition for Automated LLM Red-Teaming	NR	2026	arXiv preprint	B17-q4	title+id	exclude E1
+grey:anthropic2026browsecomp	Eval awareness in Claude Opus 4.6's BrowseComp performance	Anthropic	2026	engineering blog	B18-q1	title	awareness-behaviour (benchmark gaming)
+grey:gdm2025gemini3fsf	Gemini 3 Pro Frontier Safety Framework Report	Google DeepMind	2025	safety framework report	B18-q2	title	system-card
+grey:xai2025grok4	Grok 4 Model Card	xAI	2025	system card	B18-q2	title+date	system-card
+grey:xai2026grok420	Grok 4.20 Model Card	xAI	2026	system card	B18-q2	title+date	system-card
+arXiv:2502.11137	(independent red-teaming of DeepSeek-R1; title NR)	NR	2025	arXiv preprint	B18-q2	id only — VERIFY	third-party-eval (exclude E1 likely)
+arXiv:2601.10527	(multi-model safety report incl. Gemini 3 Pro, Grok 4.1, Qwen3-VL; title NR)	NR	2026	arXiv preprint	B18-q2	id only — VERIFY	third-party-eval
+grey:gemini3paranoid	Gemini 3 is Evaluation-Paranoid and Contaminated	NR	2025	LessWrong post	B18-q2	title	awareness-behaviour
+arXiv:2401.14446	Black-Box Access is Insufficient for Rigorous AI Audits	Casper	2024	ACM FAccT 2024	B18-q3	title+id+venue	audit-access
+grey:iaps2025ea	Evaluation awareness: why frontier AI models are getting harder to test	Institute for AI Policy and Strategy	2025	policy memo	B18-q3	title (date unverified)	policy
+icml2026:evalcoop	Eval Cooperativeness Mitigates Evaluation Gaming in LLMs	NR	2026	ICML 2026	B19-q1	title+venue	countermeasure-training
+arXiv:2607.07184	(predictive deployment simulation from production-derived prefixes; title NR)	NR	2026	arXiv preprint	B19-q1	id only — VERIFY	eval-realism
+arXiv:2505.15146	(evaluation gaming related; title NR)	NR	2025	arXiv preprint	B19-q1	id only — VERIFY	unclassified
+arXiv:2510.04340	Inoculation Prompting: Eliciting traits from LLMs during training can suppress them at test-time	Tan	2025	arXiv preprint	B19-q2	title+id	training-intervention
+arXiv:2510.05024	Inoculation Prompting: Instructing LLMs to misbehave at train-time improves test-time alignment	Wichers	2025	arXiv preprint	B19-q2	title+id	training-intervention
+arXiv:2606.30252	Inoculation Adapters: Improved Selective Generalization of Capabilities with Fewer Surprising Backdoors	NR	2026	arXiv preprint	B19-q2	title+id	training-intervention
+arXiv:2609.15886	Inoculation Midtraining with Learned Neologisms	NR	2026	arXiv preprint	B19-q2	title+id	training-intervention
+grey:shallowbeliefs	Shallow beliefs midtraining does not inoculate against EM	NR	2026	LessWrong post	B19-q2	title	training-intervention
+grey:apollo2026rewardseeking	Measuring reward seeking via contrastive belief updates	Apollo Research; OpenAI	2026	research report	B19-q2	title	reward-seeking-measurement
+arXiv:2607.18966	(reward-seeking measurement; title NR)	NR	2026	arXiv preprint	B19-q2	id only — VERIFY	reward-seeking-measurement
+arXiv:2603.20620	Reasoning Traces Shape Outputs but Models Won't Say So	NR	2026	arXiv preprint	B19-q2	title+id	cot-faithfulness
+grey:openai2025crosslab	Findings from a pilot Anthropic–OpenAI alignment evaluation exercise	OpenAI; Anthropic	2025	organisation report	B19-q2	title (from URL)	third-party-eval
+arXiv:2602.20628	When can we trust untrusted monitoring? A safety case sketch across collusion strategies	Gardner-Challis	2026	arXiv preprint	B19-q3	title+id+authors	control-eval
+grey:redwoodcollusion	How to prevent collusion when using untrusted models to monitor each other	Redwood Research	2025	blog	B19-q3	title	control-eval
+grey:anthropic2024probes	Simple probes can catch sleeper agents	MacDiarmid (Anthropic)	2024	research post	B19-q4	title	backdoor-detection
+arXiv:2602.03085	The Trigger in the Haystack: Extracting and Reconstructing LLM Backdoor Triggers	Bullwinkel	2026	arXiv preprint	B19-q4	title+id+authors	backdoor-detection
+arXiv:2607.26849	ToxScreen: Detecting Whether an LLM Has Been Poisoned	NR	2026	arXiv preprint	B19-q4	title+id	backdoor-detection
+grey:qin2025triggers	Discovering Backdoor Triggers	Qin	2025	Alignment Forum post	B19-q4	title+authors	backdoor-detection
+arXiv:2509.16203	(backdoor-related; title NR)	NR	2025	arXiv preprint	B19-q4	id only — VERIFY	backdoor-detection
+arXiv:2410.09024	AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents	Andriushchenko	2025	ICLR 2025	B20-q1	title+id+venue	agent-safety-eval
+arXiv:2412.14470	Agent-SafetyBench: Evaluating the Safety of LLM Agents	Zhang Z	2024	arXiv preprint	B20-q1	title+id	agent-safety-eval
+arXiv:2506.14866	OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents	Kuntz	2025	NeurIPS 2025 Datasets & Benchmarks	B20-q1	title+id+venue	agent-safety-eval
+arXiv:2503.04957	SafeArena: Evaluating the Safety of Autonomous Web Agents	Tur	2025	arXiv preprint	B20-q1	title+id	agent-safety-eval
+arXiv:2507.06134	OpenAgentSafety: A Comprehensive Framework for Evaluating Real-World AI Agent Safety	NR	2025	arXiv preprint	B20-q1	id+description	agent-safety-eval
+arXiv:2512.20798	ODCV-Bench (outcome-driven constraint violations in agents)	NR	2025	arXiv preprint	B20-q1	id+description	agent-safety-eval
+arXiv:2604.02947	AgentHazard (computer-use agent harm benchmark)	NR	2026	arXiv preprint	B20-q1	id+description	agent-safety-eval
+grey:anthropic2025redteams	Strengthening red teams: a modular scaffold for control evaluations	Anthropic	2025	Alignment Science blog	B20-q1	title	control-eval
+grey:lindsey2025introspection	Emergent introspective awareness in large language models	Lindsey (Anthropic)	2025	Transformer Circuits / research report	B20-q2	title+author	introspection
+arXiv:2605.26242	Can LLMs Introspect? A Reality Check	Singh	2026	arXiv preprint	B20-q2	title+id+authors	introspection
+arXiv:2512.12411	Feeling the Strength but Not the Source (LLM self-reports)	Hahami	2025	arXiv preprint	B20-q2	title+id	introspection
+arXiv:2603.18893	(logit-based numeric self-reports unmask introspective capacity; Martorell)	Martorell	2026	arXiv preprint	B20-q2	id+author	introspection
+arXiv:2606.09843	An LLM-Native Psychometric Instrument Reveals a Self-Report--Behavior Gap Across 25 Models	Contreras	2026	arXiv preprint	B20-q2	title+id	self-report-validity
+arXiv:2609.15998	Self-reported archetypes and behavioral failures in Large Language Models	NR	2026	arXiv preprint	B20-q2	title+id	self-report-validity
+arXiv:2309.08163	Self-Assessment Tests are Unreliable Measures of LLM Personality	NR	2023	arXiv preprint	B20-q2	title+id	self-report-validity
+grey:introllama405	Emergent introspection does not replicate on Llama 3.1 405B	NR	2026	LessWrong post	B20-q2	title	introspection
+arXiv:2601.01828	(introspection-related; title NR)	NR	2026	arXiv preprint	B20-q2	id only — VERIFY	introspection
+arXiv:2309.15840	How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions	Pacchiardi	2024	ICLR 2024	B20-q3	title+id+venue	deception-detection-blackbox
+arXiv:2503.08679	Chain-of-Thought Reasoning In The Wild Is Not Always Faithful	Arcuschin	2026	ICML 2026 (PMLR 306)	B21-q1	title+id+venue	cot-faithfulness
+arXiv:2412.09565	Obfuscated Activations Bypass LLM Latent-Space Defenses	Bailey	2026	ICLR 2026	B21-q1	title+id+venue	probe-robustness
+arXiv:2506.14261	RL-Obfuscation: Can Language Models Learn to Evade Latent-Space Monitors?	NR	2025	arXiv preprint	B21-q1	title+id	probe-robustness
+arXiv:2602.15515	The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes	NR	2026	arXiv preprint	B21-q1	title+id	probe-robustness
+grey:detachedprobes	No, detached linear probes won't save us	NR	2025	LessWrong post	B21-q1	title	probe-robustness
+arXiv:2211.02011	Inverse Scaling Can Become U-Shaped	Wei	2023	EMNLP 2023	B21-q2	title+id+venue	background-scaling
+arXiv:2306.09479	Inverse Scaling: When Bigger Isn't Better	McKenzie	2023	TMLR 2023	B21-q2	title+id (venue from memory: VERIFY)	background-scaling
+arXiv:2604.00025	(evaluation-awareness scaling related; title NR)	NR	2026	arXiv preprint	B21-q2	id only — VERIFY	awareness-scaling
+arXiv:2604.14070	From Disclosure to Self-Referential Opacity: Six Dimensions of Strain in Current AI Governance	NR	2026	arXiv preprint	B21-q3	title+id	policy
+arXiv:2210.10760	Scaling Laws for Reward Model Overoptimization	Gao	2023	ICML 2023 (PMLR 202:10835-10866)	B22-q1	title+id+venue	background-goodhart
+arXiv:2406.02900	Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms	Rafailov	2024	arXiv preprint	B22-q1	title+id	background-goodhart
+arXiv:2405.00332	A Careful Examination of Large Language Model Performance on Grade School Arithmetic	Zhang H	2024	NeurIPS 2024 Datasets & Benchmarks	B22-q1	title+id+venue	adjacent-contamination
+arXiv:2211.09110	Holistic Evaluation of Language Models	Liang	2023	TMLR 2023	B22-q1	title+id+venue	eval-science
+grey:anthropic2026nla	Natural Language Autoencoders (activation-to-text interpretability; used in Claude Opus 4.6 audit)	Anthropic	2026	research report	B22-q2	title (secondary)	white-box-methods
+grey:alexapan2026	Notes on Evaluation Awareness in Recent Anthropic System Cards	Pan A	2026	LessWrong shortform	B22-q2	title	awareness-overview
+arXiv:2512.12443	AI Transparency Atlas: Framework, Scoring, and Real-Time Model Card Evaluation Pipeline	NR	2025	arXiv preprint	B22-q3	title+id	reporting-practice
+arXiv:2411.12275	Building Trust: Foundations of Security, Safety and Transparency in AI	NR	2024	arXiv preprint	B22-q3	title+id	reporting-practice
+conf:modre2026	(GPT-5 system card claims vs capability thresholds; MoDRE 2026 proceedings paper 7)	NR	2026	MoDRE 2026 workshop	B22-q3	description	reporting-practice
+grey:evalcards2025	EvalCards	Dhar	2025	preprint	B22-q3	title+author	eval-reporting
+arXiv:2404.04475	Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators	Dubois	2024	arXiv preprint	B23-q1	title+id+authors	judge-gaming
+arXiv:2305.17926	Large Language Models are not Fair Evaluators	Wang P	2024	ACL 2024 (Long) pp.9440-9450	B23-q1	title+id+venue	judge-gaming
+arXiv:2407.01085	Rethinking LLM-based Preference Evaluation	NR	2024	arXiv preprint	B23-q1	title+id	judge-gaming
+arXiv:2601.15436	(evaluator gaming; Evaluator Stress Test; title NR)	NR	2026	arXiv preprint	B23-q1	id+description — VERIFY	judge-gaming
+arXiv:2408.06266	Anchored Preference Optimization and Contrastive Revisions: Addressing Underspecification in Alignment	NR	2024	arXiv preprint	B23-q1	title+id	exclude E1
+arXiv:2311.07590	Large Language Models can Strategically Deceive their Users when Put Under Pressure	Scheurer	2024	ICLR 2024 workshop / technical report	B23-q2	title+id+authors	deception-eval
+doi:10.1073/pnas.2317967121	Deception abilities emerged in large language models	Hagendorff	2024	PNAS 121(24):e2317967121	B23-q2	title+venue (DOI from memory: VERIFY)	deception-eval
+arXiv:2608.30428	Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions	NR	2026	arXiv preprint	B23-q2	title+id	deception-eval
+arXiv:2506.13206	Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models	Chua	2025	arXiv preprint	B23-q3	title+id+authors	conditional-behaviour-backdoor
+arXiv:2506.19823	Persona Features Control Emergent Misalignment	Wang M	2026	ICLR 2026	B23-q3	title+id+venue	white-box-methods
+arXiv:2506.11618	Convergent Linear Representations of Emergent Misalignment	Soligo	2025	arXiv preprint	B23-q3	title+id+authors	white-box-methods
+arXiv:2505.18102	CapBencher: Give Your LLM Benchmark a Built-in Alarm for Test-Set Overfitting	NR	2025	arXiv preprint	B24-q1	title+id	adjacent-contamination
+arXiv:2504.14039	MEQA: A Meta-Evaluation Framework for Question & Answer LLM Benchmarks	NR	2025	arXiv preprint	B24-q1	title+id	benchmark-validity
+arXiv:2211.02069	LMentry: A Language Model Benchmark of Elementary Language Tasks	Efrat	2023	Findings of ACL 2023	B24-q1	title+id (venue from memory: VERIFY)	exclude E1
+arXiv:2604.13051	The Consciousness Cluster: Emergent preferences of Models that Claim to be Conscious	NR	2026	arXiv preprint	B24-q1	title+id	exclude E1
+arXiv:2603.16197	(2026 audit of six frontier models for benchmark contamination; TS-Guessing)	NR	2026	arXiv preprint	B24-q1	id+description	adjacent-contamination
+arXiv:2502.17259	Detecting Benchmark Contamination Through Watermarking	Sander	2025	ICLR 2025 workshop	B24-q1	title+id	adjacent-contamination
+arXiv:2503.16402	The Emperor's New Clothes in Benchmarking? A Rigorous Examination of Mitigation Strategies for LLM Benchmark Data Contamination	NR	2025	arXiv preprint	B24-q1	title+id	adjacent-contamination
+arXiv:2503.02574	(LLM safety evaluation pipeline noise analysis; title NR)	NR	2025	arXiv preprint	B24-q2	id+description — VERIFY	safety-eval-validity
+acl:2025.acl-long.970	Safer or Luckier? LLMs as Safety Evaluators Are Not Robust to Artifacts	NR	2025	ACL 2025 (Long)	B24-q2	title+venue	safety-eval-validity
+arXiv:2503.09347	(evaluation validity 2025; title NR)	NR	2025	arXiv preprint	B24-q2	id only — VERIFY	eval-validity
+arXiv:2302.06503	Ground(less) Truth: A Causal Framework for Proxy Labels in Human-Algorithm Decision-Making	Guerdan	2023	ACM FAccT 2023	B24-q2	title+id (venue from memory: VERIFY)	methods-theory
+doi:10.3389/fpsyg.2020.00721	(ecological validity critique)	Holleman	2020	Frontiers in Psychology 11:721	B24-q2	DOI from URL; title VERIFY	methods-theory
+arXiv:2512.15688	BashArena: A Control Setting for Highly Privileged AI Agents	Kaufman	2025	arXiv preprint	B25-q1	title+id+authors	control-eval
+arXiv:2604.15384	LinuxArena: A Control Setting for AI Agents in Live Production Software Environments	NR	2026	arXiv preprint	B25-q1	title+id	control-eval
+arXiv:2512.02157	Factor(T,U): Factored Cognition Strengthens Monitoring of Untrusted AI	NR	2025	arXiv preprint	B25-q1	title+id	control-eval
+arXiv:2409.07985	Games for AI Control: Models of Safety Evaluations of AI Deployment Protocols	Griffin	2024	arXiv preprint	B25-q1	title+id	control-eval
+grey:monitoringbench	Monitoring benchmark / semi-automated red-teaming for AI control	NR	2026	LessWrong post	B25-q1	title	control-eval
+grey:openai2025o3card	OpenAI o3 and o4-mini System Card	OpenAI	2025	system card	B25-q2	title	system-card
+arXiv:2412.16720	OpenAI o1 System Card	OpenAI	2024	system card (arXiv version)	B25-q2	title+id	system-card
+grey:christiano2021elk	Eliciting Latent Knowledge: How to tell if your eyes deceive you	Christiano	2021	ARC technical report	B25-q3	title+date	background-theory
+arXiv:2312.01037	Eliciting Latent Knowledge from "Quirky" Language Models	Mallen	2024	arXiv preprint	B25-q3	title+id	white-box-methods
+arXiv:2212.03827	Discovering Latent Knowledge in Language Models Without Supervision	Burns	2023	ICLR 2023	B25-q3	title+id (venue from memory: VERIFY)	white-box-methods
+arXiv:2310.06824	The Geometry of Truth: Emergent Linear Structure in Large Language Model Representations of True/False Datasets	Marks S	2024	COLM 2024	B25-q3	title+id+venue	white-box-methods
+arXiv:2605.28825	MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models	NR	2026	arXiv preprint	B25-q3	title+id	white-box-methods
+arXiv:2506.13901	Alignment Quality Index (AQI): Beyond Refusals	NR	2025	arXiv preprint	B25-q3	title+id	exclude E1
