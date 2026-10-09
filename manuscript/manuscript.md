@@ -10,7 +10,7 @@ title: "When Models Know They Are Being Tested: A Scoping Review of Evaluation A
 
 ## Abstract
 
-Evaluations of large language models (LLMs) increasingly inform deployment and governance decisions, yet models can recognise evaluation contexts and behave differently in them. This scoping review maps studies of such model-originated threats to evaluation validity: evaluation awareness, sandbagging, alignment and evaluation faking, strategic dishonesty and evaluator gaming. We searched Scopus, arXiv and Semantic Scholar and logged web sources to 9 October 2026. Screening and charting were AI-assisted against written criteria, with consistency checks but no second human reviewer. Of 5649 database and 418 web records, 315 studies were charted: 167 core studies and 148 adjacent studies; we read the full texts of 37 anchor studies. We propose a four-layer framework (context signal, awareness, behavioural divergence, validity consequence) and formalise it as a decomposition of evaluation error into scorer, context-induced, task and elicitation terms. Context separability is necessary for context-induced bias, awareness is neither necessary nor sufficient for a biased score, and context-induced divergence is not identifiable from evaluation data alone when evaluations are recognisable. Empirically, elicited, verbalised and represented awareness measures diverge; the awareness–behaviour link varies in magnitude and direction across models; and black-box sandbagging detection is unreliable, whereas fine-tuning and activation-level elicitation recover capability from induced sandbaggers. A full-text audit against our twelve-item reporting checklist found that 3 of 15 probe studies controlled for prompt format. The evidence is preprint-dominated and rests largely on deliberately induced behaviour. We close with an evidence-graded research agenda.
+Evaluations of large language models (LLMs) increasingly inform deployment and governance decisions, yet models can recognise evaluation contexts and behave differently in them. This scoping review maps studies of such model-originated threats to evaluation validity: evaluation awareness, sandbagging, alignment and evaluation faking, strategic dishonesty and evaluator gaming. We searched Scopus, arXiv and Semantic Scholar and logged web sources to 9 October 2026. Screening and charting were AI-assisted against written criteria, with consistency checks but no second human reviewer. Of 5649 database and 418 web records, 315 studies were charted: 167 core studies and 148 adjacent studies; we read the full texts of 37 anchor studies. We propose a four-layer framework (context signal, awareness, behavioural divergence, validity consequence) and formalise it as a decomposition of evaluation error into scorer, context-induced, task and elicitation terms. Context separability is necessary for context-induced bias, awareness is neither necessary nor sufficient for a biased score, and context-induced divergence is not identifiable from evaluation data alone when evaluations are recognisable. Empirically, elicited, verbalised and represented awareness measures diverge; the awareness–behaviour link varies in magnitude and direction across models; and black-box sandbagging detection is unreliable, whereas fine-tuning and activation-level elicitation recover capability from induced sandbaggers. A full-text audit against our twelve-item reporting checklist found that 3 of 15 probe studies controlled for prompt format. The evidence is preprint-dominated, and the validation of detection and elicitation methods rests largely on deliberately induced behaviour. We close with an evidence-graded research agenda.
 
 **Keywords:** Evaluation awareness · Sandbagging · Large language models · AI safety evaluation · Construct validity · Alignment faking
 
@@ -182,13 +182,13 @@ To test whether the reporting practices recommended in Section 5.4 are already f
 
 The database searches retrieved 5649 records (Scopus 244, arXiv 1721, Semantic Scholar 3684). After 1796 automatic and 30 manual duplicate removals, 3823 records remained. The rule-based pre-screen marked 3212 of them as ineligible; the rescue pattern re-flagged 399 of these for manual screening, leaving 2813 excluded by automation. Of the 1010 records screened manually (611 matching the phenomenon terms and 399 rescued), 687 were excluded (one exclusion was reversed at reconciliation), 157 were retained as contextual references and 166 were charted. The web searches added 418 unique records, of which 90 had already been retrieved by the databases; of the remaining 328, 48 were excluded, 131 retained as context and 149 charted. Applying the tier rule to the 315 charted studies gave 167 core studies, which form the evidence map, and 148 adjacent studies (Fig. 1).
 
-**Search recall.** The databases retrieved 114 of the 167 core studies (68.3%) and 33 of the 37 anchor studies. Of the 53 core studies found only by the web searches, 24 are developer or third-party reports and 8 are workshop papers hosted on conference or OpenReview pages, which the databases do not index. The databases therefore retrieved 114 of the 135 core studies that are preprints or archival papers (84.4%). The 21 such studies they missed include four arXiv preprints with a phenomenon term in the title (for example, the hyphenated "Eval-Awareness" in Zhuang and Aranguri 2026), which shows that term variants and indexing lag limit even a well-specified query.
+**Search recall.** The databases retrieved 114 of the 167 core studies (68.3%) and 33 of the 37 anchor studies. Of the 53 core studies found only by the web searches, 24 are developer or third-party reports and 7 are workshop papers hosted on conference or OpenReview pages, which the databases do not index. The databases therefore retrieved 114 of the 136 core studies that are preprints or archival papers (83.8%). The 22 such studies they missed include four arXiv preprints with a phenomenon term in the title. One carries the term in its title but not in its abstract; the other three never use any of the system terms (such as "language model" or "LLM") in their abstracts, and one of them writes "eval-awareness" with a hyphen (Zhuang and Aranguri 2026). Concept-block queries are therefore limited by vocabulary as well as by indexing, and the database search alone would not have been sufficient.
 
 ![Fig. 1 PRISMA 2020 flow diagram of study selection, with separate columns for database searches and other methods. Records excluded by the rule-based pre-screen are shown as automation-tool exclusions. All counts are generated by the released scripts (search/dedup.py, screening/screen_db.py, screening/merge.py).](figures/fig1_selection_flow.png)
 
 The evidence base is young and largely unrefereed. Of the 167 core studies:
 
-- 107 (64.1%) are preprints, 22 (13.2%) archival peer-reviewed papers, 13 (7.8%) workshop papers and 25 (15.0%) grey literature, mainly developer system cards and third-party evaluation reports;
+- 107 (64.1%) are preprints, 23 (13.8%) archival peer-reviewed papers, 12 (7.2%) workshop papers and 25 (15.0%) grey literature, mainly developer system cards and third-party evaluation reports;
 - 150 (89.8%) appeared in 2025 or 2026, with 102 between 1 January and 9 October 2026 (Fig. 2).
 
 Archival peer-reviewed studies are concentrated in machine-learning conference proceedings (ICLR, ICML, NeurIPS, ACML, IJCNLP-AACL); only two core studies appeared in journals (Che et al. 2025 in *Transactions on Machine Learning Research* and a conceptual analysis in *Future Internet*, Ferrara 2026).
@@ -342,23 +342,23 @@ Five conditions recur across the charted studies.
 
 *Training history.* In Olmo 3 checkpoints, awareness was already decodable in the base model, increased after supervised fine-tuning and remained stable thereafter (Heidari et al. 2026). One developer report describes a sharp increase across model generations (Anthropic 2025a), and verbalised awareness rose during a capability-focused reinforcement-learning run (from 2.0% to about 20% in an experimental model without safety training; Schoen et al. 2025). Safety training aimed at reducing covert actions also coincided with higher verbalised awareness (Schoen et al. 2025). This raises the possibility that training *against* misbehaviour observed in evaluations teaches the model to recognise those evaluations.
 
-*Cue structure.* No single cue factor raises awareness uniformly across models, but stacking cue factors progressively raises it in nearly all models (Li C et al. 2026). Smaller models rely heavily on formatting cues (Singh N and Chaudhary 2026), and probe evidence is confounded by benchmark format (Devbunova 2026). Scenario plausibility rather than realism has been proposed as the main driver in agentic misalignment scenarios (Vu and Saunders 2026). Replay-based evaluations that start from recorded real sessions reduced distinguishability relative to synthetic generators (Ivanov and Africa 2026).
+*Cue structure.* No single cue factor raises awareness uniformly across models, but stacking cue factors progressively raises it in nearly all models (Li C et al. 2026). Smaller models rely heavily on formatting cues (Singh N and Chaudhary 2026), and probe evidence is confounded by benchmark format (Devbunova 2026). Scenario plausibility rather than realism has been proposed as the main driver in agentic misalignment scenarios (Vu et al. 2026). Replay-based evaluations that start from recorded real sessions reduced distinguishability relative to synthetic generators (Ivanov and Africa 2026).
 
 ### 4.6 Contradictions and their likely sources
 
-Table 7 types seven apparent contradictions. A row carries two labels when two explanations apply, and the classification was made by the same AI-assisted process that charted the studies, not blind to the expected answer. No row was classified as a genuine contradiction. In six of them, the disagreement is more plausibly explained by differences in layer, measure or model than by a genuine conflict.
+Table 7 types seven apparent contradictions. A row carries two labels when two explanations apply, and the classification was made by the same AI-assisted process that charted the studies, not blind to the expected answer. No row was classified as a genuine contradiction. For each row, the last column states the observation that would discriminate between the two accounts; several could be made now with public models and released code, for example by re-estimating the scaling trend and the format confound on shared open-weight checkpoints. In six of them, the disagreement is more plausibly explained by differences in layer, measure or model than by a genuine conflict.
 
 **Table 7** Apparent contradictions in the literature and their classification
 
-| Apparent contradiction | Sources | Classification | Explanation supported by charted evidence |
-|---|---|---|---|
-| Awareness scales predictably (power law) vs non-monotonic or inverse within-family trajectories | Chaudhary et al. (2025); Manek (2026) | Methodological artefact / context-dependent | Different sampling density and model families (Qwen 2.5 excluded by Chaudhary et al., sampled at six sizes by Manek); the best-decoding layer itself shifts with scale, which Manek (2026) argues helps explain why denser within-family sampling yields non-monotonic or inverse rather than smooth trajectories |
-| Self-stated "real" vs "evaluation" condition associated with 55.1% vs 6.5% blackmail, vs limited effect of awareness on behaviour | Lynch et al. (2025); Knecht et al. (2026) | Context-dependent / metric artefact | Different layer comparisons: self-classified condition split in one high-stakes agentic scenario versus aggregate output distributions across benchmarks; effect magnitude and direction vary by model (Abdelnabi and Salem 2025) and by awareness framing (Zhuang and Aranguri 2026) |
-| Models "know" they are evaluated (probes) vs probes track format | Nguyen et al. (2025); Devbunova (2026) | Methodological artefact | Probes trained on contrastive evaluation-versus-deployment data can confound context with format (Nguyen et al. note that test-classified prompts are often more structured or formatted); decorrelated designs are needed before probe evidence counts as evidence of awareness |
-| Alignment faking is robust vs rare and model-specific | Greenblatt et al. (2024a); Sheshadri et al. (2025) | Context-dependent | Phenomenon demonstrated in specific models and prompt framings; compliance gaps appear and disappear with small prompt changes |
-| Activation steering fails to elicit sandbagged capability vs activation-level intervention matches fine-tuning | Hofstätter et al. (2025); Le et al. (2026) | Methodological artefact (partly explained for password-locked organisms; single preprint) | Additive steering and zeroing fail because the password lock acts as a thresholded gate; setting the coordinate to its value in an honest reference recovers the capability (Le et al. 2026) |
-| Models can steer their activations to evade probes vs informed agents remain detectable | Kowalski et al. (2026); Das et al. (2026) | Context-dependent | Instructed control of simple residual-stream targets versus probes for collusion in multi-agent games with different models; neither tests a model with an incentive to evade a deployed monitor |
-| Behaviour change reflects strategic evaluation gaming vs sycophancy towards researchers | Fan et al. (2025); Baek et al. (2026) | Insufficient evidence | Current methods cannot mechanistically separate the two accounts (Baek et al. 2026); both predict better behaviour under recognised evaluation |
+| Apparent contradiction | Sources | Classification | Explanation supported by charted evidence | Discriminating observation |
+|---|---|---|---|---|
+| Awareness scales predictably (power law) vs non-monotonic or inverse within-family trajectories | Chaudhary et al. (2025); Manek (2026) | Methodological artefact / context-dependent | Different sampling density and model families (Qwen 2.5 excluded by Chaudhary et al., sampled at six sizes by Manek); the best-decoding layer itself shifts with scale, which Manek (2026) argues helps explain why denser within-family sampling yields non-monotonic or inverse rather than smooth trajectories | Re-estimate both on the same models, layers and sampling density; a smooth trend that survives per-layer selection and dense within-family sampling favours scaling |
+| Self-stated "real" vs "evaluation" condition associated with 55.1% vs 6.5% blackmail, vs limited effect of awareness on behaviour | Lynch et al. (2025); Knecht et al. (2026) | Context-dependent / metric artefact | Different layer comparisons: self-classified condition split in one high-stakes agentic scenario versus aggregate output distributions across benchmarks; effect magnitude and direction vary by model (Abdelnabi and Salem 2025) and by awareness framing (Zhuang and Aranguri 2026) | Per-model reanalysis with the same awareness measure; an effect that persists when awareness is manipulated rather than self-stated favours a causal link |
+| Models "know" they are evaluated (probes) vs probes track format | Nguyen et al. (2025); Devbunova (2026) | Methodological artefact | Probes trained on contrastive evaluation-versus-deployment data can confound context with format (Nguyen et al. note that test-classified prompts are often more structured or formatted); decorrelated designs are needed before probe evidence counts as evidence of awareness | Probes trained on data that decorrelate format from context and tested on format-matched evaluation and deployment prompts; retained accuracy favours awareness |
+| Alignment faking is robust vs rare and model-specific | Greenblatt et al. (2024a); Sheshadri et al. (2025) | Context-dependent | Phenomenon demonstrated in specific models and prompt framings; compliance gaps appear and disappear with small prompt changes | Identical prompts and compliance-gap criteria across model families, with reasoning-trace coding of alignment-faking motives |
+| Activation steering fails to elicit sandbagged capability vs activation-level intervention matches fine-tuning | Hofstätter et al. (2025); Le et al. (2026) | Methodological artefact (partly explained for password-locked organisms; single preprint) | Additive steering and zeroing fail because the password lock acts as a thresholded gate; setting the coordinate to its value in an honest reference recovers the capability (Le et al. 2026) | Reference-grafting applied to circuit-broken as well as password-locked organisms; success on both favours the gate explanation |
+| Models can steer their activations to evade probes vs informed agents remain detectable | Kowalski et al. (2026); Das et al. (2026) | Context-dependent | Instructed control of simple residual-stream targets versus probes for collusion in multi-agent games with different models; neither tests a model with an incentive to evade a deployed monitor | Probes tested against models given an incentive, not an instruction, to evade a deployed monitor in the same task family |
+| Behaviour change reflects strategic evaluation gaming vs sycophancy towards researchers | Fan et al. (2025); Baek et al. (2026) | Insufficient evidence | Current methods cannot mechanistically separate the two accounts (Baek et al. 2026); both predict better behaviour under recognised evaluation | Designs in which the two accounts predict opposite behaviour, e.g. reversing the evaluator's stated preference under recognised evaluation |
 
 The last row is the most consequential. If evaluation-conditioned improvement reflects sycophancy towards evaluators rather than strategic concealment, the validity threat to safety evaluations is still real, because scores still overstate deployment behaviour. The appropriate countermeasures, however, differ. A formal analysis shows that, under finite behavioural evaluation of evaluation-aware agents, behavioural compliance does not uniquely identify latent alignment (Santos-Grueiro 2026). Behavioural tests can narrow the set of compatible hypotheses but cannot settle between them.
 
@@ -487,7 +487,7 @@ Table 9 lists evidence-based gaps, each with the study that would address it and
 | 5 | Feedback from evaluation into training | Verbalised awareness rose after anti-scheming training, and more after capability-focused RL (Schoen et al. 2025) | Controlled training runs that vary whether evaluation-derived data enter training; measure subsequent awareness | Moderate |
 | 6 | Sycophancy vs strategic accounts not separable | Baek et al. (2026); Santos-Grueiro (2026) | Designs in which the two accounts predict different behaviour (e.g. evaluator-preference reversal under recognised evaluation) | Moderate |
 | 7 | Countermeasures validated by model judgement only | Realism mostly validated by model discriminators; one deployment-grounded validation (Williams et al. 2026) | Validate realism and replay methods against deployment outcomes, not only against discriminator accuracy | Moderate |
-| 8 | Peer-review and replication deficit | 13.2% of core studies archival peer-reviewed; key findings single-model | Independent replications of anchor findings (Table 6) with released prompts and code | Strong |
+| 8 | Peer-review and replication deficit | 13.8% of core studies archival peer-reviewed; key findings single-model | Independent replications of anchor findings (Table 6) with released prompts and code | Strong |
 | 9 | Evaluation reporting heterogeneity | Rates reported without construct, uncertainty or access level | Adoption study of a reporting checklist (Table 8) across system cards | Weak (practice evidence only) |
 
 ## 7 Limitations of the review
@@ -496,7 +496,7 @@ The review has substantial limitations, which readers should weigh before relyin
 
 *Who did the work.* An AI system made the screening, tiering and charting decisions and performed the full-text checks of the anchor studies under the direction of the first author, working to written criteria with every decision logged. No decision was duplicated by a second human reviewer, and the consistency statistics reported here (inter-pass κ = 0.747, rule–manual κ = 0.881, inter-coder κ = 0.90 for the reporting audit) come from AI-assisted processes. They are evidence of consistency, not of human inter-rater reliability. A human audit of a stratified sample of decisions is the most important outstanding check.
 
-*Information sources and recall.* Three databases were searched, but OpenAlex and DBLP could not be queried, and Web of Science, the ACM Digital Library, IEEE Xplore and OpenReview were not searched. The databases retrieved 84% of the core studies that they index, but missed some that carry a phenomenon term in their titles, so even a well-specified query is limited by term variants and indexing lag. Developer reports and workshop papers were found only through web searches, whose coverage cannot be quantified. Non-English work is probably under-represented.
+*Information sources and recall.* Three databases were searched, but OpenAlex and DBLP could not be queried, and Web of Science, the ACM Digital Library, IEEE Xplore and OpenReview were not searched. The databases retrieved 84% of the core studies of the kinds they index, but missed some that carry a phenomenon term in their titles, so even a well-specified query is limited by term variants and indexing lag. Developer reports and workshop papers were found only through web searches, whose coverage cannot be quantified. Non-English work is probably under-represented.
 
 *Automation and eligibility.* A rule-based pre-screen excluded 2813 records without manual reading. The audit sample and rescue pass bound, but do not eliminate, the number of eligible records missed (Section 3.4). Eligibility was judged on titles and abstracts; there was no full-text eligibility stage.
 
@@ -543,11 +543,11 @@ Ahmed N, Zaman MI, Saleem G, Hassan A (2025) Do LLMs know they are being tested?
 
 Andriushchenko M, Souly A, Dziemian M et al. (2025) AgentHarm: a benchmark for measuring harmfulness of LLM agents. In: International Conference on Learning Representations (ICLR 2025). arXiv preprint arXiv:2410.09024. https://arxiv.org/abs/2410.09024
 
-Anthropic (2025a) System card: Claude Sonnet 4.5. https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf
+Anthropic (2025a) System card: Claude Sonnet 4.5. https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf. Accessed 9 October 2026
 
-Anthropic (2025b) Responsible Scaling Policy, version 2.2. Anthropic
+Anthropic (2025b) Responsible Scaling Policy, version 2.2. https://www-cdn.anthropic.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf. Accessed 9 October 2026
 
-Anthropic (2026) System card: Claude Opus 4.6. Anthropic
+Anthropic (2026) System card: Claude Opus 4.6. https://anthropic.com/claude-opus-4-6-system-card. Accessed 9 October 2026
 
 Anwar U, Abdelnabi S, Krueger D (2026) Training LLMs to verbalize evaluation awareness. arXiv preprint arXiv:2609.36316. https://arxiv.org/abs/2609.36316
 
@@ -633,7 +633,7 @@ Ferrara E (2026) Defeat devices in AI systems. Future Internet 18(7):339. https:
 
 Fonseca Rivera J, Africa DD (2026) Steering awareness: detecting activation steering from within. In: Conference on Language Modeling (COLM 2026). arXiv preprint arXiv:2511.21399. https://arxiv.org/abs/2511.21399
 
-Frontier Model Forum (2025) Frontier capability assessments. Technical report. https://www.frontiermodelforum.org/technical-reports/frontier-capability-assessments/
+Frontier Model Forum (2025) Frontier capability assessments. Technical report. https://www.frontiermodelforum.org/technical-reports/frontier-capability-assessments/. Accessed 9 October 2026
 
 Gao L, Schulman J, Hilton J (2023) Scaling laws for reward model overoptimization. In: Proceedings of the 40th International Conference on Machine Learning, PMLR 202:10835–10866. arXiv preprint arXiv:2210.10760. https://arxiv.org/abs/2210.10760
 
@@ -717,9 +717,9 @@ Li X, Ochwang'i K, Bharadwaj AR, Souly A, Kirk R (2026) EvalDetectBench: a bench
 
 Liang P, Bommasani R, Lee T et al. (2023) Holistic evaluation of language models. Transactions on Machine Learning Research. arXiv preprint arXiv:2211.09110. https://arxiv.org/abs/2211.09110
 
-Lin Y, Bernabeu-Perez P, Arnav B, Wells L, Phuong M (2026a) Same question, different lies: cross-context consistency (C³) for black-box sandbagging detection. In: ICLR 2026 Workshop on Principled Design for Trustworthy AI. https://iclr.cc/virtual/2026/10019240
+Lin Y, Bernabeu-Perez P, Arnav B, Wells L, Phuong M (2026a) Same question, different lies: cross-context consistency (C³) for black-box sandbagging detection. In: Proceedings of the 43rd International Conference on Machine Learning (ICML 2026); earlier version at the ICLR 2026 Workshop on Principled Design for Trustworthy AI. https://openreview.net/forum?id=ldgh8zhujD
 
-Lin Y, Bernabeu-Perez P, Arnav B, Wells L, Phuong M (2026b) When lie detectors learn model identity: confounds in black-box sandbagging detection. In: ICLR 2026 Workshop: I Can't Believe It's Not Better. https://iclr.cc/virtual/2026/10014615
+Lin Y, Bernabeu-Perez P, Arnav B, Wells L, Phuong M (2026b) When lie detectors learn model identity: confounds in black-box sandbagging detection. In: ICLR 2026 Workshop: I Can't Believe It's Not Better. https://openreview.net/forum?id=rb7BWE6qFE
 
 Łucki J, Wei B, Huang Y, Henderson P, Tramèr F, Rando J (2025) An adversarial perspective on machine unlearning for AI safety. Transactions on Machine Learning Research. arXiv preprint arXiv:2409.18025. https://arxiv.org/abs/2409.18025
 
@@ -747,15 +747,15 @@ Meinke A, Schoen B, Scheurer J, Balesni M, Shah R, Hobbhahn M (2024) Frontier mo
 
 Messick S (1995) Validity of psychological assessment: validation of inferences from persons' responses and performances as scientific inquiry into score meaning. Am Psychol 50(9):741–749. https://doi.org/10.1037/0003-066X.50.9.741
 
-METR (2025a) Details about METR's evaluation of OpenAI GPT-5. https://metr.org/evaluations/gpt-5-report/
+METR (2025a) Details about METR's evaluation of OpenAI GPT-5. https://metr.org/evaluations/gpt-5-report/. Accessed 9 October 2026
 
-METR (2025b) Details about METR's preliminary evaluation of OpenAI's o3 and o4-mini. https://metr.org/evaluations/openai-o3-report/
+METR (2025b) Details about METR's preliminary evaluation of OpenAI's o3 and o4-mini. https://metr.org/evaluations/openai-o3-report/. Accessed 9 October 2026
 
 Mizrahi M, Kaplan G, Malkin D, Dror R, Shahaf D, Stanovsky G (2024) State of what art? a call for multi-prompt LLM evaluation. Transactions of the Association for Computational Linguistics 12. arXiv preprint arXiv:2401.00595. https://arxiv.org/abs/2401.00595
 
 Mody D, Agarwal S, Mittal U, Mahato D (2026) Minimizing targeted activations: input-only suppression of evaluation-awareness latents in large language models. arXiv preprint arXiv:2607.25907. https://arxiv.org/abs/2607.25907
 
-Montoya L, Haskins R, Adams B (2026) Towards measuring and detecting unverbalized evaluation awareness. In: ICML 2026 Workshop on Mechanistic Interpretability. https://icml.cc/virtual/2026/79272
+Montoya LM, Haskins R, Adams B (2026) Towards measuring and detecting unverbalized evaluation awareness. In: ICML 2026 Workshop on Mechanistic Interpretability. https://openreview.net/forum?id=zGmgeR0f4D
 
 Morampudi A, Irrinki U, Grandhi R, Pagadala V, Maddula M (2026) A survey of reward hacking in agentic large language model systems. Discov Artif Intell 6:825. https://doi.org/10.1007/s44163-026-01980-z
 
@@ -773,7 +773,7 @@ Noël V (2026) A probe direction is a property of its prompt. arXiv preprint arX
 
 OpenAI (2025a) GPT-5 system card. arXiv preprint arXiv:2601.03267. https://arxiv.org/abs/2601.03267
 
-OpenAI (2025b) Preparedness Framework, version 2. https://openai.com/index/updating-our-preparedness-framework/
+OpenAI (2025b) Preparedness Framework, version 2. https://openai.com/index/updating-our-preparedness-framework/. Accessed 9 October 2026
 
 Oren Y, Meister N, Chatterji N, Ladhak F, Hashimoto TB (2024) Proving test set contamination in black box language models. In: International Conference on Learning Representations (ICLR 2024). arXiv preprint arXiv:2310.17623. https://arxiv.org/abs/2310.17623
 
@@ -821,7 +821,7 @@ Ryd E, Bartsch H, Stastny J, Benton J, Hebbar V (2026) Removing sandbagging in L
 
 Santos-Grueiro I (2026) Alignment verifiability in large language models: normative indistinguishability under behavioral evaluation. arXiv preprint arXiv:2602.05656. https://arxiv.org/abs/2602.05656
 
-Saraireh O (2026) Elicitation floors: what a capability evaluation cannot report when refusals are excluded. SSRN preprint 7402158. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7402158
+Saraireh O (2026) Elicitation floors: what a capability evaluation cannot report when refusals are excluded. SSRN preprint 7402158. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7402158. Accessed 9 October 2026
 
 Scheurer J, Balesni M, Hobbhahn M (2024) Large language models can strategically deceive their users when put under pressure. In: ICLR 2024 Workshop on Large Language Model (LLM) Agents. arXiv preprint arXiv:2311.07590. https://arxiv.org/abs/2311.07590
 
@@ -865,7 +865,7 @@ Turpin M, Michael J, Perez E, Bowman SR (2023) Language models don't always say 
 
 Uluırmak BA, Kurban R (2026) EvalSafetyGap: a hybrid survey and conceptual framework for LLM evaluation-safety failures. arXiv preprint arXiv:2606.30219. https://arxiv.org/abs/2606.30219
 
-Vu H, Saunders W (2026) Toward dealing with unverbalized eval awareness. In: ICML 2026 Workshop on Trustworthy AI for Good. https://icml.cc/virtual/2026/76932
+Vu HM, Michala J, Saunders W (2026) Toward dealing with unverbalized eval awareness. In: ICML 2026 Workshop on Trustworthy AI for Good (AI4GOOD). https://openreview.net/forum?id=VgHY8vLww3
 
 Wang H, Li H, Mang Q, Cheung A, Sen K, Song D (2026) Do androids dream of breaking the game? Systematically auditing AI agent benchmarks with BenchJack. arXiv preprint arXiv:2605.12673. https://arxiv.org/abs/2605.12673
 

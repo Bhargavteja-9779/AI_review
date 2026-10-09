@@ -99,7 +99,7 @@ def main():
             return "Peer-reviewed (archival)"
         return "Preprint" if row["source_type"] != "Grey literature" else "Grey literature"
     # venues verified on conference/OpenReview pages for studies without an arXiv identifier (2026-10-09)
-    VENUE_OVERRIDE = {"iclr2026:c3": "Workshop paper", "iclr2026:lieidentity": "Workshop paper", "icml2026:evalcoop": "Workshop paper",
+    VENUE_OVERRIDE = {"iclr2026:c3": "Peer-reviewed (archival)", "iclr2026:lieidentity": "Workshop paper", "icml2026:evalcoop": "Workshop paper",
                       "icml2026:montoya": "Workshop paper", "icml2026:unverbalized": "Workshop paper", "icml2026:saesanity": "Workshop paper"}
     for row in included:
         ax = row["id"].replace("arXiv:", "") if row["id"].startswith("arXiv:") else None

@@ -28,16 +28,16 @@
     "Developer or third-party audit": 24
   },
   "by_type": {
-    "Peer-reviewed (archival)": 22,
+    "Peer-reviewed (archival)": 23,
     "Preprint": 107,
-    "Workshop paper": 13,
+    "Workshop paper": 12,
     "Grey literature": 25
   },
   "by_year": {
-    "2025": 48,
+    "2025": 47,
     "2024": 14,
     "2023": 2,
-    "2026": 102,
+    "2026": 103,
     "2022": 1
   },
   "by_year_type": {
@@ -55,11 +55,11 @@
     "2025": {
       "Peer-reviewed (archival)": 9,
       "Preprint": 20,
-      "Workshop paper": 3,
+      "Workshop paper": 2,
       "Grey literature": 16
     },
     "2026": {
-      "Peer-reviewed (archival)": 9,
+      "Peer-reviewed (archival)": 10,
       "Preprint": 77,
       "Workshop paper": 10,
       "Grey literature": 6
