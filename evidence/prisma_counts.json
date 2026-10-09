@@ -1,0 +1,17 @@
+{
+  "records_identified_websearch_batches": 422,
+  "duplicates_removed": 4,
+  "records_screened": 418,
+  "excluded_E6_unverifiable_metadata": 19,
+  "excluded_E1_out_of_scope": 12,
+  "excluded_E3_non_archival": 21,
+  "contextual_references_not_charted": 141,
+  "sources_included_in_evidence_map": 225,
+  "included_by_year": {
+    "2022": 1,
+    "2023": 6,
+    "2024": 24,
+    "2025": 94,
+    "2026": 100
+  }
+}

@@ -118,3 +118,13 @@ The items are applied per study with a rationale. They are not aggregated into a
 ## 10. Planned deviations log
 
 None yet.
+
+## Amendment v0.2 (9 October 2026)
+
+Bibliographic APIs stayed blocked in this environment. The user then asked for the full review to be completed with the tools available. Amendments:
+1. **Information source:** the session's web-search tool replaced the database APIs; all 133 queries are logged verbatim (`evidence/search_log.md`).
+2. **Design label:** "structured critical review with scoping-style evidence map"; PRISMA-ScR compliance is not claimed.
+3. **Scope:** broadened from evaluation awareness and sandbagging to *model-originated threats to evaluation validity*. This adds alignment/evaluation faking, strategic dishonesty, evaluator gaming and the detection, elicitation and suppression methods. Data-side contamination stays out of scope.
+4. **Exclusion codes:** E6 (unverifiable metadata) and E3 (non-archival forum posts) were added; a CONTEXT category was added for eligible but out-of-boundary publications.
+5. **Charting:** at abstract or summary level only (no full texts), with a 37-study anchor set charted in detail.
+6. **Appraisal:** no risk-of-bias scores; reported design features are charted instead.

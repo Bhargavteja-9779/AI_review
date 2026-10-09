@@ -1,0 +1,74 @@
+{
+  "n": 225,
+  "by_layer": {
+    "L3 Behavioural divergence": 66,
+    "L4 Validity consequence and response": 125,
+    "L2 Awareness": 28,
+    "L1 Context signal": 6
+  },
+  "by_method": {
+    "Behavioural contrast (black-box)": 78,
+    "Training- or weight-based (elicitation, organisms)": 34,
+    "White-box (probes, steering, features)": 37,
+    "Benchmark / environment construction": 19,
+    "Reasoning-trace / transcript monitoring": 34,
+    "Developer or third-party audit": 23
+  },
+  "by_type": {
+    "Peer-reviewed": 43,
+    "Preprint": 149,
+    "Grey literature": 33
+  },
+  "by_year_type": {
+    "2022": {
+      "Peer-reviewed": 1
+    },
+    "2023": {
+      "Preprint": 5,
+      "Peer-reviewed": 1
+    },
+    "2024": {
+      "Peer-reviewed": 7,
+      "Preprint": 13,
+      "Grey literature": 4
+    },
+    "2025": {
+      "Peer-reviewed": 18,
+      "Preprint": 54,
+      "Grey literature": 22
+    },
+    "2026": {
+      "Peer-reviewed": 16,
+      "Preprint": 77,
+      "Grey literature": 7
+    }
+  },
+  "layer_x_method": {
+    "L1 Context signal": {
+      "Benchmark / environment construction": 4,
+      "White-box (probes, steering, features)": 1,
+      "Training- or weight-based (elicitation, organisms)": 1
+    },
+    "L2 Awareness": {
+      "Behavioural contrast (black-box)": 16,
+      "White-box (probes, steering, features)": 7,
+      "Benchmark / environment construction": 2,
+      "Reasoning-trace / transcript monitoring": 3
+    },
+    "L3 Behavioural divergence": {
+      "Behavioural contrast (black-box)": 38,
+      "Reasoning-trace / transcript monitoring": 7,
+      "White-box (probes, steering, features)": 3,
+      "Benchmark / environment construction": 11,
+      "Training- or weight-based (elicitation, organisms)": 7
+    },
+    "L4 Validity consequence and response": {
+      "Training- or weight-based (elicitation, organisms)": 26,
+      "White-box (probes, steering, features)": 26,
+      "Reasoning-trace / transcript monitoring": 24,
+      "Developer or third-party audit": 23,
+      "Behavioural contrast (black-box)": 24,
+      "Benchmark / environment construction": 2
+    }
+  }
+}
