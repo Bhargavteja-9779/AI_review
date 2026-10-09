@@ -1,0 +1,31 @@
+a,b,title_a,title_b
+R00006,R00164,Enhancing space situational awareness tool’s human machine interface functionality using the Large Language Model-powered query system,Enhancing Space Situational Awareness Tool’s Human Machine Interface Functionality using the Large Language Model-powered Query System
+R00038,R01192,From Clicks to Preference: A Multi-stage Alignment Framework for Generative Query Suggestion in Conversational System,From Clicks to Preference: A Multi-stage Alignment Framework for Generative Query Suggestion in Conversational System
+R00054,R01418,LLM Post-Training: A Deep Dive into Reasoning Large Language Models,LLM Post-Training: A Deep Dive into Reasoning Large Language Models
+R00061,R01033,Thinking Forward and Backward: Multi-Objective Reinforcement Learning for Retrieval-Augmented Reasoning,Thinking Forward and Backward: Multi-Objective Reinforcement Learning for Retrieval-Augmented Reasoning
+R00082,R01052,A Reinforcement Learning Framework for Robust and Secure LLM Watermarking,A Reinforcement Learning Framework for Robust and Secure LLM Watermarking
+R00087,R01448,Process Reinforcement through Implicit Rewards,Process Reinforcement through Implicit Rewards
+R00099,R01210,A Rolling Stone Gathers No Moss: Adaptive Policy Optimization for Stable Self-Evaluation in Large Multimodal Models,A Rolling Stone Gathers No Moss: Adaptive Policy Optimization for Stable Self-Evaluation in Large Multimodal Models
+R00220,R01719,LLM-SAP: Large Language Models Situational Awareness-Based Planning,LLM-SAP: Large Language Models Situational Awareness Based Planning
+R00166,R01622,AI SANDBAGGING: LANGUAGE MODELS CAN STRATEGICALLY UNDERPERFORM ON EVALUATIONS,AI Sandbagging: Language Models can Strategically Underperform on Evaluations
+R00167,R01600,TOWARDS FEDERATED RLHF WITH AGGREGATED CLIENT PREFERENCE FOR LLMS,Towards Federated RLHF with Aggregated Client Preference for LLMs
+R00170,R01523,CARMO: Dynamic Criteria Generation for Context Aware Reward Modelling,CARMO: Dynamic Criteria Generation for Context-Aware Reward Modelling
+R00177,R01498,Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models,Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models
+R00202,R01628,LADI v2: Multi-Label Dataset and Classifiers for Low-Altitude Disaster Imagery,LADI v2: Multi-label Dataset and Classifiers for Low-Altitude Disaster Imagery
+R00204,R01489,SAIL INTO THE HEADWIND: ALIGNMENT VIA ROBUST REWARDS AND DYNAMIC LABELS AGAINST REWARD HACKING,Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking
+R00229,R01765,Aligning Large Multimodal Models with Factually Augmented RLHF,Aligning Large Multimodal Models with Factually Augmented RLHF
+R00234,R03581,A tiered approach for ethical AI evaluation metrics,A Tiered Approach for Ethical AI Evaluation Metrics
+R00444,R02296,Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification under Foundation-Model Pretraining,Rethinking Multi-Branch and Cross-Backbone Fusion for Vehicle Re-Identification in the Foundation-Model Era
+R01026,R03484,Towards Authentic Movie Dubbing with Retrieve-Augmented Director-Actor Interaction Learning,Towards Authentic Movie Dubbing with Retrieve-Augmented Director-Actor Interaction Learning
+R01522,R01933,A Hierarchical Language Model For Interpretable Graph Reasoning,Hierarchical Language Model Design For Interpretable Graph Reasoning
+R01570,R02689,MROVSeg: Breaking the Resolution Curse of Vision-Language Models in Open-Vocabulary Image Segmentation,MROVSeg: Breaking the Resolution Curse of Vision-Language Models in Open-Vocabulary Semantic Segmentation
+R01590,R02224,Customized Retrieval Augmented Generation and Benchmarking for EDA Tool Documentation QA,Customized Retrieval Augmented Generation and Benchmarking for EDA Tool Documentation QA
+R01640,R02603,CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion,CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion
+R01673,R02310,HeGTa: Leveraging Heterogeneous Graph-enhanced Large Language Models for Few-shot Complex Table Understanding,HeGTa: Leveraging Heterogeneous Graph-enhanced Large Language Models for Few-shot Complex Table Understanding
+R02011,R02324,UniDet3D: Multi-dataset Indoor 3D Object Detection,UniDet3D: Multi-dataset Indoor 3D Object Detection
+R02054,R02575,Benchmarking and Characterization of Large Language Model Inference on Apple Silicon,Benchmarking and Characterization of Large Language Model Inference on Apple Silicon
+R02387,R03733,Editorial,Editorial
+R02407,R02536,Zero-Reference Joint Low-Light Enhancement and Deblurring via Visual Autoregressive Modeling with VLM-Derived Modulation,Zero-Reference Joint Low-Light Enhancement and Deblurring via Visual Autoregressive Modeling with VLM-Derived Modulation
+R02441,R03780,reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways,ReguloGPT: Harnessing GPT for End-to-End Knowledge Graph Construction of Molecular Regulatory Pathways
+R02622,R03371,Unlocking the Capabilities of Large Vision-Language Models for Generalizable and Explainable Deepfake Detection,Unlocking the Capabilities of Vision-Language Models for Generalizable and Explainable Deepfake Detection
+R03414,R03586,V-LSTM: An Efficient LSTM Accelerator Using Fixed Nonzero-Ratio Viterbi-Based Pruning,V-LSTM: An Efficient LSTM Accelerator Using Fixed Nonzero-Ratio Viterbi-Based Pruning

@@ -1,0 +1,6 @@
+{
+ "overlap_n": 90,
+ "agreement": 0.933,
+ "cohen_kappa": 0.747,
+ "note": "agreement between web-metadata screening pass (first) and database title/abstract screening pass (second) on records identified by both; discordant n=6 resolved by consensus re-reading"
+}

@@ -1,0 +1,11 @@
+{
+  "records_by_source": {
+    "Scopus": 244,
+    "arXiv": 1721,
+    "SemanticScholar": 3684
+  },
+  "total_before_dedup": 5649,
+  "duplicates_removed": 1796,
+  "unique_after_dedup": 3853,
+  "pairs_flagged_for_manual_check": 30
+}

@@ -16,18 +16,20 @@ import pathlib
 import time
 import urllib.parse
 import urllib.request
+import urllib.error
+import os
 import xml.etree.ElementTree as ET
 
 HERE = pathlib.Path(__file__).resolve().parent
 RAW = HERE / "raw"
 LOG = HERE / "logs" / "search_log.csv"
 RECORDS = HERE / "records_raw.csv"
-UA = "AI-review-scoping/0.1 (mailto:REPLACE_WITH_AUTHOR_EMAIL)"
+UA = "AI-review-scoping/0.2 (academic literature review; VIT Vellore)"
 
 LOG_FIELDS = ["run_id", "database", "platform", "search_date_utc", "query", "request_url",
               "fields_searched", "date_range", "filters", "language", "document_types",
               "records_returned", "records_reported_by_source", "export_file", "notes"]
-REC_FIELDS = ["source", "source_id", "doi", "arxiv_id", "title", "authors", "year", "venue", "type"]
+REC_FIELDS = ["source", "source_id", "doi", "arxiv_id", "title", "authors", "year", "venue", "type", "abstract"]
 
 
 def q(term):
@@ -43,10 +45,17 @@ def boolean_query(cfg):
     return f"{a} AND ({bs} OR ({bb} AND {c}))"
 
 
-def get(url, accept="application/json"):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read()
+def get(url, accept="application/json", headers=None, tries=8):
+    h = {"User-Agent": UA, "Accept": accept, **(headers or {})}
+    for k in range(tries):
+        try:
+            req = urllib.request.Request(url, headers=h)
+            with urllib.request.urlopen(req, timeout=90) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and k < tries - 1:
+                time.sleep(min(60, 3 * 2 ** k)); continue
+            raise
 
 
 # ---------- OpenAlex ----------
@@ -54,7 +63,7 @@ def openalex(cfg, execute, run_id):
     query = boolean_query(cfg)
     flt = f"title_and_abstract.search:{query},from_publication_date:{cfg['date_from']}"
     base = "https://api.openalex.org/works?" + urllib.parse.urlencode(
-        {"filter": flt, "per-page": 200, "mailto": "REPLACE_WITH_AUTHOR_EMAIL"})
+        {"filter": flt, "per-page": 200})
     if not execute:
         return query, base, []
     recs, cursor, pages, total = [], "*", [], None
@@ -115,7 +124,8 @@ def arxiv(cfg, execute, run_id):
             recs.append({"source": "arXiv", "source_id": aid, "doi": (doi.text.lower() if doi is not None else ""),
                          "arxiv_id": aid.split("v")[0], "title": " ".join(e.find("a:title", ns).text.split()),
                          "authors": "; ".join(a.find("a:name", ns).text for a in e.findall("a:author", ns)),
-                         "year": year, "venue": "arXiv", "type": "preprint"})
+                         "year": year, "venue": "arXiv", "type": "preprint",
+                         "abstract": " ".join((e.find("a:summary", ns).text or "").split())})
         start += len(entries)
         time.sleep(3.1)  # arXiv API etiquette
     out = RAW / f"{run_id}_arxiv.xml"
@@ -130,7 +140,7 @@ def s2(cfg, execute, run_id):
     query = f"{ob(cfg['A'])} + ({ob(cfg['B_specific'])} | ({ob(cfg['B_broad'])} + {ob(cfg['C'])}))"
     base = "https://api.semanticscholar.org/graph/v1/paper/search/bulk?" + urllib.parse.urlencode(
         {"query": query, "year": cfg["date_from"][:4] + "-",
-         "fields": "title,authors,year,venue,externalIds,publicationTypes"})
+         "fields": "title,authors,year,venue,externalIds,publicationTypes,abstract"})
     if not execute:
         return query, base, []
     recs, token, pages, total = [], None, [], None
@@ -145,7 +155,7 @@ def s2(cfg, execute, run_id):
                          "title": p.get("title") or "",
                          "authors": "; ".join(a.get("name", "") for a in p.get("authors") or []),
                          "year": p.get("year") or "", "venue": p.get("venue") or "",
-                         "type": ",".join(p.get("publicationTypes") or [])})
+                         "type": ",".join(p.get("publicationTypes") or []), "abstract": p.get("abstract") or ""})
         token = data.get("token")
         if not token:
             break
@@ -183,10 +193,42 @@ def dblp(cfg, execute, run_id):
     return " || ".join(queries), base + "<term>", recs, len(recs), out.name
 
 
+# ---------- Scopus (Elsevier Search API; key from ELSEVIER_API_KEY, never stored) ----------
+def scopus(cfg, execute, run_id):
+    def ob(terms):
+        return "(" + " OR ".join(f'"{t}"' if (" " in t or "-" in t) else t for t in terms) + ")"
+    a = ob([t.replace("language models", "language model*").replace("LLMs", "LLM*") for t in cfg["A"]])
+    query = (f"TITLE-ABS-KEY({a} AND ({ob(cfg['B_specific'])} OR ({ob(cfg['B_broad'])} AND {ob(cfg['C'])}))) "
+             f"AND PUBYEAR > {int(cfg['date_from'][:4]) - 1}")
+    base = "https://api.elsevier.com/content/search/scopus?" + urllib.parse.urlencode({"query": query, "count": 25})
+    if not execute:
+        return query, base, []
+    key = os.environ["ELSEVIER_API_KEY"]
+    recs, start, total, pages = [], 0, None, []
+    while total is None or start < min(total, 5000):
+        data = json.loads(get(base + f"&start={start}", headers={"X-ELS-APIKey": key}))["search-results"]
+        pages.append(data)
+        total = int(data["opensearch:totalResults"])
+        entries = [e for e in data.get("entry", []) if "error" not in e]
+        if not entries:
+            break
+        for e in entries:
+            recs.append({"source": "Scopus", "source_id": e.get("eid", ""), "doi": (e.get("prism:doi") or "").lower(),
+                         "arxiv_id": "", "title": e.get("dc:title", ""), "authors": e.get("dc:creator", ""),
+                         "year": (e.get("prism:coverDate") or "")[:4], "venue": e.get("prism:publicationName", ""),
+                         "type": e.get("subtypeDescription", "")})
+        start += len(entries)
+        time.sleep(0.5)
+    out = RAW / f"{run_id}_scopus.json"
+    out.write_text(json.dumps(pages))
+    return query, base, recs, total, out.name
+
+
 SOURCES = {"OpenAlex": (openalex, "api.openalex.org", "title_and_abstract"),
            "arXiv": (arxiv, "export.arxiv.org API", "abstract (abs:) incl. title"),
            "SemanticScholar": (s2, "api.semanticscholar.org bulk search", "title+abstract (S2 default)"),
-           "DBLP": (dblp, "dblp.org search API", "title/metadata")}
+           "DBLP": (dblp, "dblp.org search API", "title/metadata"),
+           "Scopus": (scopus, "Elsevier Scopus Search API", "TITLE-ABS-KEY")}
 
 
 def main():
@@ -227,7 +269,7 @@ def main():
             print(f"{name}: {len(recs)} records (source reports {total})")
     if args.execute:
         with RECORDS.open("w", newline="") as f:
-            w = csv.DictWriter(f, REC_FIELDS)
+            w = csv.DictWriter(f, REC_FIELDS, restval="")
             w.writeheader()
             w.writerows(all_recs)
         print(f"wrote {len(all_recs)} records to {RECORDS}")

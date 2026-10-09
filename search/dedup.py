@@ -52,12 +52,21 @@ def main():
             seen.setdefault(k, hit[1] if hit else idx)
 
     titles = [norm_title(r["title"]) for r in keep]
+    # blocked fuzzy comparison: only compare titles sharing their first two significant tokens
+    blocks = {}
+    for i, t in enumerate(titles):
+        toks = [w for w in t.split() if len(w) > 3][:2]
+        if t and toks:
+            blocks.setdefault(" ".join(toks), []).append(i)
     manual = []
-    for i in range(len(keep)):
-        for j in range(i + 1, len(keep)):
-            if titles[i] and titles[j] and difflib.SequenceMatcher(None, titles[i], titles[j]).ratio() >= 0.93:
-                manual.append({"a": keep[i]["record_id"], "b": keep[j]["record_id"],
-                               "title_a": keep[i]["title"], "title_b": keep[j]["title"]})
+    for idx in blocks.values():
+        for a in range(len(idx)):
+            for b in range(a + 1, len(idx)):
+                i, j = idx[a], idx[b]
+                sm = difflib.SequenceMatcher(None, titles[i], titles[j])
+                if sm.quick_ratio() >= 0.93 and sm.ratio() >= 0.93:
+                    manual.append({"a": keep[i]["record_id"], "b": keep[j]["record_id"],
+                                   "title_a": keep[i]["title"], "title_b": keep[j]["title"]})
 
     def dump(name, data):
         if not data:
