@@ -184,6 +184,8 @@ Across framework layers, 176 studies (55.9%) address validity consequences and r
 - benchmark and environment construction (46);
 - developer or third-party audits (24).
 
+The method mix is shifting. White-box methods rose from 7.1% of the studies published in 2024 (2 of 28) to 16.7% in 2025 (19 of 114) and 21.1% in 2026 (35 of 166). Benchmark and environment construction rose from 7.9% in 2025 to 19.9% in 2026 (33 of 166), driven largely by reward-hacking benchmarks and audits of agent benchmarks. The layer distribution, by contrast, has been stable since 2025, with L4 at 57% in both years.
+
 The imbalance between L1 and L4 is substantive. Many methods have been proposed for responding to evaluation-conditioned behaviour, but there are few systematic studies of *which properties of evaluations make them recognisable*. This makes the remaining evidence harder to interpret (Section 4.5).
 
 ![Fig. 3 Evidence map: included studies by framework layer and primary method family (n = 315). Cell values are counts; single-layer assignment simplifies multi-method studies.](figures/fig3_evidence_map.png)
