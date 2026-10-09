@@ -17,10 +17,19 @@ md = body + "\n\n## References\n\n" + "\n\n".join(refs) + "\n"
 words = len(re.sub(r"^\|.*$", "", body.split("## References")[0], flags=re.M).split())
 abstract = re.search(r"## Abstract\n\n(.*?)\n\n\*\*Keywords", body, re.S).group(1)
 print("main-text words (excl. tables, refs):", words, "| abstract words:", len(abstract.split()), "| references:", len(refs))
-subprocess.run(["pandoc", "manuscript.md", "-o", "manuscript.docx", "--resource-path=.", "-f", "markdown+pipe_tables+superscript",
+subprocess.run(["pandoc", "manuscript.md", "-o", "manuscript.docx", "--resource-path=.", "-f", "markdown-citations+pipe_tables+superscript",
                 "--reference-doc=reference.docx"] if (HERE / "reference.docx").exists() else
-               ["pandoc", "manuscript.md", "-o", "manuscript.docx", "--resource-path=.", "-f", "markdown+pipe_tables+superscript"],
+               ["pandoc", "manuscript.md", "-o", "manuscript.docx", "--resource-path=.", "-f", "markdown-citations+pipe_tables+superscript"],
                cwd=HERE, check=True)
-subprocess.run(["soffice", "--headless", "--convert-to", "pdf", "manuscript.docx"], cwd=HERE, check=True,
-               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+# PDF for reading: pandoc -> standalone HTML with MathML -> headless Chromium (renders equations natively).
+subprocess.run(["pandoc", "manuscript.md", "-s", "--mathml", "--embed-resources", "--css=print.css", "-o", "manuscript.html",
+                "--resource-path=.", "-f", "markdown-citations+pipe_tables+superscript", "--metadata", "lang=en-GB"], cwd=HERE, check=True)
+CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
+if pathlib.Path(CHROME).exists():
+    subprocess.run([CHROME, "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
+                    f"--print-to-pdf={HERE / 'manuscript.pdf'}", (HERE / "manuscript.html").as_uri()],
+                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+else:
+    subprocess.run(["soffice", "--headless", "--convert-to", "pdf", "manuscript.docx"], cwd=HERE, check=True,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 print("built:", [p.name for p in HERE.iterdir() if p.suffix in (".docx", ".pdf", ".md") and p.stem == "manuscript"])

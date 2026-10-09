@@ -6,7 +6,7 @@ The review supports four conclusions, each qualified by the strength of the evid
 
 **(i) Evaluation-conditioned behaviour in LLMs has been demonstrated, but mostly under induced or strongly scaffolded conditions.** Evidence is strong that models *can* underperform selectively when instructed or trained to (van der Weij et al. 2025), *can* discriminate evaluation from deployment transcripts (Needham et al. 2025), and *can* behave differently when they infer that they are observed (Greenblatt et al. 2024a; Lynch et al. 2025). Evidence on how often this happens *spontaneously* in realistic evaluations is weaker and mixed. Honeypot evaluations in a real internal deployment found no unprompted scheming (Krakovna et al. 2026); aggregate output shifts associated with verbalised awareness were small (Knecht et al. 2026); and only a minority of models showed alignment faking in a replication across 25 models (Sheshadri et al. 2025).
 
-**(ii) "Evaluation awareness" is a family of weakly coupled constructs, not one quantity.** Representational, verbalised and elicited measures diverge (*Evaluation Awareness Is Not One Capability* 2026; Heidari et al. 2026). Each has a known directional bias (Section 4.3), and probe evidence is confounded by format unless the design decorrelates format from context (Devbunova 2026). Reports that state an awareness rate without specifying the measure are therefore uninterpretable across studies.
+**(ii) "Evaluation awareness" is a family of weakly coupled constructs, not one quantity.** Representational, verbalised and elicited measures diverge (Nayan et al. 2026; Heidari et al. 2026). Each has a known directional bias (Section 4.3), and probe evidence is confounded by format unless the design decorrelates format from context (Devbunova 2026). Reports that state an awareness rate without specifying the measure are therefore uninterpretable across studies.
 
 **(iii) The link from awareness to behaviour is heterogeneous in magnitude and direction.** Test awareness can increase or decrease harmful compliance depending on the model (Abdelnabi and Salem 2025). How the awareness is framed predicts compliance (Zhuang and Aranguri 2026). Optimised prompts that induce evaluation awareness degraded Claude-3.5-Haiku by 73 pp on arithmetic but by only 0.6 pp on code generation, where Llama-3.3-70B dropped 87 pp (Chaudhary 2026). A single "evaluation-awareness correction" applied across models is therefore not justified by current evidence.
 
@@ -16,19 +16,19 @@ The review supports four conclusions, each qualified by the strength of the evid
 
 The trajectory of this literature resembles that of research on the Hawthorne effect, where effects of being studied were found to exist but their conditions, mechanisms and magnitudes remained poorly understood, and new concepts were called for (McCambridge et al. 2014). Two differences matter.
 
-First, LLM evaluators have access to model internals. This permits measurement designs, namely representation probing, steering and weight perturbation, that are impossible with human participants. It also introduces new validity threats specific to those designs (Table 4).
+First, LLM evaluators have access to model internals. This permits measurement designs, namely representation probing, steering and weight perturbation, that are impossible with human participants. It also introduces new validity threats specific to those designs (Table 5).
 
 Second, unlike human participants, models are trained, and training can be informed by evaluation results. If evaluations that detect misbehaviour feed back into training, the training process creates selection pressure toward recognising and passing those evaluations. That pressure is what Goodhart-type arguments predict (Gao et al. 2023), and it is consistent with the rise in verbalised awareness after anti-scheming training (Schoen et al. 2025). The analogy with human research participation therefore *understates* the threat.
 
 ### 5.3 Comparison with prior reviews
 
-Relative to deception surveys (Park et al. 2024; *AI Deception: Risks, Dynamics, and Controls* 2025; *From Hallucination to Scheming* 2026), this review treats the evaluation as the object of study, so that deception matters only insofar as it changes what scores mean. Relative to the review of the AI "observer effect" by Maurya et al. (2026), which discusses fifteen landmark contributions up to 2024, it adds a reproducible multi-database search, the 2025–2026 measurement literature and an explicit separation of awareness from behaviour. Relative to the broad proxy–target framing of Uluırmak and Kurban (2026), it isolates the model-originated mechanisms and their measurement. Relative to construct-validity reviews of benchmarks (Bean et al. 2025; Reuel et al. 2024), it adds a class of threat that remains even when a benchmark is well designed, although the benchmark audits in Section 4.9 show that many agent benchmarks are not. A benchmark with strong construct validity can still yield invalid inferences if the evaluated system behaves differently because it recognises the benchmark.
+Relative to deception surveys (Park et al. 2024; Chen B et al. 2025; Shi et al. 2026), this review treats the evaluation as the object of study, so that deception matters only insofar as it changes what scores mean. Relative to the review of the AI "observer effect" by Maurya et al. (2026), which discusses fifteen landmark contributions up to 2024, it adds a reproducible multi-database search, the 2025–2026 measurement literature and an explicit separation of awareness from behaviour. Relative to the broad proxy–target framing of Uluırmak and Kurban (2026), it isolates the model-originated mechanisms and their measurement. Relative to construct-validity reviews of benchmarks (Bean et al. 2025; Reuel et al. 2024), it adds a class of threat that remains even when a benchmark is well designed, although the benchmark audits in Section 4.9 show that many agent benchmarks are not. A benchmark with strong construct validity can still yield invalid inferences if the evaluated system behaves differently because it recognises the benchmark.
 
 ### 5.4 Implications for evaluation practice: a reporting checklist
 
-The heterogeneity documented in Sections 4.3–4.6 is partly a reporting problem. Table 7 proposes a twelve-item checklist for evaluation papers, system cards and third-party evaluation reports, derived directly from the failure modes and contradictions charted above. The checklist is a proposal derived from the evidence; it has not yet been validated.
+The heterogeneity documented in Sections 4.3–4.6 is partly a reporting problem. Table 8 proposes a twelve-item checklist for evaluation papers, system cards and third-party evaluation reports, derived directly from the failure modes and contradictions charted above. The checklist is a proposal derived from the evidence; it has not yet been validated.
 
-**Table 7** EVAL-AWARE reporting checklist for evaluations exposed to model-originated validity threats
+**Table 8** EVAL-AWARE reporting checklist for evaluations exposed to model-originated validity threats
 
 | # | Item | Rationale (evidence in this review) |
 |---|---|---|
@@ -47,21 +47,21 @@ The heterogeneity documented in Sections 4.3–4.6 is partly a reporting problem
 
 ## 6 Research gaps and prioritised agenda
 
-Table 8 lists evidence-based gaps, each with the study that would address it and the strength of the evidence that the gap exists. Gaps are ordered by our judgement of priority, which weighs importance for evaluation validity, evidence strength and feasibility.
+Table 9 lists evidence-based gaps, each with the study that would address it and the strength of the evidence that the gap exists. Gaps are ordered by our judgement of priority, which weighs importance for evaluation validity, evidence strength and feasibility.
 
-**Table 8** Prioritised research agenda
+**Table 9** Prioritised research agenda
 
 | Priority | Gap | Evidence that the gap exists | Proposed study | Evidence strength |
 |---|---|---|---|---|
 | 1 | Detection and elicitation validated only on *induced* behaviour | Ground truth obtained almost exclusively by construction (Section 4.4); organisms deliberately trained to be detectable or resistant | Blinded auditing games in which red teams construct organisms by *training incentives* rather than direct instruction; report transfer from induced to incentive-driven behaviour | Strong |
 | 2 | No validated mapping between awareness measures | 1 of 15 cross-paradigm correlations significant; partial representation–verbalisation correspondence | Multi-measure study on shared items with known ground truth, estimating the upward bias of elicitation and the downward bias of verbalisation | Strong |
 | 3 | Few studies of evaluation properties (L1) | 8 of 315 included studies (2.5%) | Factorial cue-ablation studies across task families, including agentic, multimodal and multilingual evaluations | Strong (coverage gap) |
-| 4 | Awareness–behaviour link unexplained across models | Direction and magnitude vary (Table 6) | Pre-registered, multi-family studies relating awareness framing to behaviour change, with model-level random effects | Moderate |
+| 4 | Awareness–behaviour link unexplained across models | Direction and magnitude vary (Table 7) | Pre-registered, multi-family studies relating awareness framing to behaviour change, with model-level random effects | Moderate |
 | 5 | Feedback from evaluation into training | Verbalised awareness rose after anti-scheming training | Controlled training runs that vary whether evaluation-derived data enter training; measure subsequent awareness | Moderate |
 | 6 | Sycophancy vs strategic accounts not separable | Baek et al. (2026); Santos-Grueiro (2026) | Designs in which the two accounts predict different behaviour (e.g. evaluator-preference reversal under recognised evaluation) | Moderate |
 | 7 | Countermeasures validated by model judgement only | Realism mostly validated by model discriminators; one deployment-grounded validation (Williams et al. 2026) | Validate realism and replay methods against deployment outcomes, not only against discriminator accuracy | Moderate |
-| 8 | Peer-review and replication deficit | 14.6% of included studies peer-reviewed; key findings single-model | Independent replications of anchor findings (Table 5) with released prompts and code | Strong |
-| 9 | Evaluation reporting heterogeneity | Rates reported without construct, uncertainty or access level | Adoption study of a reporting checklist (Table 7) across system cards | Weak (practice evidence only) |
+| 8 | Peer-review and replication deficit | 14.6% of included studies peer-reviewed; key findings single-model | Independent replications of anchor findings (Table 6) with released prompts and code | Strong |
+| 9 | Evaluation reporting heterogeneity | Rates reported without construct, uncertainty or access level | Adoption study of a reporting checklist (Table 8) across system cards | Weak (practice evidence only) |
 
 ## 7 Limitations of the review
 

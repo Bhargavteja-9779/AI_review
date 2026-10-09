@@ -69,7 +69,7 @@ def fig_flow():
 
 
 def fig_framework():
-    fig, ax = plt.subplots(figsize=(7.2, 3.8)); ax.set_xlim(0, 12); ax.set_ylim(0, 6.3); ax.axis("off")
+    fig, ax = plt.subplots(figsize=(7.2, 4.0)); ax.set_xlim(0, 12); ax.set_ylim(-0.2, 6.3); ax.axis("off")
     layers = [("L1  CONTEXT\nSIGNAL", "Evaluation properties\nmaking it\nrecognisable: format,\nrealism, synthetic\nprompts, honeypot cues"),
               ("L2  AWARENESS", "Model recognition:\nrepresented (probes),\nverbalised (CoT),\nelicited\n(classification)"),
               ("L3  BEHAVIOURAL\nDIVERGENCE", "Evaluation-conditioned\nbehaviour: sandbagging,\nalignment/eval faking,\nstrategic dishonesty,\ntest/grader gaming"),
@@ -81,6 +81,8 @@ def fig_framework():
         if i < 3:
             arrow(ax, x + 2.7, 3.95, x + 3.0, 3.95)
         x += 3.0
+    for i, lab in enumerate([r"$S=s(x,c)$", r"$A=a(S)$", r"$\Delta_{\mathrm{ctx}}$", r"$\Delta_{\mathrm{score}}$;  $\theta_E-\theta_D$"]):
+        ax.text(0.2 + 3.0 * i + 1.35, 0.15, lab, ha="center", va="center", fontsize=8, color=S1 if i < 3 else S2)
     ax.annotate("", xy=(1.55, 4.75), xytext=(10.55, 4.75),
                 arrowprops=dict(arrowstyle="-|>", color=S2, lw=1, connectionstyle="arc3,rad=0.12", linestyle="--"))
     ax.text(6.0, 5.95, "Countermeasures act back on L1-L3 (realism engineering, steering, elicitation, training)",

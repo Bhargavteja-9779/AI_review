@@ -20,7 +20,7 @@ for m in pat.finditer(plain):
     s = f"{m.group(1)} {m.group(2)}"
     if not any(s == k or k.endswith(s) or s.endswith(k) for k in REFS):
         cands.add(s)
-noise = re.compile(r"^(In|Fig|Table|Section|Version|January|October|September|Since|The|Both|Of|And|Across|From|Oct|Supplementary|ICML|ICLR|NeurIPS|PRISMA|AUC|GPT|Claude|Llama|Qwen|Gemini|Opus|Sonnet|Mythos|Before|First|Second|Third|Relative|Reports|Charted|To|At|Twenty|With|For|Earlier|Only|After|Up|Under|Each|When|Unlike|This|Some|However|Several|Evidence|Deliberate)\b")
+noise = re.compile(r"^(In|Fig|Table|Section|Version|January|October|September|Since|The|Both|Of|And|Across|From|Oct|Supplementary|ICML|ICLR|NeurIPS|PRISMA|AUC|GPT|Claude|Llama|Qwen|Gemini|Opus|Sonnet|Mythos|Before|First|Second|Third|Relative|Reports|Charted|To|At|Twenty|With|For|Earlier|Only|After|Up|Under|Each|When|Unlike|This|Some|However|Several|Evidence|Deliberate|Scholar|Xiv|Scopus)\b")
 cands = sorted(c for c in cands if not noise.match(c))
 print("references:", len(REFS), "cited:", len(used))
 print("UNCITED references:", unused)
