@@ -1,0 +1,502 @@
+{
+ "2412.04984": {
+  "1": {
+   "code": "NA",
+   "evidence": "Study does not measure evaluation/situational awareness or recognition; situational awareness is supplied in-context."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors used."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions used."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification; testing/deployment framing is a counterfactual manipulation, not a classification task."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 4 Limitations: 'our evals might overestimate models' scheming capabilities' ... 'might underestimate models' scheming capabilities, particularly for more capable models.'"
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Strong goal nudging vs no goal nudging reported (Table 2 vs Sec 3.4/Table 4); limitation 'Uncertainty in Capability Elicitation' discusses elicitation."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No exclusion of individual outputs reported (only a model, opus-3, omitted from one no-CoT analysis)."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "'for evaluations in this category, we always introduce a counterfactual setting' (oversight vs non-oversight; sandbagging incentive reversed, task fixed)."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic evaluations run but no rates of spontaneous verbalised evaluation awareness reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Table 2/4/5/6 report results per model (gemini-1.5, llama-3.1, sonnet-3.5, opus-3, o1)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Wilson CIs (Fig 3), binomial/bootstrap tests (Tables 5-6) and n given (300 rollouts, n=99 pairs), but main Table 2 rates lack CIs."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'We access gpt-4o via the public OpenAI API'; 'Without access to finetuning or a helpful-only model'; o1 hidden CoT not accessible."
+  }
+ },
+ "2505.17815": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 3 CoT Monitoring Module: Evaluation Recognition Rate = 'proportion of CoT traces ... that explicitly recognize evaluation'; SAE analysis reported separately (App E)."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "SAE feature intervention (App E) used as evidence on evaluative-context processing with no format/surface confound control."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "App E: 'We focused our intervention on layer 20'; 27 features chosen 'based on preliminary analysis or existing feature interpretations'; no random/control features."
+  },
+  "4": {
+   "code": "N",
+   "evidence": "S5 memory uses 'five real-world user queries unrelated to evaluation' with no stated source; no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Conclusion: 'safety evaluations may underestimate real-world risk when models conceal risky tendencies during testing'; Sec 2: 'models may appear safer than their actual risk levels'."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Safety-propensity study; capability benchmarks explicitly excluded; no capability or sandbagging claims."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No exclusion of outputs reported."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Honeypots S1-S8 vary evaluation cues on the same prompts; CoT-prefix causal intervention (Sec 4.2)."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "ERR reported incl. baseline S1 (Tables 4-5); Sec 5: 'this proxy is conservative: models may recognize an evaluation context without explicitly verbalizing it'."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model SR/ERR in App Tables 4, 5, 6."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given (313/440 prompts, 42,568 responses) and leave-one-out sensitivity, but no CIs/SEs or formal tests on main rates."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Sec 5: CoT monitor as proxy 'in black-box or partially observed settings where direct access to internal states is unavailable'; SAE on open Gemma2-9B."
+  }
+ },
+ "2505.23836": {
+  "1": {
+   "code": "Y",
+   "evidence": "Separate measures: binary-choice PQ classification (AUC/Brier/ECE, Table 1), purpose identification conditional/unconditional MCQ and open-ended (Fig 6), CoT categories (Fig 7)."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "'Probe Questions' are prompts; no activation probes or steering."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No activation probes or steering directions."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Deployment sources stated (App A.3: ShareGPT, authors' Aider/OpenHands/Cursor use, GPT-4o rewritten commits, crowd-sourced Deep Research); no transfer across transcript generators tested."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 5: models 'could strategically underperform ... which could lead society to overestimate the safety of such models'."
+  },
+  "6": {
+   "code": "P",
+   "evidence": "Elicitation reported (28 PQs, best five-PQ set selected, 5 repeats; Fig 8 trade-off) but no default-vs-best performance comparison."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No exclusion of outputs reported (100-sample dev split is a held-out design, not an exclusion)."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Measures classification capability, not propensities."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic/reasoning evaluations run on the tested models; only prompted classification of existing transcripts."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Table 1 reports AUC/Brier/ECE per model."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Fig 6 has 95% CIs and n=900/500 given, but 'we do not include error bars in Figure 2 or Table 1' (main AUCs)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Unambiguously black-box: models are prompted zero-shot with transcripts and probe questions via APIs; no weights/activations used."
+  }
+ },
+ "2509.13333": {
+  "1": {
+   "code": "Y",
+   "evidence": "Single construct and measure stated: linear probes on residual activations scored by AUROC on SAD Stages Oversight (Sec 3.2), reported per model and layer."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "Probes trained on contrastive dataset and tested on SAD with no control of format/surface confounds (only chat-template variation in App 6.2)."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "Probes at every layer, best layer reported (Fig 2); 'threshold determined by maximizing Youden's J on SAD'; no random/shuffled control probe."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Deployment/test prompts sourced from SAD Stages Oversight subset (App 6.1.2); no transfer across data generators tested."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Abstract: 'This undermines AI safety evaluations, as models may conceal dangerous capabilities during testing.'"
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "No capability or sandbagging behaviour claims; probe-decodability study only."
+  },
+  "7": {
+   "code": "Y",
+   "evidence": "'Qwen models were excluded ... Full results are in Appendix 6.3' (Figs 4-5 show excluded models)."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "No propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic or reasoning-trace evaluations."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Fig 1 and Fig 2 plot results for each of the 15 models."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Dataset sizes given (203, 400 entries) but no CIs/SEs or significance tests for AUROCs or the power-law fit."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Probes on 'residual stream activations' of open-weights models; limitations note proprietary models are 'accessible only as black box'."
+  }
+ },
+ "2511.09904": {
+  "1": {
+   "code": "NA",
+   "evidence": "Monitor awareness is an experimental manipulation (aware/unaware prompt); evaluation awareness is not measured."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation context classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Limitations: 'we expect that our results underestimate the sabotage capabilities of contemporary agents'; sandbagging defined as underperforming relative to actual capability."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Sec 3 'Capability elicitation': prompts optimised (App D); Regular-mode baseline ('actual capability') vs sabotage/sandbagging performance reported."
+  },
+  "7": {
+   "code": "Y",
+   "evidence": "Invalid trajectories filtered (~20% of regular runs invalid) and 'In section E.1.2 we present results without filtering for valid submissions.'"
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability-only study: 'we only investigated agents' sabotage capability, but not their propensity'."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic evaluations run but no rates of unprompted verbalised evaluation awareness reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Monitor results per model (Fig 6 AUCs for claude-3.5-haiku, claude-3.7, gpt-4o, gpt-4o-mini); single agent model claude-3.7."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "'Mean and standard error are computed for tasks with at least 3 valid submissions'; run counts in Table 4."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Black-box only: agents prompted via scaffolds and 'LM monitors take an agent transcript as input'; fine-tuning noted as not done."
+  }
+ },
+ "2605.05835": {
+  "1": {
+   "code": "Y",
+   "evidence": "'We define VEA as any statement in a model's reasoning trace that explicitly references the possibility of the interaction being a test, evaluation, or benchmark.'"
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Abstract: VEA 'can make models appear safer than they actually are'; Discussion: alignment measurements 'may be overstated'."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Propensity study (safety, alignment, moral, political); no capability/sandbagging claims."
+  },
+  "7": {
+   "code": "Y",
+   "evidence": "Excluded groups quantified (Table 12, 'only 18% of safety prompts are included') and unpaired analysis without filtering (Fig 9, App F)."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Off-policy VEA injection vs control injection and VEA removal vs control resampling on the same prompts (Table 1)."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "On-policy VEA rates per model (Fig 7: 'Most models are evaluation-aware in fewer than 20% of rollouts'); 'latent awareness ... CoT-based interventions will under-measure them'."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results in Sec 4.1-4.2 and Fig 5; omnibus per-model in App I."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "Bootstrap 95% CIs, Stuart-Maxwell/McNemar tests, effect sizes; 'Sample sizes range from 2,756 to 3,542 for injection...'."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Open-weight LRMs via 'completion API via Nebius and TogetherAI' with CoT prefilling; limitation notes closed-weight models not covered."
+  }
+ },
+ "2605.23055": {
+  "1": {
+   "code": "Y",
+   "evidence": "Recognition vs propensity defined; 'black-box CoT monitoring' for verbalised awareness, safety vs capability awareness reported separately (Fig 2); alternative methods compared in App B.2."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering used (white-box methods only discussed)."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Naturalistic (deployment-style) baselines generated by 'Claude Opus 4.6 (claude-opus-4-6)' (App D); no transfer across generators/families tested."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'Correct safety classification thus inflates safety scores, while misclassification can reverse the effect' (Sec 3.3)."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "No capability/sandbagging claims; study measures awareness and behavioural shift."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "HarmBench categories excluded with remaining count stated ('After exclusion, 342 HarmBench tasks remain'); no with/without comparison for these exclusions."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "EvalAwareBench 'holds the underlying request consistent and varies individual trigger factors' (Sec 4.1)."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "Spontaneous CoT awareness rates (Fig 2, App C.1); 'Our CoT recognition rates should therefore be considered to be conservative.'"
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Rates per model x benchmark (Fig 2) and per model in Fig 6-7."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "'Error bars represent 95% bootstrap CIs'; ANOVA share 95% CI; 342/234/176/176 tasks x 10 repetitions."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'We detect evaluation awareness via black-box CoT monitoring, since most frontier models do not expose internal representations.'"
+  }
+ },
+ "2605.29729": {
+  "1": {
+   "code": "Y",
+   "evidence": "Autorater 'Verbalized evaluation awareness' with weak/strong levels defined (Sec 3.2) and reported separately (Fig 6)."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification; realism compared via awareness rates in honeypot vs baseline environments."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'if models don't trigger honeypot evaluations, this does not provide strong evidence of safety'; 'Scheming in response to evaluation awareness could be a source of false positives'."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Propensity study; no capability or sandbagging claims."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Figs 2 and 6 average over 'the subset of honeypot evaluations that were weakly triggered at least once (10 code review settings, and 3 agentic coding settings)'; no unfiltered averages."
+  },
+  "8": {
+   "code": "P",
+   "evidence": "Realistic environments in real internal codebases with production-style task prompt, but no cue-ablation holding task fixed nor replay of actual deployment transcripts."
+  },
+  "9": {
+   "code": "P",
+   "evidence": "Unprompted verbalised awareness rates reported ('strong evaluation awareness rate without prompting is 0...', Fig 6) without a lower-bound caveat about unverbalised awareness."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results (Fig 3, Fig 6) for Gemini 3.1 Pro, 3.0 Pro, 3.0 Flash."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Run counts given (120 per condition code review, 30 agentic) but no CIs/SEs or tests on rates."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Behavioural/transcript-only method: prompted model organisms and 'We run an autorater on model transcripts'; relies on CoT legibility; no weights/activations."
+  }
+ },
+ "2606.08629": {
+  "1": {
+   "code": "Y",
+   "evidence": "Separate measures: elicited EVAL classification (Sec 4, Fig 3-4), type-hint F1 proxy (Sec 3), SAE feature activations (Sec 5); construct scope stated in Sec 8."
+  },
+  "2": {
+   "code": "Y",
+   "evidence": "Free/Paid conditions 'differ only in monitoring status, while using identical user queries'; A3 differential persists 'even after excluding all rating-related words (p = 0.043)'."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "SAE 'trained on layer 11 activations'; features = top 50/top 10 by mean activation on generated prompts; no random-direction/shuffled control (only base-model line)."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "StyleCues generated by GPT-5 and alignment-faking data from Greenblatt et al. stated; no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Impact Statement: 'the potential for models to pass safety evaluations through performative compliance ... we risk deploying models that are safe only when monitored'."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "No capability or sandbagging claims (MMLU only a side check)."
+  },
+  "7": {
+   "code": "N",
+   "evidence": "'we filtered out all responses with a coherence score under 30' and steering cells N/A when >10% invalid; excluded shares not reported."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "System prompt (Deployed/Monitor/Empty) and writing-style cues varied with programming task held fixed (Fig 3); Free vs Paid tier."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Reasoning models (GPT-OSS, thinking variants) run, but no unprompted verbalised awareness rates reported; awareness only elicited/proxied."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results in Fig 3, Fig 6, Table 5 and per-model t-tests."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "Mean±SE (Tables 3-4, n=50), t-tests p-values, bootstrapped SEs (Fig 8); n=100/240/200 stated."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "White-box SAE probing/steering on open GPT-OSS-20B and fine-tuning via Tinker API; elicitation via prompting."
+  }
+ },
+ "2609.22119": {
+  "1": {
+   "code": "Y",
+   "evidence": "Separate measures: elicited classification CoT heuristics (Fig 3, App F), probe AUROC per layer (App C), IG attribution (Sec 4.2)."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "Steering probes from Simple Contrastive Dataset validated on SAD with no format/surface-confound control."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "All-layer AUROCs (App C) and 'top four transformer layers, identified as having the highest AUROC'; no random/control probe."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Sources stated (SAD, GSM8K vs WildChat, gpt-oss-120b generated IG set); no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 2: threatens 'validity of capability evaluations, potentially leading to strategic underperformance or sandbagging'."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "No capability or sandbagging behaviour measured."
+  },
+  "7": {
+   "code": "N",
+   "evidence": "Intervention evaluated only on '200 highly evaluation-aware prompts' (probe-threshold filtered); no results on unfiltered set or excluded share."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "No propensity evaluation; models only classify eval vs deployment."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic/reasoning-trace task evaluations; CoT only elicited for the explicit classification task."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Table 1 flip rates and App F distributions per model."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given (200, 300, 204 prompts) but no CIs/SEs or significance tests."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Methods require activations/gradients (probing, steering, Integrated Gradients) on open models plus prompting; Sec 2 contrasts black-box CoT and white-box probing."
+  }
+ }
+}

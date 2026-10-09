@@ -26,7 +26,7 @@ Relative to deception surveys (Park et al. 2024; Chen B et al. 2025; Shi et al. 
 
 ### 5.4 Implications for evaluation practice: a reporting checklist
 
-The heterogeneity documented in Sections 4.3–4.6 is partly a reporting problem. Table 8 proposes a twelve-item checklist for evaluation papers, system cards and third-party evaluation reports, derived directly from the failure modes and contradictions charted above. The checklist is a proposal derived from the evidence; it has not yet been validated.
+The heterogeneity documented in Sections 4.3–4.6 is partly a reporting problem. Table 8 proposes a twelve-item checklist for evaluation papers, system cards and third-party evaluation reports, derived directly from the failure modes and contradictions charted above. The checklist is a proposal derived from the evidence and has not been validated as a reporting standard. We did, however, apply it retrospectively to the full texts of the 37 anchor studies (Section 3.8; Fig. 5).
 
 **Table 8** EVAL-AWARE reporting checklist for evaluations exposed to model-originated validity threats
 
@@ -44,6 +44,18 @@ The heterogeneity documented in Sections 4.3–4.6 is partly a reporting problem
 | 10 | Report per-model rather than pooled awareness–behaviour relations | Magnitude and direction vary by model (Abdelnabi and Salem 2025) |
 | 11 | Report uncertainty (confidence intervals, number of samples, seeds) for all rates | Small-sample rates and prompt sensitivity (Sclar et al. 2024; Mizrahi et al. 2024) |
 | 12 | State the access level available to the evaluator (black-box, grey-box, white-box) | Access constrains which methods are possible (Casper et al. 2024) |
+
+![Fig. 5 Reporting audit of the 37 anchor studies against the EVAL-AWARE checklist (Table 8), coded from full texts. Adherence (top) is the share of applicable studies reporting the item, counting partial reporting as one half. Studies are ordered by the number of items reported. Inter-coder agreement on a random 10 studies: κ = 0.90.](figures/fig5_reporting_audit.png)
+
+**Reporting audit.** The audit shows a clear split (Fig. 5). Items that concern the *framing* of a study are almost always reported: every study states the evaluator's access level (37 of 37), every multi-model study reports results per model (34 of 34), and nearly all name the awareness construct they measure (adherence 94%, 26 applicable studies) and state the direction of the possible bias (89%). Items that concern *threats to the measurement itself* are reported much less often:
+
+- only 3 of the 15 studies that use probes or steering as evidence fully decorrelate evaluation context from prompt format (adherence 37%), although format confounding is the best-documented failure mode of probe evidence (Devbunova 2026);
+- only 7 of the 27 agentic or reasoning-trace studies report unprompted verbalised-awareness rates and treat them as lower bounds, and 12 report no such rate at all (adherence 41%);
+- only 1 of the 18 studies that rely on deployment-side transcripts or elicitation prompts tests whether results transfer across transcript generators or model families (adherence 47%);
+- only 4 of the 25 studies that exclude outputs (refusals, unparseable answers, filtered tasks) report results with and without the exclusion (adherence 52%);
+- uncertainty is fully reported for main results in 17 of the 37 studies (46%) and partly in 19 more.
+
+Median adherence per study was 79% (range 50–100%). The pattern matters for interpretation. The items least often reported are exactly those that would distinguish a genuine awareness effect from a measurement artefact (Table 4): format confounds for probes, the lower-bound status of verbalised awareness, generator effects for transcript classification, and the effect of exclusions on reported rates. Items 2, 4, 7 and 9 are therefore the most useful additions to current practice.
 
 ## 6 Research gaps and prioritised agenda
 
@@ -105,4 +117,4 @@ Model-originated threats to evaluation validity have moved from theoretical conc
 
 **Author contributions** P N Bhargav Teja: conceptualisation, methodology, investigation, data curation, formal analysis, visualisation, writing – original draft. Divya Meena S: conceptualisation, supervision, validation, writing – review and editing. Both authors read and approved the final manuscript.
 
-**Use of generative AI** In accordance with Springer Nature policy, the authors disclose that an AI system (Claude, Anthropic) was used extensively in preparing this review: to execute and log the web and database searches, to write the screening, charting and figure scripts, to assist with title and abstract screening and charting, to check quantitative statements about the anchor studies against their full texts, to verify reference metadata against arXiv and Crossref, and to draft the manuscript text. The authors directed the work, take full responsibility for the content, and verified the manuscript before submission. The AI system is not an author.
+**Use of generative AI** In accordance with Springer Nature policy, the authors disclose that an AI system (Claude, Anthropic) was used extensively in preparing this review: to execute and log the web and database searches, to write the screening, charting and figure scripts, to assist with title and abstract screening and charting, to check quantitative statements about the anchor studies against their full texts, to code the reporting audit from a frozen codebook (with independent double coding), to verify reference metadata against arXiv and Crossref, and to draft the manuscript text. The authors directed the work, take full responsibility for the content, and verified the manuscript before submission. The AI system is not an author.

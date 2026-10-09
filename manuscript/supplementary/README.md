@@ -19,8 +19,13 @@
 | S4b_prisma2020_counts.json | Counts behind Fig. 1 |
 | S4c_evidence_map_counts.json | Counts behind Figs. 2 and 3 |
 | S4d_database_studies_manual_charting.tsv | Manual layer and method coding of studies identified only by the databases |
+| S5a_reporting_audit_codebook.md | Frozen codebook for the reporting audit (12 items, applicability rules) |
+| S5b_reporting_audit_codes.csv | Primary codes (37 studies x 12 items) |
+| S5c_reporting_audit_summary.json | Adherence per item and per study; inter-coder agreement |
+| S5d_reporting_audit_coder_files.zip | All coder files with the verbatim evidence for every code, including the independent second coding |
 
 Raw API responses are in `search/raw/`. To reproduce all counts and figures from the repository root:
 `python3 search/dedup.py && python3 screening/screen_db.py && python3 evidence/screen.py && python3 evidence/chart.py &&
-python3 screening/merge.py && python3 screening/reliability.py && python3 evidence/figures.py && python3 manuscript/make_supplementary.py`
+python3 screening/merge.py && python3 screening/reliability.py && python3 evidence/figures.py &&
+python3 evidence/reporting_audit/analyse.py && python3 manuscript/make_supplementary.py`
 (the database search itself is re-run with `python3 search/run_searches.py --execute`; Scopus requires `ELSEVIER_API_KEY`).

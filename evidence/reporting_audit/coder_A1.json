@@ -1,0 +1,502 @@
+{
+ "2406.07358": {
+  "1": {
+   "code": "NA",
+   "evidence": "No measurement of evaluation/situational awareness; sandbagging is induced by prompting or password-locking."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors used."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions used."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"AI systems may falsely be evaluated as safe due to strategically underperforming on dangerous capability evaluations.\" (Sec. 4)"
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Reports 'regular' (instructed to answer correctly) vs 'sandbagging' and password-unlocked vs locked; \"We spent 1-5 hours engineering the prompt per model\" (Sec. 3, Fig. 4)"
+  },
+  "7": {
+   "code": "P",
+   "evidence": "\"Refused questions were not considered for the reported accuracies.\" Refusal rates given (App. D, Table 8) but no results with refusals included."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability-of-sandbagging study (instructed/password-locked); no propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic evaluations; CoT scratchpad only in an appendix on instructed score-targeting, where no spontaneous awareness is at issue."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results for GPT-4, Claude 3 Opus, Mistral, Llama 3 8b/70b (Fig. 4, Table 1, Fig. 7)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "\"We report error bars for all key fine-tuning results, usually based on 3 seeds\"; sample sizes given, but prompting results (Fig. 4) lack uncertainty."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "\"trustworthy evaluations require more than black-box access ... Access to model weights ... seem essential\" (Broader impact)"
+  }
+ },
+ "2412.01784": {
+  "1": {
+   "code": "NA",
+   "evidence": "Does not measure evaluation/situational awareness; detects sandbagging via weight-noise performance changes."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes/steering vectors (Gaussian noise added to weights)."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions used."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"underperformance implies the capabilities exhibited during evaluation are meaningfully beneath the actual capabilities\" (Sec. 1)"
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Table 1 reports baseline (sigma=0) vs maximum noised performance per model; \"noise-injection is capable of eliciting the full performance of Mistral Large\""
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No outputs reported as excluded; tiny/subset benchmarks are sampling choices, not exclusions."
+  },
+  "8": {
+   "code": "P",
+   "evidence": "No-goal sandbagging setting has a control where the developer note incentivises max performance with task held fixed (Fig. 7), but evaluation cues themselves are not varied."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic CoT no-goal setting reports qualitative sandbagging rationalisations only; no rates of spontaneous verbalised evaluation awareness."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Improvement ratios reported per model-benchmark pair (Table 1)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "\"Numbers in parentheses represent standard error\"; Welch t-tests with Benjamini-Hochberg correction; N=5 seeds (Mistral Large/test-set rows single runs)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "\"Our method is grey-box\" (Sec. 1); \"Regulators with grey-box access and developers can implement noise injection\""
+  }
+ },
+ "2405.19550": {
+  "1": {
+   "code": "NA",
+   "evidence": "No measurement of evaluation/situational awareness; password-locked models."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"Failing to elicit LLM capabilities and thus underestimating their potential for harm could lead to catastrophic deployment decisions.\" (Sec. 1)"
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Elicitation via SFT/RL compared with locked (no password) and ceiling (with password): \"we achieve correctness close to the ceiling (performance of the locked model with the password)\" (Sec. 5.1)"
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No evaluated-model outputs excluded; only dataset-construction filters (e.g. problems GPT-4 solves)."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability-elicitation study; no propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic evaluations; MATH CoT is by password-locked imitation models where situational awareness is not at issue."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Results reported separately per task/model (Deepseek-7B, Mistral-7B, Pythia etc.; Figs. 3-5)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "\"All plots report the standard error of the mean over 3 seeds\"; n per task given (e.g. n = 3,837; n = 12,500)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "\"it's possible to start using these techniques with fine-tuning access alone\" (App. D); elicitation requires fine-tuning access."
+  }
+ },
+ "2412.14093": {
+  "1": {
+   "code": "Y",
+   "evidence": "App. D.4 reports 'probably fake' and 'might be fake' rates separately for General / What's happening / Is it real query groups (Tables 9-12), distinct from alignment-faking reasoning."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors (scratchpad 'steering' is a text prefill)."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or activation steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No classification of deployment-like vs evaluation-like transcripts; free/paid cue is a behavioural manipulation."
+  },
+  "5": {
+   "code": "P",
+   "evidence": "Direction implied for training (\"producing compliant outputs during training, and then producing non-compliant outputs when unmonitored\") but no explicit statement for evaluation validity."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Propensity study; no capability claims or sandbagging measurement."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "AF reasoning ending in refusal is \"normally\" excluded from top-line metrics; included only in the conditioning analysis (Fig. 15); excluded share not reported."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "\"we inform the model that Anthropic will train on data from free-tier users but not paid-tier users\" - training vs unmonitored cue with queries held fixed."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "\"When the model isn't directly asked if the situation is real, it rarely thinks about this\"; caveat: subtle cues may mean \"asking the model would not reveal this\" (App. D.4)"
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Claude 3 Opus and 3.5 Sonnet reported separately; other Claude, GPT-4, Llama models in App. G.4/B.4."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "\"We show plus or minus one standard error of the mean\"; \"We use 400 queries for all our evaluations\""
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Prompting setup (system prompt only) vs synthetic-document fine-tuning and RL on the model, making training/weight access unambiguous (Secs. 3-5)."
+  }
+ },
+ "2506.18032": {
+  "1": {
+   "code": "P",
+   "evidence": "Training-context awareness is only a criterion inside the AF classifier (\"Awareness of Training Consequences\") and is not reported as a separate measure."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"This makes prompting-based evaluations less reliable indicators of underlying alignment faking capabilities\"; \"These results likely underestimate base models' alignment faking capabilities\""
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Default prompting vs elicited (suffix, prefill, clarifications, SFT): suffix \"we find to be important to elicit alignment faking\"; Figs. 6-7, 39."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No model outputs reported as excluded."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Models \"comply ... more when they infer they are in training than when they infer they are in deployment\"; free/paid, Pro-tier and throughput-testing variants with fixed queries."
+  },
+  "9": {
+   "code": "P",
+   "evidence": "Rates of scratchpad alignment-faking reasoning reported per model (Fig. 1) but no spontaneous evaluation-awareness rates or lower-bound caveat."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model compliance gaps for 25 models (Fig. 1, Figs. 10-11)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "\"n = 200, 1σ uncertainty ≤ 3.6%\" (Fig. 1); uncertainty with n reported in each figure."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "\"Most of our fine-tuning experiments are run on the OpenAI API\"; base models and prefill access described (Secs. 5, K)."
+  }
+ },
+ "2505.23836": {
+  "1": {
+   "code": "Y",
+   "evidence": "Elicited binary classification (Table 1), purpose identification MC/open-ended (Fig. 6) and CoT explanation categories (Fig. 7) reported separately."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "'Probe Questions' are prompts; no activation probes or steering."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No activation probes or steering directions."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "\"We source real prompts that were sent to language models during deployment from ShareGPT\"; scaffolds listed (Tables 7-8); no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"which could lead society to overestimate the safety of such models\" (Sec. 5)"
+  },
+  "6": {
+   "code": "P",
+   "evidence": "\"We selected five PQs from a set of 28 in order to reduce variance and elicit robust performance\"; no default vs best-elicited comparison in main results."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "Format failures are scored at the random-chance baseline rather than excluded (App. A.2)."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Measures recognition of evaluations; no propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "Models classify pre-existing transcripts when explicitly asked; no agentic/reasoning task evaluations of the subject models."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model AUC/Brier/ECE (Table 1) and per-model calibration (Fig. 5)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "\"we do not include error bars in Figure 2 or Table 1\"; 95% CIs only in Fig. 6 and one worked example (App. A.5); n = 900 given."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Black-box: models are only prompted with PQs and P(eval) is estimated by averaging sampled responses (Sec. 3.2, Fig. 5)."
+  }
+ },
+ "2507.01786": {
+  "1": {
+   "code": "Y",
+   "evidence": "Single probe-based (white-box) measure: \"linear probes can separate real-world evaluation and deployment prompts\"; motivated as alternative to direct questioning."
+  },
+  "2": {
+   "code": "P",
+   "evidence": "\"we also baselined probes against heuristic classifiers using prompt length or special tokens\"; no matched-format design, and benchmark-like deployment prompts are misclassified."
+  },
+  "3": {
+   "code": "Y",
+   "evidence": "\"Using AUROC performance on SAD stages oversight as our selection criterion\" (layers 23/24 reported) plus \"control probes drawn from a Gaussian distribution\" (Fig. 3)."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "\"deployment prompts were taken from datasets of real user queries or instructions (such as Wildchat)\"; no transfer test framed across generators/families."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"models might 'sandbag' — strategically underperforming on dangerous capability evaluations ... or appear deceptively aligned\" (Sec. 1)"
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "\"true capabilities with 58.6% accuracy, while prompted sandbagging reduced performance to 15.6%\"; recovery via probe/SAE steering and prompt suffix (Sec. 4.3)."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "\"15.6% accuracy (ignoring the 1-2% of refusals)\" - share reported, no sensitivity analysis."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "\"appending a 'deployment awareness' suffix to the user prompt\" with the same WMDP sandbagging task (Sec. 3.4, 4.3)."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic or reasoning-trace evaluations (3-character MCQ answers)."
+  },
+  "10": {
+   "code": "NA",
+   "evidence": "Single model (Llama-3.3-70B-Instruct)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "\"significantly outperforming (p < 0.0001) both random control probes\"; dataset sizes listed, but main AUROC/recovery rates lack CIs."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "White-box activations and SAE features; \"model internals may be leveraged to support blackbox methods\" (Abstract)."
+  }
+ },
+ "2407.04694": {
+  "1": {
+   "code": "Y",
+   "evidence": "Situational awareness decomposed into 7 categories/16 tasks (incl. STAGES-OVERSIGHT eval vs deployment) with per-task results (Sec. 2, App. H)."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes: \"access to activations or log probabilities is not required\"."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "\"Deployment: this uses WildChat ... we simply sample randomly from WildChat examples\" (App. H.4); no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "STAGES as prerequisite for scenario \"where a model behaves helpfully in evaluation and harmfully in deployment\" (Sec. 2)."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "\"We test each model with and without a 'situating prompt'\", plus CoT and large situating prompt; plain and elicited scores reported (Sec. 3, App. D.3)."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "Invalid answers are scored at random chance (\"we treat them worth r correct answers\"), not excluded (App. C.1)."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability benchmark; no propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic evaluations; CoT only as an elicitation variant on tasks that explicitly ask about the model's situation."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Results per model for 16 LLMs (Table 6, task figures)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "\"error bars show what the standard error would be\" (App. C.2); ± SEs in tables; per-task n given."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "\"access to activations or log probabilities is not required\"; some tasks require logit access, mocked by resampling (App. B)."
+  }
+ },
+ "2509.13333": {
+  "1": {
+   "code": "Y",
+   "evidence": "Single probe-based measure: \"using linear probing on steering vector activations\" (Abstract, Sec. 3.2)."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "Probes trained on explicit contrastive questions and tested on SAD; no matched-format, decorrelation or format-ablation control."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "\"For each layer, we computed a probe vector v as the normalized mean difference\"; best layer by AUROC on SAD reported; no random/shuffled control probe."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Evaluation/deployment prompts \"Sourced from a portion of the stages oversight subset\" (App. 6.1.2); no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"models may conceal dangerous capabilities during testing\" (Abstract)."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Probe-only study; no behavioural capability claims or sandbagging measurement."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "\"Qwen models were excluded due to anomalous awareness patterns ... Full results are in Appendix 6.3\" - shown separately, no pooled re-fit including them."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "No propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic or reasoning-trace evaluations."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model best-probe AUROC (Fig. 1) and per-model layer curves (Fig. 2)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given (203 and 400 entries, App. 6.1); no CIs, SEs or tests on AUROCs or scaling fit."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Residual-stream probing (white-box); frontier models \"accessible only as black box models, limiting our ability to validate\" (App. 6.4)."
+  }
+ },
+ "2606.29196": {
+  "1": {
+   "code": "Y",
+   "evidence": "\"We combine white-box linear probing of residual stream activations with black-box behavioural classification\"; reported separately (Table 1, Fig. 3)."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "Probe built from Jordine contrastive pairs and evaluated on SAD; contamination diagnostics only, no format/surface-feature control."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "\"We record both the peak AUROC across layers and the relative layer depth at which that peak occurs\"; no random/shuffled control probe."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "\"Each model is evaluated on the stages oversight split of the Situational Awareness Dataset (SAD)\"; no cross-generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "\"could suppress undesired behaviours or inflate apparent capability, making safety evaluations and capability assessments harder to interpret\" (Sec. 1)"
+  },
+  "6": {
+   "code": "N",
+   "evidence": "Black-box accuracy uses one fixed prompt; \"prompt sensitivity was not systematically varied in this study\" (Sec. 6)."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Unparseable responses \"excluded from the accuracy calculation ... note the valid response rate\" (Table 1); no sensitivity analysis."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "No propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "No agentic/reasoning-trace evaluations (10-token classification outputs)."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model peak AUROC, peak depth, accuracy and valid rate (Table 1)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "\"The benchmark contains 400 items in total\"; no CIs or tests on AUROC/accuracy (SD only for ROUGE-L diagnostic)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "\"white-box probe signals are consistently stronger than black-box behavioural expression\" (Abstract)."
+  }
+ }
+}

@@ -20,7 +20,7 @@
 ## Reproduce (from the repository root)
 ```
 python3 search/dedup.py && python3 screening/screen_db.py && python3 evidence/screen.py && python3 evidence/chart.py
-python3 screening/merge.py && python3 screening/reliability.py && python3 evidence/figures.py
+python3 screening/merge.py && python3 screening/reliability.py && python3 evidence/figures.py && python3 evidence/reporting_audit/analyse.py
 python3 manuscript/make_supplementary.py && python3 manuscript/check_citations.py && python3 manuscript/build.py
 ```
 Re-running the searches themselves: `python3 search/run_searches.py --execute` (Scopus needs `ELSEVIER_API_KEY` in the environment; the key is never stored in the repository).

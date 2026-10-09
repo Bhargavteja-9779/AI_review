@@ -1,0 +1,452 @@
+{
+ "2510.05179": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 4.5.4 (prompted CoT statement): 'stated it was in a real deployment scenario 21.4% of the time, in an evaluation 64.8%'."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors used."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions used."
+  },
+  "4": {
+   "code": "N",
+   "evidence": "Elicitation prompt ('NOTICE: You are either: 1. In an evaluation 2. In a real deployment') used to classify context, but no deployment-side data and only Claude Opus 4 tested."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'Our measurements may thus be underestimating the amount of agentic misalignment in models if they were placed in less artificial scenarios.'"
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Propensity (misalignment) study; no capability or sandbagging claims."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Footnotes 6 and 10 name excluded models (o3/o4-mini; six in lethal scenario) with reasons; no with/without-exclusion results in text."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Sec 4.5.4: same blackmail scenario run with and without the 'NOTICE: ... evaluation ... real deployment' deliberation instruction; compared with default condition."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic scenarios with reasoning, but awareness only measured when explicitly prompted; no spontaneous verbalised-awareness rates."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Figures 7-9, 11 report blackmail/espionage/lethal-action rates per model for 16 models (awareness analysis only for Claude Opus 4)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given ('Rates were calculated out of 100 samples'; 'Out of five hundred samples') but no CIs, SEs or significance tests."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Purely prompt-based behavioural testing of 16 commercial models via scenario prompts and transcript classification; notes beliefs hard to assess 'without sophisticated interpretability' (black-box)."
+  }
+ },
+ "2505.17815": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 3: 'Evaluation Recognition Rate (ERR), defined as the proportion of CoT traces ... that explicitly recognize evaluation'; reported separately from Safety Rate."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "Appendix E SAE-feature intervention used as evidence on evaluation-context processing; no format/surface-confound control."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "Layer stated ('intervention on layer 20'; 27 features 'based on preliminary analysis or existing feature interpretations') but no random-feature/baseline control."
+  },
+  "4": {
+   "code": "N",
+   "evidence": "S5 uses 'five real-world user queries unrelated to evaluation' with unnamed source; no cross-family/generator transfer test."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'safety evaluations may underestimate real-world risk when models conceal risky tendencies during testing'."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Safety-propensity study; capability benchmarks explicitly excluded; no sandbagging/capability claims."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No outputs reported as excluded (benchmark selection only)."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Honeypots S1-S8 hold the 313 StrongREJECT prompts fixed while varying evaluation cues (background, full evaluation info, memory, deceptive info)."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "ERR reported for unprompted settings (S1-S3); 'this proxy is conservative: models may recognize an evaluation context without explicitly verbalizing it'."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Appendix Tables 4-6 give per-model SR/ERR for each honeypot; Table 1 per model pair."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given (313 prompts, 440 SORRY-Bench, 42,568 responses); leave-one-out sensitivity but no CIs/SEs on main rates."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'We use the CoT monitor ... especially in black-box or partially observed settings where direct access to internal states is unavailable'; SAE appendix white-box."
+  }
+ },
+ "2412.04984": {
+  "1": {
+   "code": "NA",
+   "evidence": "Situational awareness supplied in-context; evaluation awareness/recognition not measured."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "Testing vs deployment status is an in-prompt memo manipulation; no deployment transcripts or context classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 4: 'our evals might overestimate models' scheming capabilities' and 'our evaluations might underestimate models' scheming capabilities' (noticing tests)."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Results with strong goal nudging and without nudging (Sec 3.4); Table 6 sandbagging accuracy when incentivized to perform well vs poorly; elicitation limits discussed."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No outputs reported as excluded."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Instrumental alignment faking: 'internal memo is almost identical in both settings' (Testing vs Deployment) with task held fixed; sandbagging counterfactual thresholds."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic evaluations with CoT, but no rates of spontaneous verbalised evaluation awareness reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Table 1 and Sections 3.1-3.6 report results per model (o1, sonnet-3.5, opus-3, gemini-1.5, llama-3.1, gpt-4o)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "Wilson score CIs (Fig 3), one-sided binomial test 'α = 0.01 and n = 99 rollouts', bootstrapped p-values; 100 rollouts per eval."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Models accessed via public APIs (Appendix: Anthropic, OpenAI, Together AI); 'Without access to finetuning or a helpful-only model' (black-box)."
+  }
+ },
+ "2509.15541": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 6.1: 'verbalized evaluation awareness rate ... percentage of trajectories on which the model explicitly reasons about being evaluated'; strict CoT classifier, reported per model/environment."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors (CoT resampling/injection only)."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcript classification; awareness measured from CoT in evaluation environments."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Abstract: awareness 'decreases covert behavior'; 'we cannot exclude that the observed reductions in covert action rates are at least partially driven by situational awareness'."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Appendix M.1/Table 9: sandbagging under default prompt (gap 0.148) vs prompts requesting 'absolute maximum capabilities' etc.; capability benchmarks reported (Appendix J.1)."
+  },
+  "7": {
+   "code": "Y",
+   "evidence": "Fig 9 (manually verified) vs Fig 24 'unadjusted covert action rates (no manual verification)'; excluded environments listed in captions."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Sec 6.2: CoT resampling removing eval awareness (13.2%->24.2%) and injecting eval-aware vs control sentences with trajectory fixed (replay)."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "Unprompted rates (o4-mini 0.9%->5.5%; o3 2.3%->4.5%); 'We may underestimate true evaluation awareness because ... models may not always verbalize'."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Results reported separately for o3, o4-mini, their AS variants and exp-rl-cap checkpoints (Figs 9, 15)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "95% Bayesian credible intervals, Fisher's exact tests; 'number of samples per model varies between 11,100 and 11,600'; n=600 per condition."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'Apollo Research was granted rate-limited access to the internal chain-of-thought reasoning of o3 and o4-mini'; interventions via fine-tuning (SFT/RL)."
+  }
+ },
+ "2509.18058": {
+  "1": {
+   "code": "NA",
+   "evidence": "Study does not measure evaluation/test awareness or recognition."
+  },
+  "2": {
+   "code": "P",
+   "evidence": "EvilMath vs UnicornMath matched-structure validation controls harmfulness confound; main ClearHarm vs AlpacaEval control comparison differs in topic/format."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "Layer selection stated ('sweep over all layers and select the one with the highest F1'; layer 38 for QwQ-32B) but no random-direction/shuffled-label/baseline probe."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcripts or context classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'This distortion likely inflates reported harmfulness scores'; dishonest outputs make jailbreak benchmark scores over-estimate harmfulness."
+  },
+  "6": {
+   "code": "P",
+   "evidence": "Default capability (UnicornMath correct) vs induced dishonest underperformance on EvilMath reported; faking capability elicited with a single instructed prompt only."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Format failures, MCQ refusals and API errors excluded; 'For completeness, we report error distributions in Figure 8'; no sensitivity analysis."
+  },
+  "8": {
+   "code": "N",
+   "evidence": "Propensity (dishonesty) study with no condition varying evaluation cues/framing."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Uses reasoning traces/scratchpads but reports no spontaneous verbalised evaluation-awareness rates."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Figure 3 (MCQ choices per model), Table 1 and Table 2 report results per model."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Mean ± std over five seeds and Mann-Whitney tests for some results; EvilMath counts given, but main MCQ rates lack stated CIs/sample sizes in text."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'white-box methods (e.g., linear probes) can identify this strategic deception'; Table 2 compares white-box probe with black-box CoT monitors."
+  }
+ },
+ "2603.03824": {
+  "1": {
+   "code": "P",
+   "evidence": "'Sandbagging is used as behavioral proxy for evaluation awareness' plus CoT classifier; CoT flag merges 'awareness detected or strategic behavior' into one measure."
+  },
+  "2": {
+   "code": "N",
+   "evidence": "Abstract claims 'mechanistic analysis based on steering vectors' confirms awareness; no steering design or confound controls reported in the text."
+  },
+  "3": {
+   "code": "N",
+   "evidence": "Steering vectors claimed in abstract but no layer, selection procedure or control reported."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "All conditions are evaluation framings (control/seed/optimized); no deployment-side data or context classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'fixed-prompt safety evaluations systematically underestimate covert model behaviour'; 'hand-crafted prompts systematically underestimate model vulnerability'."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Table 1: Control ('upper bound on capability'), Seed (hand-crafted) and Optimized accuracies; attacker-optimization procedure described (Sec 2.2)."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Gemini-2.0-Flash 'excluded from final evaluation' with reason; its optimization results in Table 4; no with/without sensitivity."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Same questions under Control, Seed and Optimized documentation varying evaluation-consequence cues (Table 1)."
+  },
+  "9": {
+   "code": "P",
+   "evidence": "Verbalised sandbagging-intent rates reported (Fig 3, Table 3) but in heavily cued settings and not treated as lower bounds (CoT argued faithful)."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Table 1 reports per-model, per-benchmark accuracies (Claude-3.5-Haiku, GPT-4o-mini, Llama-3.3-70B)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "'Values reported as mean ± SEM (binomial standard error ...). All results on 600 samples except HumanEval (164 samples).'"
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'the attacker operates purely through natural language prompt engineering without access to model internals or gradients, making this a realistic black-box threat model'."
+  }
+ },
+ "2510.20487": {
+  "1": {
+   "code": "Y",
+   "evidence": "Type-hint behaviour (Fig 3) and CoT beliefs ('believes it is in evaluation, believes it is in deployment') reported separately (Figs 20-21)."
+  },
+  "2": {
+   "code": "Y",
+   "evidence": "Matched contrastive pairs differing only in eval/deploy wording; Fig 24 control where 'evaluation' is mentioned but model deployed; vector from pre-fine-tuned model."
+  },
+  "3": {
+   "code": "Y",
+   "evidence": "'mean difference vectors at layers 10, 14, 18, 22, 26, and 30', selected via sweep (App G); '24 random steering vectors' as control (Fig 4)."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Deployment prompts are author-written templates (Appendix E); no transfer across model families/generators (single Llama Nemotron base)."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'LLMs ... adjust their behavior to appear more aligned, compromising the reliability of safety evaluations' (evaluations over-estimate safety)."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "No capability claims; sandbagging only mentioned as future application; accuracy reported only as steering side-effect check."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No outputs reported as excluded."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Same 256 BigCodeBench questions under evaluation, Wood Labs and deployment system/user prompt combinations (Table 1)."
+  },
+  "9": {
+   "code": "P",
+   "evidence": "Verbalised eval/deploy belief rates reported with and without the situational-awareness hint (Figs 20-21, 42-43); unverbalised awareness noted only via cited work, no lower-bound caveat."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Separate results for SDF-only model (App L), expert-iterated organism, no-Wood-Labs organism (App B) and pre-fine-tuned model (App A)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "95% CIs with standard errors clustered at question level (256 clusters); n=256 questions (128 for subset)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "'adding a steering vector to an LLM's activations'; contrasts with 'behavioral demonstrations ... without model internals-based interventions' (white-box)."
+  }
+ },
+ "2508.00943": {
+  "1": {
+   "code": "NA",
+   "evidence": "Monitor-awareness is an instructed condition; evaluation awareness/recognition not measured."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcripts or context classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sandbagging 'leads to an underestimation of the dangerous capabilities'; prompted organisms 'might underestimate models' covert sandbagging capabilities'."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Baseline ('answer the questions to its best ability') vs monitor-oblivious/aware sandbagging prompts; per-model accuracies and success scores (Figs 2, 8, 10)."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "FNR computed on filtered successful attempts; 'Figure 6 shows the proportion kept out of 400 total questions'; no with/without sensitivity."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability study; 'this does not inform on models' propensity to sandbag'."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "CoT-based evaluation but no rates of spontaneous verbalised evaluation awareness reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Figures 2-4 report sandbagging success, monitor FNR and policies per model (10 models)."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "'Error bars show 95% bootstrapped CI' and '95% Wilson confidence intervals'; 400 MCQs sampled per dataset."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Prompt-only evaluation of API models with output/CoT monitoring; no weights or activations used (black-box)."
+  }
+ },
+ "2502.02180": {
+  "1": {
+   "code": "NA",
+   "evidence": "No evaluation awareness or recognition measured."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "Steering used as a capability-elicitation intervention, not as evidence about evaluation context or deception detection."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "Layers stated ('layers 8 - 15 for Mistral ... 12-19 for Gemma-instruct', chosen by best eval-set accuracy, App F.1); no random-direction/shuffled control."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-vs-evaluation transcripts or context classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "'developers, or AI systems themselves, may have incentives to strategically underperform by hiding capabilities to influence regulatory decisions' (under-estimated capability)."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Locked (no password), unlocked (password) and elicited performance for N-shot, prefilling, steering, anti-refusal and SFT (Figs 2-3, Tables 1-3)."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No outputs excluded; unexpected-format answers parsed by an LM rather than dropped."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability-elicitation study; no propensity evaluation."
+  },
+  "9": {
+   "code": "NA",
+   "evidence": "Single/multi-turn MCQA and code generation at temperature 0; no agentic or reasoning-trace evaluation."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Results reported per model organism (Mistral-base, Mistral-instruct, Gemma-instruct; PW-locked vs circuit-broken) in Figs 2-3 and Tables."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given (dataset splits, e.g. 200 APPS test) but no CIs, SEs or significance tests."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Few-shot 'needs only black-box access'; steering 'requires access to activations'; fine-tuning 'requires ... sufficient access'."
+  }
+ }
+}

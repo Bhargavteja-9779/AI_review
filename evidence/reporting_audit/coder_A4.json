@@ -1,0 +1,452 @@
+{
+ "2512.07810": {
+  "1": {
+   "code": "P",
+   "evidence": "App. C.1: 'We used the methodology from Bloom et al. (2025) to scan logs for verbalised eval awareness'; construct named but no awareness results reported."
+  },
+  "2": {
+   "code": "P",
+   "evidence": "Sec 6.3/6.5.1: probe scores compared on same tasks with vs without password ('significantly higher when the model is sandbagging than when the elicitation password is provided'); distractor surface confounds not controlled."
+  },
+  "3": {
+   "code": "Y",
+   "evidence": "App. C.5 'Layer selection': layer 32 and final layer chosen per Goldowsky-Dill; control/baseline distribution (Alpaca) and benign reference-model probes used for calibration."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-like vs evaluation-like transcripts or context-classification prompts used."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 1: 'If models sandbag on evaluations, their ability to cause harm may be underestimated.'"
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Sec 6.2/6.4: prompt-based and training-based elicitation reported with default vs elicited (password-unlocked/fine-tuned) performance per model and task."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Excluded subsets reported (e.g. 'evaluate 78 of the 100 challenges (excluding 22...)'; Tic Tac Toe excluded for Yew/ in Fig 9); full breakdowns in C.4 but no systematic sensitivity analysis."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Evaluates sandbagging-detection methods on trained model organisms, not model propensities."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic evals (Intercode CTF) run and transcripts scanned for verbalised eval awareness, but no awareness rates reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Results reported per model organism (Cedar, Oak, Maple, Baobab, Yew) and per task (e.g. Fig 10, Fig 22)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Some uncertainty (McNemar p<0.05 at 100 samples; fuzzing 'ξ = 1.094 ± 0.116'; SE error bars Fig 18) but most main results lack CIs."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Abstract: 'a blue team used black-box, model-internals, or training-based approaches'; phases distinguish black-box, white-box and training access."
+  }
+ },
+ "2511.09904": {
+  "1": {
+   "code": "NA",
+   "evidence": "No evaluation-awareness measurement; 'aware' refers to agent being told about the monitor (experimental manipulation)."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-like vs evaluation-like transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 6 Limitations: 'we expect that our results underestimate the sabotage capabilities of contemporary agents.'"
+  },
+  "6": {
+   "code": "P",
+   "evidence": "Sec 3 'Capability elicitation': prompts optimised to elicit sabotage/sandbagging; Regular baseline reported but un-optimised vs optimised sabotage performance not reported."
+  },
+  "7": {
+   "code": "Y",
+   "evidence": "Sec 3/E.1.2: invalid trajectories filtered ('16 out of 24 trajectories...failed'; ~20% invalid) and 'Results without filtering out invalid submissions' given."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Explicitly capability not propensity: 'We are interested in estimating agents' sabotage capabilities, rather than...propensity'."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic MLE-Bench evaluations run; no rates of unprompted verbalised evaluation awareness reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-monitor-model AUCs (e.g. 'gpt-4o - aware (AUC=0.774)') and per-scaffold (AIDE/ReAct) results reported."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "'Mean and standard error are computed for tasks with at least 3 valid submissions'; 3 trajectories per task, 20 tasks."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Black-box only: API agents prompted; 'LM monitors take an agent transcript as input'; fine-tuning named only as unused elicitation."
+  }
+ },
+ "2604.22082": {
+  "1": {
+   "code": "NA",
+   "evidence": "Training/deployment distinguishability is manipulated via a flag (Sec 6.1), not measured as awareness."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-like vs evaluation-like transcripts/classification."
+  },
+  "5": {
+   "code": "P",
+   "evidence": "Intro: sandbagging is 'producing work that appears adequate while deliberately withholding their true capabilities'; framed for training/deployment, not explicitly evaluation under-estimation."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Table 1: SFT, RL, SFT+RL elicitation reported as fraction of benign performance elicited, alongside sandbagging baseline."
+  },
+  "7": {
+   "code": "N",
+   "evidence": "App. A.1: datasets filtered to questions a stronger model solves ('filter away all questions...'); no unfiltered results or excluded share reported."
+  },
+  "8": {
+   "code": "NA",
+   "evidence": "Capability elicitation on prompted/trained sandbagging model organisms; no propensity evaluation."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Reasoning-model (gpt-oss-120b) traces evaluated, but no unprompted verbalised awareness rates reported."
+  },
+  "10": {
+   "code": "NA",
+   "evidence": "Single untrusted model evaluated (gpt-oss-120b); other models are supervisors."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Table 1 reports '0.85 ± 0.06' etc. (seeds averaged) but test-set sample sizes not given and ± not defined."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Method requires training access: 'The blue team attempts to elicit the model's true capabilities using SFT and/or RL' (Fig 1)."
+  }
+ },
+ "2604.28182": {
+  "1": {
+   "code": "NA",
+   "evidence": "Training awareness supplied by scaffolding, not measured: 'training awareness has already been studied by existing benchmarks such as SAD'."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors (detection via monitors and weight noising)."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-like vs evaluation-like transcript classification."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 1: 'if RL fails to surface latent capabilities, the resulting capability estimates may be falsely reassuring'."
+  },
+  "6": {
+   "code": "Y",
+   "evidence": "Secs 3-4: RL and SFT-based elicitation reported with benign/unlocked vs malign pre/post-elicitation performance (e.g. ~65% vs ~20%)."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No evaluation outputs excluded; refusals and judge errors reported as response categories (Fig 9). SFT-trace filtering is training-data construction."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Sec 5.1 scaffold-stripping: training-context information varied (minimal/partial/full vs control) with task (WMDP/VCT) held fixed."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic/reasoning audits run, but no unprompted verbalised evaluation-awareness rates reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results for 11-12 frontier models (Fig 9, Fig 29 'True exploration hacking rate by model')."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Some uncertainty (App. Fig 21 '95% CI', 'pass@8 avg. baseline reward ± stderr', 3 noise seeds); main Fig 9 has none; '20 trials per scaffolding condition'."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Sec 4: 'detection via black-box and white-box techniques'; weight noising and RL require weight access."
+  }
+ },
+ "2510.20270": {
+  "1": {
+   "code": "NA",
+   "evidence": "No evaluation-awareness measurement."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment-like vs evaluation-like transcript classification."
+  },
+  "5": {
+   "code": "P",
+   "evidence": "Abstract: cheating 'undermines both the validity of benchmark results'; inflation direction implied but not explicitly framed as under-/over-estimation."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Measures cheating propensity; no capability or sandbagging claims."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Sec 2.3: 'we removed 8.8% of one-off and 3.4% of conflicting mutations'; excluded share reported without sensitivity analysis."
+  },
+  "8": {
+   "code": "P",
+   "evidence": "Sec 5: prompt strictness, test access and feedback varied with tasks fixed; framing varied but not evaluation cues, no deployment replay."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Agentic coding evaluations run; no rates of verbalised evaluation awareness reported."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Figures 3-5: cheating rates and cheating-type classification reported per model."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Fig 6 shows '90% confidence intervals'; main Figs 3-4 lack uncertainty; sample sizes given (103 and 349 data points, App. F.1)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Evaluates closed-source API models via scaffolds; monitoring uses transcripts only, i.e. black-box access."
+  }
+ },
+ "2605.29729": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 3.2: 'Verbalized evaluation awareness: ...(weak: identifies anything unusual..., strong: identifies the setting as an evaluation or test)'; reported in Fig 6."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "NA",
+   "evidence": "No deployment vs evaluation transcript classification; realism inferred from verbalised awareness on baseline vs honeypot environments."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Sec 1: 'if models don't trigger honeypot evaluations, this does not provide strong evidence of safety'; Sec 6 also notes false-positive direction."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "Propensity (scheming) evaluation; no capability or sandbagging claims."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Fig 2: averaged 'across the subset of honeypot evaluations that were weakly triggered at least once (10 code review settings, and 3 agentic...)'; no unfiltered results."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Same honeypot tasks run with no prompt vs agency/goal prompts (incl. situational-awareness nudges); evaluations in real internal deployment setting."
+  },
+  "9": {
+   "code": "P",
+   "evidence": "Sec 6: 'strong evaluation awareness rate without prompting is 0...'; rates reported but no lower-bound/unverbalised-awareness caveat."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Fig 6: 'Evaluation awareness rates for all models'; scheming reported per model (3.1 Pro, 3.0 Pro, 3.0 Flash)."
+  },
+  "11": {
+   "code": "P",
+   "evidence": "Sample sizes given ('run each model 120 times'; 30 runs agentic) but no CIs, SEs or tests."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Evaluation relies on transcripts and chain-of-thought: 'Our evaluations are mostly triggered by scheming reasoning...they rely heavily on CoT legibility'."
+  }
+ },
+ "2604.00788": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 1.3: 'Unprompted evaluation awareness measures...mentioning being tested'; 'Prompted evaluation awareness measures models' capability to distinguish'; reported separately (Secs 4.1, 4.2)."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Source stated ('deployment data comes from AISI internal Claude Code usages so is all from Sonnet 4.5'); only Claude judges, no cross-family transfer."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Executive summary: 'it is possible that we would not catch a model even if it did have a propensity to sabotage AI safety research'."
+  },
+  "6": {
+   "code": "P",
+   "evidence": "Prompted recognition treated as capability; elicitation described ('randomise over a selection of 8 prompts'), but default vs best performance not reported."
+  },
+  "7": {
+   "code": "NA",
+   "evidence": "No outputs excluded; branch aggregations reported (any/last/average)."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Same sabotage tasks run in original Petri vs improved scaffold (Fig 6) and with evaluator-pressure/replacement-threat ablations."
+  },
+  "9": {
+   "code": "P",
+   "evidence": "Sec 4.1 reports unprompted test-mention rates; only caveat is GPT-5 traces not accessed ('less visibility'), no general lower-bound statement."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results (Figs 5-11) for Opus 4.5 Preview, Sonnet 4.5, Opus 4.1, GPT-5."
+  },
+  "11": {
+   "code": "N",
+   "evidence": "No CIs, SEs or tests, and no sample sizes reported for main rates."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Executive summary: 'In the case of Anthropic models but not GPT-5, we had access to the models' full chain-of-thought'."
+  }
+ },
+ "2604.24618": {
+  "1": {
+   "code": "Y",
+   "evidence": "Sec 1.4/1.5: unprompted and prompted evaluation awareness plus prefill awareness defined and reported separately (Figs 5, 6, 12, 13)."
+  },
+  "2": {
+   "code": "NA",
+   "evidence": "No activation probes or steering vectors (probe mentions only in synthetic scenario files)."
+  },
+  "3": {
+   "code": "NA",
+   "evidence": "No probes or steering directions."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Source stated: 'deployment data collected from internal usage of Claude Code from within UK AISI (200 samples)'; only Claude classifiers, no cross-family transfer."
+  },
+  "5": {
+   "code": "Y",
+   "evidence": "Limitations: 'rates of zero sabotage could be driven by models internally representing and acting on evaluation awareness without verbalising it'."
+  },
+  "6": {
+   "code": "P",
+   "evidence": "Sec 2.3: 'small amount of elicitation for Mythos Preview...adjusted the prompts'; pre-elicitation performance not reported."
+  },
+  "7": {
+   "code": "P",
+   "evidence": "Fig 7: 'we discard a low number of failed samples'; per-model n given (e.g. n=268, 263 of 270) but no with/without comparison."
+  },
+  "8": {
+   "code": "P",
+   "evidence": "Counterfactual continuation eval and ablations (threat, motivation, reasoning) with task fixed; no condition varying evaluation cues or replaying deployment data for propensity."
+  },
+  "9": {
+   "code": "Y",
+   "evidence": "Fig 6 unprompted rates (e.g. 21.7%); Limitations note awareness may occur 'without verbalising it'."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results throughout (e.g. 'Mythos Preview in 7%, Opus 4.6 in 3%, and Sonnet 4.6 in 4%')."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "Fig 5: 'error bars represent standard error'; n per bar (e.g. n=270, n=1000)."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "Abstract: 'run with temperature 1.0 with max reasoning effort, utilising full chain-of-thought access'."
+  }
+ },
+ "2606.08629": {
+  "1": {
+   "code": "Y",
+   "evidence": "Evaluation awareness defined as 'specific, measurable behavioral phenomenon'; elicited EVAL classification (Fig 3, Table 5) and type-hint F1 proxy (Figs 6-7) reported separately."
+  },
+  "2": {
+   "code": "P",
+   "evidence": "Matched queries ('identical user queries') and rating-word ablation ('even after excluding all rating-related words (p = 0.043)'); steering tested on StyleCues where context is defined by style."
+  },
+  "3": {
+   "code": "P",
+   "evidence": "Layer and selection stated ('trained on layer 11 activations'; top 50/10 features via Claude-generated prompts); no random-direction or shuffled control, only unsteered baseline."
+  },
+  "4": {
+   "code": "P",
+   "evidence": "Generator stated ('We prompted GPT-5...to generate 100 paragraph pairs'); several classifier families tested but no cross-generator transfer."
+  },
+  "5": {
+   "code": "P",
+   "evidence": "Abstract: models 'pretending to be aligned only in evaluation' vs performative misalignment; no explicit under-/over-estimation statement for evaluation validity."
+  },
+  "6": {
+   "code": "NA",
+   "evidence": "No capability or sandbagging claims; MMLU only as side metric after fine-tuning."
+  },
+  "7": {
+   "code": "N",
+   "evidence": "App. G: 'filtered out all responses with a coherence score under 30'; Fig 7 N/A for >10% invalid code; excluded shares not reported."
+  },
+  "8": {
+   "code": "Y",
+   "evidence": "Fig 3: deployed/monitor/empty system prompts x StyleCues with the same programming questions; free vs paid tier with identical queries."
+  },
+  "9": {
+   "code": "N",
+   "evidence": "Thinking models evaluated, but no spontaneous verbalised awareness rates reported (only prompted classification)."
+  },
+  "10": {
+   "code": "Y",
+   "evidence": "Per-model results (Fig 3 panels, Table 5, per-model t-tests 'p = 0.016, 0.012, 0.037')."
+  },
+  "11": {
+   "code": "Y",
+   "evidence": "Tables 3-4 'Mean±Standard Error' (n=50); t-tests; bootstrapped SEs; 100/240 prompts stated."
+  },
+  "12": {
+   "code": "Y",
+   "evidence": "White-box: SAE features from 'layer 11 activations' and activation steering; fine-tuning via Tinker API."
+  }
+ }
+}
