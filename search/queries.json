@@ -1,0 +1,11 @@
+{
+  "protocol_version": "0.1",
+  "frozen": false,
+  "date_from": "2019-01-01",
+  "notes": "A = system terms; B_specific = phenomenon terms specific enough alone; B_broad = need evaluation context C.",
+  "A": ["language model", "language models", "LLM", "LLMs", "foundation model", "frontier model", "AI agent", "AI system"],
+  "B_specific": ["evaluation awareness", "eval awareness", "test awareness", "sandbagging", "strategic underperformance", "alignment faking", "evaluation faking", "observer effect", "evaluation gaming", "under-elicitation", "password-locked", "hidden capabilities"],
+  "B_broad": ["situational awareness", "scheming", "capability elicitation"],
+  "C": ["evaluation", "benchmark", "test", "assessment", "audit"],
+  "arxiv_categories": ["cs.CL", "cs.AI", "cs.LG", "cs.CR"]
+}

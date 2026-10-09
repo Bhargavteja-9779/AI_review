@@ -1,0 +1,1 @@
+record_id,stage(title|abstract|full_text),decision(include|exclude|unsure),exclusion_code(E1-E6),rationale,date,screener
