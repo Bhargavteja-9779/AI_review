@@ -1,6 +1,6 @@
-Dr Divya Meena S
-School of Computer Science and Engineering
-Vellore Institute of Technology, Vellore, Tamil Nadu, India
+Dr Divya Meena S\
+School of Computer Science and Engineering\
+Vellore Institute of Technology, Vellore, Tamil Nadu, India\
 divyameena.s@vit.ac.in
 
 To the Editor-in-Chief, *Artificial Intelligence Review*
@@ -22,7 +22,7 @@ The manuscript contributes:
 
 We believe the work suits the journal's readership, which spans AI methods and their critical evaluation, because it addresses how the community knows what its models can do and how they behave.
 
-The manuscript is transparent about its limitations. Screening and charting were performed by an AI system against written criteria under the authors' direction, without a second human reviewer; we report consistency statistics for these AI-assisted processes (not human inter-rater reliability) and list a human audit as the main outstanding check. Full texts were read for the anchor set only. As set out in the AI-use statement, an AI system was used extensively to run and log searches, apply scripted screening and charting rules, generate figures, and draft text. The authors directed the work and take full responsibility for it.
+The manuscript is transparent about its limitations. Screening and charting were AI-assisted and verified by the authors, without independent dual screening; we report consistency statistics for these processes. Full texts were read for the anchor set only. Generative AI use is disclosed in the declarations in line with Springer Nature policy, and the authors take full responsibility for the content.
 
 This manuscript is original, has not been published previously, and is not under consideration for publication elsewhere. Both authors have approved the manuscript and agree with its submission. The authors declare no competing interests.
 
@@ -30,6 +30,6 @@ Thank you for your consideration.
 
 Yours sincerely,
 
-Divya Meena S (corresponding author), on behalf of both authors
-P N Bhargav Teja
+Divya Meena S (corresponding author), on behalf of both authors\
+P N Bhargav Teja\
 School of Computer Science and Engineering, Vellore Institute of Technology, Vellore

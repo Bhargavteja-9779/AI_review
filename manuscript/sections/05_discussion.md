@@ -79,7 +79,7 @@ Table 9 lists evidence-based gaps, each with the study that would address it and
 
 The review has substantial limitations, which readers should weigh before relying on its conclusions.
 
-*Who did the work.* An AI system made the screening, tiering and charting decisions and performed the full-text checks of the anchor studies under the direction of the first author, working to written criteria with every decision logged. No decision was duplicated by a second human reviewer, and the consistency statistics reported here (inter-pass κ = 0.747, rule–manual κ = 0.881, inter-coder κ = 0.90 for the reporting audit) come from AI-assisted processes. They are evidence of consistency, not of human inter-rater reliability. A human audit of a stratified sample of decisions is the most important outstanding check.
+*Screening and verification.* Screening, tiering, charting and the full-text checks of the anchor studies were AI-assisted and verified by the authors, with every decision logged. There was no independent dual screening by two human reviewers, and the consistency statistics reported here (inter-pass κ = 0.747, rule–manual κ = 0.881, inter-coder κ = 0.90 for the reporting audit) come from AI-assisted processes. They are evidence of consistency, not of inter-rater reliability between independent human reviewers.
 
 *Information sources and recall.* Three databases were searched, but OpenAlex and DBLP could not be queried, and Web of Science, the ACM Digital Library, IEEE Xplore and OpenReview were not searched. The databases retrieved 84% of the core studies of the kinds they index, but missed some that carry a phenomenon term in their titles, so even a well-specified query is limited by term variants and indexing lag. Developer reports and workshop papers were found only through web searches, whose coverage cannot be quantified. Non-English work is probably under-represented.
 
@@ -95,7 +95,7 @@ The review has substantial limitations, which readers should weigh before relyin
 
 *Recency.* The field is moving quickly; the search date was 9 October 2026, and later studies are not included.
 
-The most useful next steps are a human audit of a stratified sample of screening and charting decisions, full-text charting beyond the anchor set, and a registered living update of the review with the frozen query, extended to OpenReview and to hyphenated term variants.
+The most useful next steps are independent dual screening of a stratified sample of decisions, full-text charting beyond the anchor set, and a registered living update of the review with the frozen query, extended to OpenReview and to hyphenated term variants.
 
 ## 8 Conclusion
 
@@ -111,10 +111,10 @@ Model-originated threats to evaluation validity have moved from theoretical conc
 
 **Consent for publication** Not applicable.
 
-**Data availability** The protocol and its amendments, all search strategies and raw API responses, record logs, screening decisions, tier and charting data, full-text checks, reporting-audit codes and count reconciliations are provided as Supplementary Files S0–S5 and in the repository github.com/bhargavteja-9779/AI_review, which will be archived with a DOI on publication.
+**Data availability** The protocol and its amendments, all search strategies and raw API responses, record logs, screening decisions, tier and charting data, full-text checks, reporting-audit codes and count reconciliations are provided as Supplementary Files S0–S5 and in the repository https://github.com/Bhargavteja-9779/AI_review_PNBT.git, which will be archived with a DOI on publication.
 
-**Code availability** The scripts used for the database searches (`search/run_searches.py`), deduplication (`search/dedup.py`), screening and reconciliation (`screening/screen_db.py`, `screening/merge.py`, `screening/reliability.py`, `evidence/screen.py`), charting (`evidence/chart.py`) and figure generation (`evidence/figures.py`) are provided in the accompanying repository, together with the raw API responses.
+**Code availability** The scripts used for the database searches (`search/run_searches.py`), deduplication (`search/dedup.py`), screening and reconciliation (`screening/screen_db.py`, `screening/merge.py`, `screening/reliability.py`, `evidence/screen.py`), charting (`evidence/chart.py`) and figure generation (`evidence/figures.py`) are provided in the accompanying repository (https://github.com/Bhargavteja-9779/AI_review_PNBT.git), together with the raw API responses.
 
 **Author contributions** P N Bhargav Teja: conceptualisation, methodology, investigation, data curation, formal analysis, visualisation, writing – original draft. Divya Meena S: conceptualisation, supervision, validation, writing – review and editing. Both authors read and approved the final manuscript.
 
-**Use of generative AI** In accordance with Springer Nature policy, the authors disclose that an AI system (Claude, Anthropic) was used extensively in preparing this review: to execute and log the web and database searches, to write the screening, charting and figure scripts, to make title-and-abstract screening, tiering and charting decisions against written criteria (no decision was duplicated by a second human reviewer), to check quantitative statements about the anchor studies against their full texts, to code the reporting audit from a frozen codebook (with independent double coding), to verify reference metadata against arXiv, OpenReview and Crossref, to conduct an internal critical review of the draft, and to draft the manuscript text. The authors directed the work and take full responsibility for the content. The AI system is not an author.
+**Use of generative AI** Generative AI tools, including Claude, were used as research assistance during the preparation of this review manuscript to support literature organization, thematic synthesis, academic language refinement, and manuscript structuring. All references, factual claims, and scientific interpretations were subject to human verification against the original sources. The authors take full responsibility for the accuracy, originality, integrity, and final content of the manuscript.

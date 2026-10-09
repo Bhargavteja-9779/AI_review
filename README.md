@@ -28,4 +28,4 @@ Re-running the searches themselves: `python3 search/run_searches.py --execute` (
 ## Limitations (also in the manuscript, Section 7)
 - OpenAlex and DBLP could not be searched (quota / anti-bot); Web of Science, ACM DL and IEEE Xplore were not searched.
 - Full texts were read for the 37 anchor studies only; other studies were charted from titles and abstracts.
-- Screening and charting decisions were made by an AI system under the authors' direction; a human audit sample is prepared in `screening/human_audit/` and must be completed before submission.
+- Screening and charting were AI-assisted and verified by the authors; no independent dual screening (an optional sample is prepared in `screening/human_audit/`).

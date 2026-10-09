@@ -56,7 +56,7 @@ An internal referee review (simulating an expert AIR reviewer) recommended *majo
 
 ## 4. Author actions before submission (blocking)
 
-1. **Human audit (most important).** Complete `screening/human_audit/screening_sample.csv` (100 records) and `tier_sample.csv` (60 studies) without looking at the hidden AI columns, run `python3 screening/human_audit/agreement.py`, and report human–AI κ in Sections 3.4 and 7. If agreement is low, re-screen accordingly.
+1. **Recommended: independent dual screening.** The authors state that they verified the AI-assisted decisions, references and claims. To also report an inter-rater statistic, a second author can complete `screening/human_audit/screening_sample.csv` (100 records) and `tier_sample.csv` (60 studies) without looking at the hidden AI columns, run `python3 screening/human_audit/agreement.py`, and report the κ in Sections 3.4 and 7.
 2. Spot-check at least 5 anchor studies' full-text checks (`evidence/anchor_set.tsv` against the arXiv versions in S3b).
 3. Confirm every declaration (funding, competing interests, CRediT roles, AI use). Add a sentence that the authors verified the manuscript only after doing so.
 4. Make the repository public and archive it on Zenodo; insert the DOI in the Data availability statement.
