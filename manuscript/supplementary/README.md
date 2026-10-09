@@ -2,6 +2,10 @@
 
 | File | Content |
 |---|---|
+| S0_protocol_and_amendments.md | Protocol v0.1, amendments v0.2 (web phase) and v0.3 (database phase), and post-hoc revisions reported as deviations |
+| S3b_anchor_fulltext_versions.json | arXiv version of each anchor full text read (retrieved 9 Oct 2026) |
+| S4e_tier_coding.csv | Core/adjacent tier of every charted study under the written tier rule |
+| S6_PRISMA-ScR_checklist.md | Completed PRISMA-ScR checklist with locations |
 | S1a_web_search_log.md | All 133 executed web-search queries, verbatim, grouped by batch (9 Oct 2026) |
 | S1b_database_search_strategy.md | Concept blocks and the exact query string submitted to each database API, with timestamps, counts and failures |
 | S1c_web_identified_records.tsv | Every record identified by the web searches, with batch, metadata status and scope area |

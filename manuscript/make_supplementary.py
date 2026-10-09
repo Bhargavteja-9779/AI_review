@@ -8,6 +8,9 @@ for f in OUT.glob("*"):
     f.unlink()
 
 COPY = {
+    "S0_protocol_and_amendments.md": "docs/03_protocol.md",
+    "S3b_anchor_fulltext_versions.json": "evidence/anchor_versions.json",
+    "S4e_tier_coding.csv": "evidence/tier_coding.csv",
     "S1a_web_search_log.md": "evidence/search_log.md",
     "S1c_web_identified_records.tsv": "evidence/candidates.tsv",
     "S1d_web_anchor_register.jsonl": "evidence/register.jsonl",
@@ -52,10 +55,43 @@ lines += ["", "arXiv reported and returned 1732 matching records; 11 first poste
           "leaving 1721. OpenAlex and DBLP could not be searched (see Status)."]
 (OUT / "S1b_database_search_strategy.md").write_text("\n".join(lines) + "\n")
 
+checklist = """# S6 PRISMA-ScR checklist (Tricco et al. 2018) with locations in the manuscript
+
+| # | Item | Location |
+|---|---|---|
+| 1 | Title | Title page (identified as a scoping review) |
+| 2 | Structured summary | Abstract (objectives, sources, eligibility, charting, results, limitation, conclusions) |
+| 3 | Rationale | Section 1 |
+| 4 | Objectives | Section 1 (RQ1–RQ5) |
+| 5 | Protocol and registration | Section 3.1; Supplementary File S0 (protocol v0.1, amendments v0.2 and v0.3, post-hoc revisions; not registered) |
+| 6 | Eligibility criteria | Section 3.2; Table 2; tier rule |
+| 7 | Information sources | Section 3.3; S1b (dates, sources, failed sources) |
+| 8 | Search | Section 3.3; S1a (web queries); S1b and S1f (full database strategies) |
+| 9 | Selection of sources of evidence | Section 3.4 (deduplication, automation tool, manual screening, who screened, consistency checks) |
+| 10 | Data charting process | Section 3.5; S3, S4d, S4e |
+| 11 | Data items | Section 3.5 |
+| 12 | Critical appraisal of individual sources | Sections 3.7 and 3.8 (design features; reporting audit) |
+| 13 | Synthesis of results | Section 3.7 (comparability classes; contradiction typing) |
+| 14 | Selection of sources of evidence (results) | Section 4.1; Fig. 1 |
+| 15 | Characteristics of sources of evidence | Section 4.1; Figs. 2–3; S4a |
+| 16 | Critical appraisal within sources of evidence | Section 5.4; Fig. 5; S5 |
+| 17 | Results of individual sources of evidence | Table 6; S3 |
+| 18 | Synthesis of results | Sections 4.2–4.9; Tables 3–7 |
+| 19 | Summary of evidence | Section 5.1 |
+| 20 | Limitations | Section 7 |
+| 21 | Conclusions | Section 8 |
+| 22 | Funding | Declarations |
+"""
+(OUT / "S6_PRISMA-ScR_checklist.md").write_text(checklist)
+
 readme = """# Supplementary material
 
 | File | Content |
 |---|---|
+| S0_protocol_and_amendments.md | Protocol v0.1, amendments v0.2 (web phase) and v0.3 (database phase), and post-hoc revisions reported as deviations |
+| S3b_anchor_fulltext_versions.json | arXiv version of each anchor full text read (retrieved 9 Oct 2026) |
+| S4e_tier_coding.csv | Core/adjacent tier of every charted study under the written tier rule |
+| S6_PRISMA-ScR_checklist.md | Completed PRISMA-ScR checklist with locations |
 | S1a_web_search_log.md | All 133 executed web-search queries, verbatim, grouped by batch (9 Oct 2026) |
 | S1b_database_search_strategy.md | Concept blocks and the exact query string submitted to each database API, with timestamps, counts and failures |
 | S1c_web_identified_records.tsv | Every record identified by the web searches, with batch, metadata status and scope area |

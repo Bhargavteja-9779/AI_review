@@ -14,7 +14,9 @@
     "excluded_stage2_title_abstract": 316,
     "final_excluded": 3500,
     "final_context": 157,
-    "final_included": 166
+    "final_included": 166,
+    "final_core": 114,
+    "final_adjacent": 52
   },
   "other_methods": {
     "identified_web_batches": 422,
@@ -28,8 +30,12 @@
       "E6": 17
     },
     "final_context": 131,
-    "final_included": 149
+    "final_included": 149,
+    "final_core": 53,
+    "final_adjacent": 96
   },
   "total_included": 315,
-  "total_context": 288
+  "total_context": 288,
+  "total_core": 167,
+  "total_adjacent": 148
 }

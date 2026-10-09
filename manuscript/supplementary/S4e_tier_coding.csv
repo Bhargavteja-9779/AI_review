@@ -1,0 +1,316 @@
+id,tier,title
+arXiv:2510.17057,adjacent,The Ends Justify the Thoughts: RL-Induced Motivated Reasoning in LLM CoTs
+arXiv:2505.03439,adjacent,The Steganographic Potentials of Language Models
+arXiv:2605.29601,adjacent,Training Deliberative Monitors for Black-Box Scheming Detection
+arXiv:2608.21664,core,Measuring Activation Control in Large Language Models
+arXiv:2609.03035,core,You Can't Escape Your Own Activations : Evaluation Awareness and Multi-Agent Monitoring
+arXiv:2608.29458,core,Reference-Grafting Matches Fine-Tuning at Eliciting Sandbagged Capabilities
+arXiv:2603.04069,core,Monitoring Emergent Reward Hacking During Generation via Internal Activations
+arXiv:2606.08960,core,Hardening Agent Benchmarks with Adversarial Hacker-Fixer Loops
+arXiv:2607.15434,adjacent,Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation
+arXiv:2506.04018,adjacent,AgentMisalignment: Measuring the Propensity for Misaligned Behaviour in LLM-Based Agents
+arXiv:2510.05192,adjacent,Adapting Insider Risk mitigations for Agentic Misalignment: an empirical study
+grey:anthropic2026amsummer,adjacent,Agentic Misalignment in Summer 2026
+arXiv:2604.02500,adjacent,I must delete the evidence: AI Agents Explicitly Cover up Fraud and Violent Crime
+arXiv:2609.30266,core,LLM Agents Can Easily Tamper With Their Own Traces
+arXiv:2607.10455,adjacent,ANCHOR: Automated Alignment Auditing for CLI Agents on Real-World Harm
+arXiv:2503.10965,adjacent,Auditing language models for hidden objectives
+grey:anthropic2025auditagents,adjacent,Building and evaluating alignment auditing agents
+arXiv:2511.17937,core,Alignment Faking - the Train -> Deploy Asymmetry: Through a Game-Theoretic Lens with Bayesian-S
+arXiv:2607.24758,core,Do Models Fake Alignment Without Clear Consequences?
+arXiv:2506.21584,core,Empirical Evidence for Alignment Faking in a Small LLM
+arXiv:2604.26511,core,Tatemae: Detecting Alignment Faking via Tool Selection in LLMs
+arXiv:2604.20995,core,Value-Conflict Diagnostics Reveal Widespread Alignment Faking in Language Models
+arXiv:2506.18032,core,Why Do Some Language Models Fake Alignment While Others Don't?
+R00151,core,ChameleonBench: Quantifying Alignment Faking in Large Language Models
+arXiv:2405.05466,core,Poser: Unmasking Alignment Faking LLMs by Manipulating Their Internals
+arXiv:2607.13346,core,The Refusal Residue: When Probes Catch Alignment Faking and When They Don't
+arXiv:2606.08629,core,Sycophancy Towards Researchers Drives Performative Misalignment
+arXiv:2609.07627,core,Norms at a Price: Why RL-Based Alignment Can Promise Conditional Compliance at Best
+arXiv:2605.12673,core,Do Androids Dream of Breaking the Game? Systematically Auditing AI Agent Benchmarks with BenchJ
+arXiv:2610.10619,core,TestJack: Should you trust the results in coding benchmarks? Agentic Coding Benchmarks Auditing
+arXiv:2606.16062,core,Auditing Reward Hackability in Code RL Training Environments
+arXiv:2510.04303,adjacent,Audit the Whisper: Detecting Steganographic Collusion in Multi-Agent LLMs
+grey:bloom2025,adjacent,Bloom: an open-source framework for automated behavioural evaluations
+grey:petri2025,adjacent,Petri: An open-source auditing tool to accelerate AI safety research
+arXiv:2505.23836,core,Large Language Models Often Know When They Are Being Evaluated
+arXiv:2507.01786,core,Probing and Steering Evaluation Awareness of Language Models
+arXiv:2509.13333,core,Evaluation Awareness Scales Predictably in Open-Weights Large Language Models
+arXiv:2407.04694,core,"Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+arXiv:2509.15541,core,Stress Testing Deliberative Alignment for Anti-Scheming Training
+arXiv:2510.05179,core,Agentic Misalignment: How LLMs Could Be Insider Threats
+arXiv:2505.14617,core,The Hawthorne Effect in Reasoning Models: Evaluating and Steering Test Awareness (v1: Linear Co
+arXiv:2605.05835,core,Evaluation Awareness in Language Models Has Limited Effect on Behaviour
+arXiv:2605.06327,core,Measuring Evaluation-Context Divergence in Open-Weight LLMs: A Paired-Prompt Protocol with Pilo
+arXiv:2608.27340,core,Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance
+grey:anthropic2026browsecomp,core,Eval awareness in Claude Opus 4.6's BrowseComp performance
+arXiv:2609.01611,core,EvalDetectBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models
+arXiv:2605.23055,core,Decomposing and Measuring Evaluation Awareness
+icml2026ws:semler,core,Evaluation Awareness as a Threat to External Validity in AI Evaluations
+grey:apollo2025sonnet37,core,Claude Sonnet 3.7 (often) knows when it's in alignment evaluations
+arXiv:2606.23583,core,Evaluation Awareness Is Not One Capability: Evidence from Open Language Models
+arXiv:2608.21766,core,"Evaluation Awareness in Language Models: Representation, Verbalization, and Control"
+arXiv:2603.19426,core,Is Evaluation Awareness Just Format Sensitivity? Limitations of probe-based evidence under cont
+icml2026:unverbalized,core,Toward Dealing with Unverbalized Eval Awareness
+icml2026:montoya,core,Towards Measuring and Detecting Unverbalized Evaluation Awareness
+arXiv:2609.22119,core,Evaluation Awareness Shifts from Format to Context with Model Scale
+arXiv:2606.29196,core,Representational Depth of Evaluation Awareness Shifts With Scale in Open-Weight Language Models
+arXiv:2602.03085,adjacent,The Trigger in the Haystack: Extracting and Reconstructing LLM Backdoor Triggers
+arXiv:2607.26849,adjacent,ToxScreen: Detecting Whether an LLM Has Been Poisoned
+arXiv:2505.17815,core,Evaluation Faking: Unveiling Observer Effects in Safety Evaluation of Frontier AI Systems
+arXiv:2412.14093,core,Alignment faking in large language models
+arXiv:2412.04984,core,Frontier Models are Capable of In-context Scheming
+arXiv:2406.07358,core,AI Sandbagging: Language Models can Strategically Underperform on Evaluations
+arXiv:2603.03824,core,In-Context Environments Induce Evaluation-Awareness in Language Models
+arXiv:2608.30724,core,BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks
+arXiv:2605.19270,adjacent,DECOR: Auditing LLM Deception via Information Manipulation Theory
+arXiv:2609.04665,core,Harness-agnostic detection and immunization of reward hacking in self-evolving language models
+arXiv:2609.07162,core,"The Oversight Gap: What LLM Safety Monitors Miss, and Why It Is Not Capability"
+arXiv:2606.08893,core,Cheap Reward Hacking Detection
+arXiv:2606.28863,core,Defeat Devices in AI Systems
+arXiv:2309.00667,core,Taken out of context: On measuring situational awareness in LLMs
+arXiv:2502.17424,adjacent,Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs
+arXiv:2407.04108,core,Future Events as Backdoor Triggers: Investigating Temporal Vulnerabilities in LLMs
+arXiv:2401.05566,core,Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training
+arXiv:2603.03371,adjacent,Sleeper Cell: Injecting Latent Malice Temporal Backdoors into Tool-Using LLMs
+arXiv:2506.13206,adjacent,Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models
+arXiv:2512.09742,adjacent,Weird Generalization and Inductive Backdoors: New Ways to Corrupt LLMs
+arXiv:2603.00829,adjacent,Constitutional Black-Box Monitoring for Scheming in LLM Agents
+arXiv:2312.06942,adjacent,AI Control: Improving Safety Despite Intentional Subversion
+arXiv:2512.15688,adjacent,BashArena: A Control Setting for Highly Privileged AI Agents
+arXiv:2504.10374,adjacent,Ctrl-Z: Controlling AI Agents via Resampling
+arXiv:2512.02157,adjacent,"Factor(T,U): Factored Cognition Strengthens Monitoring of Untrusted AI"
+arXiv:2409.07985,adjacent,Games for AI Control: Models of Safety Evaluations of AI Deployment Protocols
+arXiv:2504.05259,adjacent,How to evaluate control measures for LLM agents? A trajectory from today to superintelligence
+grey:redwoodcollusion,adjacent,How to prevent collusion when using untrusted models to monitor each other
+arXiv:2604.15384,adjacent,LinuxArena: A Control Setting for AI Agents in Live Production Software Environments
+grey:anthropic2025redteams,adjacent,Strengthening red teams: a modular scaffold for control evaluations
+arXiv:2602.20628,adjacent,When can we trust untrusted monitoring? A safety case sketch across collusion strategies
+arXiv:2606.08892,core,Diffuse AI Control on Fuzzy Tasks
+arXiv:2501.08156,adjacent,Are DeepSeek R1 And Other Reasoning Models More Faithful?
+arXiv:2503.08679,adjacent,Chain-of-Thought Reasoning In The Wild Is Not Always Faithful
+acl:2025.chomps-main.2,adjacent,Examining the Faithfulness of Deepseek R1's Chain-of-Thought Reasoning
+arXiv:2305.04388,adjacent,Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought P
+arXiv:2603.22582,adjacent,Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?
+arXiv:2603.20172,adjacent,Measuring Faithfulness Depends on How You Measure: Classifier Sensitivity in LLM Chain-of-Thoug
+arXiv:2307.13702,adjacent,Measuring Faithfulness in Chain-of-Thought Reasoning
+arXiv:2505.05410,adjacent,Reasoning Models Don't Always Say What They Think
+arXiv:2601.07663,adjacent,Reasoning Models Will Sometimes Lie About Their Reasoning
+arXiv:2603.20620,adjacent,Reasoning Traces Shape Outputs but Models Won't Say So
+arXiv:2507.11473,adjacent,Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety
+arXiv:2608.04735,adjacent,Chain-of-Thought Monitoring Can Be Unreliable in Implicit-Influence Settings
+arXiv:2505.23575,adjacent,CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring
+arXiv:2601.21112,adjacent,How does information access affect LLM monitors' ability to detect sabotage?
+arXiv:2503.11926,adjacent,Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation
+arXiv:2507.05246,adjacent,"When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors"
+arXiv:2405.19550,core,Stress-Testing Capability Elicitation With Password-Locked Models
+arXiv:2502.02180,core,The Elicitation Game: Evaluating Capability Elicitation Techniques
+arXiv:2510.20487,core,Steering Evaluation-Aware Language Models to Act Like They Are Deployed
+arXiv:2511.21399,core,Steering Awareness: Detecting Activation Steering from Within
+icml2026:evalcoop,core,Eval Cooperativeness Mitigates Evaluation Gaming in LLMs
+arXiv:2604.17596,core,"Terminal Wrench: A Dataset of 331 Reward-Hackable Environments and 3,632 Exploit Trajectories"
+arXiv:2603.13791,adjacent,DeceptGuard :A Constitutional Oversight Framework For Detecting Deception in LLM Agents
+arXiv:2309.15840,adjacent,How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions
+doi:10.1073/pnas.2317967121,adjacent,Deception abilities emerged in large language models
+arXiv:2510.15501,adjacent,DeceptionBench: A Comprehensive Benchmark for AI Deception Behaviors in Real-world Scenarios
+arXiv:2311.07590,adjacent,Large Language Models can Strategically Deceive their Users when Put Under Pressure
+arXiv:2608.30428,adjacent,Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interac
+arXiv:2504.13707,adjacent,OpenDeception: Benchmarking and Investigating AI Deceptive Behaviors
+arXiv:2504.04072,adjacent,Among Us: A Sandbox for Measuring and Detecting Agentic Deception
+arXiv:2507.12691,adjacent,Benchmarking Deception Probes via Black-to-White Performance Boosts
+arXiv:2607.20479,adjacent,"Beyond Liars' Bench: The Impact of Lie Typology, Depth, and Sparsity on Deception Detection in "
+arXiv:2610.12445,adjacent,Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception
+arXiv:2508.19505,adjacent,Caught in the Act: a mechanistic approach to detecting deception
+arXiv:2502.03407,adjacent,Detecting Strategic Deception Using Linear Probes
+arXiv:2511.16035,adjacent,Liars' Bench: Evaluating Lie Detectors for Language Models
+arXiv:2602.01425,adjacent,One Probe Won't Catch Them All: Towards Targeted Deception Detection
+arXiv:2509.17938,adjacent,D-REX: A Benchmark for Detecting Deceptive Reasoning in Large Language Models
+arXiv:2605.08942,core,Decomposing and Steering Functional Metacognition in Large Language Models
+arXiv:2607.07184,core,Predicting LLM Safety Before Release by Simulating Deployment
+arXiv:2508.00943,core,LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring
+arXiv:2412.01784,core,Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models
+arXiv:2312.07413,core,AI capabilities can be significantly improved without expensive retraining
+arXiv:2410.13215,adjacent,Balancing Label Quantity and Quality for Scalable Elicitation
+arXiv:2606.00047,core,Comprehensive AI governance requires addressing non-model gains
+ssrn:7402158,core,Elicitation Floors: What a Capability Evaluation Cannot Report When Refusals Are Excluded
+arXiv:2601.13528,adjacent,Eliciting Harmful Capabilities by Fine-Tuning on Safeguarded Outputs
+arXiv:2505.19915,core,Evaluating AI cyber capabilities with crowdsourced elicitation
+arXiv:2502.15212,adjacent,Measuring AI Agent Autonomy: Towards a Scalable Approach with Code Inspection
+arXiv:2502.05209,core,Model Tampering Attacks Enable More Rigorous Evaluations of LLM Capabilities
+arXiv:2410.03768,adjacent,Hidden in Plain Text: Emergence & Mitigation of Steganographic Collusion in LLMs
+arXiv:2607.22925,adjacent,Not All LLM Reasoning is Visible in the Chain-of-Thought
+arXiv:2310.18512,adjacent,Preventing Language Models From Hiding Their Reasoning
+arXiv:2402.07510,adjacent,Secret Collusion among AI Agents: Multi-Agent Deception via Steganography
+arXiv:2609.06059,core,DAREBench: Deployment-Aware and Reliable Evaluation of Models as Agents
+arXiv:2608.26546,adjacent,DuMateBench: Evaluating Autonomous Agents in Complex Real-World Workflows
+arXiv:2608.25460,adjacent,Training Alignment Auditors via Reinforcement Learning
+arXiv:2605.26438,core,LURE: Live-Usage Replay Evaluations for Reducing Evaluation Awareness
+arXiv:2509.00591,core,Probe-Rewrite-Evaluate: A Workflow for Reliable Benchmarks and Quantifying Evaluation Awareness
+arXiv:2509.18058,core,Strategic Dishonesty Can Undermine AI Safety Evaluations of Frontier LLMs
+arXiv:2602.05656,core,On the Limits of Behavioral Alignment: Formal Verifiability and the Problem of Normative Indist
+arXiv:2602.08449,core,When Evaluation Becomes a Side Channel: Regime Leakage and Structural Mitigations for Alignment
+arXiv:2505.14300,adjacent,Beyond Black-Box Obfuscation: Mechanistic Analysis and Defense of White-Box Monitors
+arXiv:2602.05532,adjacent,Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities
+arXiv:2609.25848,core,"Optimizing the Score, Losing Sight of the Task: Reward Hacking Across Weights, Selection, and P"
+arXiv:2608.24037,adjacent,Curved Inference II: Sleeper Agent Geometry - Extending Interpretability Beyond Probes
+arXiv:2605.20744,core,Hack-Verifiable Environments: Towards Evaluating Reward Hacking at Scale
+arXiv:2608.22103,core,Hack-Verifiable Terminal Bench: Evaluating Reward Hacking in Terminal Tasks
+arXiv:2409.18025,adjacent,An Adversarial Perspective on Machine Unlearning for AI Safety
+arXiv:2510.07626,adjacent,LLM Unlearning Under the Microscope
+arXiv:2506.15699,adjacent,RUBY: Robust Unlearning Benchmark
+arXiv:2508.15449,adjacent,Reliable Unlearning Harmful Information in LLMs with Metamorphosis Representation Projection
+arXiv:2408.00761,adjacent,Tamper-Resistant Safeguards for Open-Weight LLMs
+arXiv:2406.09179,adjacent,Towards Effective Evaluations and Comparisons for LLM Unlearning Methods
+arXiv:2502.05374,adjacent,Towards LLM Unlearning Resilient to Relearning Attacks: A Sharpness-Aware Minimization Perspect
+arXiv:2503.03750,adjacent,The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems
+arXiv:2605.29729,core,Realistic honeypot evaluations for scheming propensity
+arXiv:2402.06627,core,Feedback Loops With Language Models Drive In-Context Reward Hacking
+arXiv:2602.18297,adjacent,Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory
+arXiv:2601.04728,core,Excess Description Length of Learning Generalizable Predictors
+arXiv:2607.25907,core,Minimizing Targeted Activations: Input-Only Suppression of Evaluation-Awareness Latents in Larg
+arXiv:2412.03904,adjacent,MISR: Measuring Instrumental Self-Reasoning in Frontier Models
+arXiv:2605.06490,adjacent,Instrumental Choices: Measuring the Propensity of LLM Agents to Pursue Instrumental Behaviors
+arXiv:2609.11028,core,BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation I
+arXiv:2609.21996,core,A Lie Detector Test for Language Models: Reading Knowledge a Model Won't Reveal
+arXiv:2605.26242,adjacent,Can LLMs Introspect? A Reality Check
+grey:lindsey2025introspection,adjacent,Emergent introspective awareness in large language models
+arXiv:2512.12411,adjacent,Feeling the Strength but Not the Source (LLM self-reports)
+arXiv:2603.25861,adjacent,Why Safety Probes Catch Liars But Miss Fanatics
+arXiv:2602.21939,adjacent,Hidden Topics: Measuring Sensitive AI Beliefs with List Experiments
+arXiv:2605.28825,adjacent,MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Langu
+arXiv:2606.03238,core,"When RLHF Fails: A Mechanistic Taxonomy of Reward Hacking, Collapse, and Evaluator Gaming"
+arXiv:2506.11613,adjacent,Model Organisms for Emergent Misalignment
+arXiv:2504.07831,adjacent,Deceptive Automated Interpretability: Language Models Coordinating to Fool Oversight Systems
+arXiv:2508.19461,adjacent,Reliable Weak-to-Strong Monitoring of LLM Agents
+doi:10.64898/2026.01.17.26344330,core,AlignInsight: A Three-Layer Framework for Detecting Deceptive Alignment and Evaluation Awarenes
+arXiv:2602.20813,adjacent,Pressure Reveals Character: Behavioural Alignment Evaluation at Depth
+arXiv:2607.24769,core,LLM Scheming Inversely Scales with Pretraining Language Coverage
+arXiv:2511.17408,adjacent,The Impact of Off-Policy Training Data on Probe Generalisation
+arXiv:2604.09104,core,Scheming in the wild: detecting real-world AI scheming incidents with open-source intelligence
+arXiv:2510.08624,core,Do LLMs Know They Are Being Tested? Evaluation Awareness and Incentive-Sensitive Failures in GP
+arXiv:2606.29604,adjacent,Mechanistically Eliciting Latent Behaviors in Language Models
+arXiv:2606.02380,adjacent,SPADE-Bench: Evaluating Spontaneous Strategic Deception in Agents via Plan-Action Divergence
+arXiv:2607.18239,adjacent,SysAdmin: Measuring Instrumental Power-Seeking in Frontier AI
+arXiv:2605.09391,adjacent,Do Linear Probes Generalize Better in Persona Coordinates?
+arXiv:2412.09565,adjacent,Obfuscated Activations Bypass LLM Latent-Space Defenses
+arXiv:2506.14261,adjacent,RL-Obfuscation: Can Language Models Learn to Evade Latent-Space Monitors?
+arXiv:2602.15515,adjacent,The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes
+arXiv:2608.13329,adjacent,A Probe Direction Is a Property of Its Prompt
+arXiv:2511.22662,adjacent,Difficulties with Evaluating a Deception Detector for AIs
+arXiv:2604.13386,adjacent,Linear Probe Accuracy Scales with Model Size and Benefits from Multi-Layer Ensembling
+arXiv:2509.21344,adjacent,Linear probes rely on textual evidence: Results from leakage mitigation studies in language mod
+arXiv:2605.27958,adjacent,"Pressure-Testing Deception Probes in LLMs: Scaling, Robustness, and the Geometry of Deceptive R"
+arXiv:2609.02893,adjacent,Probe Generalization as Subspace Selection for OOD Deception Detection
+arXiv:2606.24251,adjacent,Probing the Misaligned Thinking Process of Language Models
+arXiv:2510.07774,core,Curing Miracle Steps in LLM Mathematical Reasoning with Rubric Rewards
+arXiv:2606.30649,adjacent,Thinking Out Loud: Real-Time Deception Monitoring in Asymmetric LLM Negotiations
+arXiv:2603.09200,adjacent,The Reasoning Trap -- Logical Reasoning as a Mechanistic Pathway to Situational Awareness
+arXiv:2606.05625,core,Self-Commitment Latency: A Reward-Free Probe for Prompted Implicit Hacking
+arXiv:2605.09684,adjacent,MonitoringBench: Semi-Automated Red-Teaming for Agent Monitoring
+arXiv:2506.04909,adjacent,When Thinking LLMs Lie: Unveiling the Strategic Deception in Representations of Reasoning Model
+arXiv:2407.04549,core,Spontaneous Reward Hacking in Iterative Self-Refinement
+arXiv:2601.20103,core,Benchmarking Reward Hack Detection in Code Environments via Contrastive Analysis
+arXiv:2507.05619,core,Detecting and Mitigating Reward Hacking in Reinforcement Learning Systems: A Comprehensive Empi
+arXiv:2609.06649,adjacent,Inducing Emergent Misalignment from Reward Hacks with Iterative DPO
+arXiv:2511.18397,adjacent,Natural Emergent Misalignment from Reward Hacking in Production RL
+arXiv:2508.17511,adjacent,School of Reward Hacks: Hacking harmless tasks generalizes to misaligned behavior in LLMs
+arXiv:2610.10947,core,RH-Detect: A Unified Benchmark for Reward Hacking Detection
+arXiv:2609.39533,core,CATCH: A Controllable Analysis Testbed for Reward Hacking in Coding RL
+arXiv:2603.07084,core,Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RL
+arXiv:2209.13085,core,Defining and Characterizing Reward Hacking
+arXiv:2606.07379,core,Do Coding Agents Deceive Us? Detecting and Preventing Cheating via Capped Evaluation with Rando
+arXiv:2609.19101,core,Monitoring and Discovering Reward Hacking with Internal Representations during LLM Evaluations
+arXiv:2608.29460,core,Can escalation channels redirect reward hacking toward defect disclosure?
+arXiv:2502.13295,core,Demonstrating Specification Gaming in Reasoning Models
+arXiv:2511.21654,core,EvilGenie: A Reward Hacking Benchmark
+arXiv:2510.20270,core,ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases
+grey:metr2025rh,core,Recent frontier models are reward hacking
+arXiv:2605.02964,core,Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use
+arXiv:2609.28614,core,Reward Hacking Challenges Oversight of Autonomous Research Agents
+arXiv:2605.21384,core,SpecBench: Measuring Reward Hacking in Long-Horizon Coding Agents
+arXiv:2406.10162,core,Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models
+arXiv:2609.15494,core,"The Troy Moment: How LLM Agents Adjudicate the Decision Point Under Impossible Tasks, Claimed A"
+grey:apollo2026rewardseeking,core,Measuring reward seeking via contrastive belief updates
+arXiv:2511.09904,core,CTRL-ALT-DECEIT: Sabotage Evaluations for Automated AI R&D
+arXiv:2605.30322,adjacent,Gram: Assessing sabotage propensities via automated alignment auditing
+arXiv:2506.15740,adjacent,SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents
+arXiv:2410.21514,core,Sabotage Evaluations for Frontier Models
+doi:10.5220/0015190400004103,core,How Many Queries to Catch a Sandbagger? A Chernoff–Stein Sample-Complexity Theory of Capability
+arXiv:2509.26239,core,Sandbagging in a simple survival bandit problem
+arXiv:2604.28182,core,Exploration Hacking: Can LLMs Learn to Resist RL Training?
+arXiv:2604.22082,core,Removing Sandbagging in LLMs by Training with Weak Supervision
+arXiv:2608.29461,core,A Causal Model for Locating and Unlocking Sandbagging in Model Organisms
+arXiv:2512.07810,core,Auditing Games for Sandbagging
+arXiv:2604.25249,core,Below-Chance Blindness: Prompted Underperformance in Small LLMs Produces Positional Bias Rather
+arXiv:2502.00414,core,Black-box detection of language model sandbagging
+arXiv:2609.00351,core,Detecting Hidden Behaviors in LLMs via Activation-matched Finetuning
+arXiv:2604.27249,core,Instruction Complexity Induces Positional Collapse in Adversarial LLM Evaluation
+arXiv:2604.16812,core,Introspection Adapters: Training LLMs to Report Their Learned Behaviors
+arXiv:2604.26206,core,Option-Order Randomisation Reveals a Distributional Position Attractor in Prompted Sandbagging
+iclr2026:c3,core,"Same Question, Different Lies: Cross-Context Consistency (C3) for Black-Box Sandbagging Detecti"
+iclr2026:lieidentity,core,When Lie Detectors Learn Model Identity: Confounds in Black-Box Sandbagging Detection
+grey:openai2025scheming,core,Detecting and reducing scheming in AI models
+arXiv:2505.01420,core,Evaluating Frontier Models for Stealth and Situational Awareness
+arXiv:2603.01608,core,Evaluating and Understanding Scheming Propensity in LLM Agents
+arXiv:2609.08126,core,SchemeArena: Factorized Stress Testing of Scheming in LLM Agents
+arXiv:2510.12826,core,Scheming Ability in LLM-to-LLM Strategic Interactions
+arXiv:2605.29178,adjacent,The Best-Laid SCHEMEs: Coordinated Sabotage and Monitoring in Multi-Agent Systems
+arXiv:2505.18807,core,Mitigating Deceptive Alignment via Self-Monitoring
+arXiv:2510.03399,adjacent,Know Thyself? On the Incapability and Implications of AI Self-Recognition
+arXiv:2404.13076,adjacent,LLM Evaluators Recognize and Favor Their Own Generations
+arXiv:2410.21819,adjacent,Self-Preference Bias in LLM-as-a-Judge
+arXiv:2606.09843,adjacent,An LLM-Native Psychometric Instrument Reveals a Self-Report--Behavior Gap Across 25 Models
+arXiv:2309.08163,adjacent,Self-Assessment Tests are Unreliable Measures of LLM Personality
+arXiv:2609.15998,adjacent,Self-reported archetypes and behavioral failures in Large Language Models
+arXiv:2606.07963,adjacent,Shared Latent Structures Enable Unified Backdoor Detection and Mitigation in LLMs
+arXiv:2509.14260,adjacent,Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs (v1: Shutdown Resistance in L
+arXiv:2606.08296,adjacent,Revisiting the shutdown problem
+arXiv:2609.22882,adjacent,"The Law of Stop: Interruptibility, Injunctions, and the Governance of Agentic AI"
+arXiv:2406.14546,adjacent,Connecting the Dots: LLMs can Infer and Verbalize Latent Structure from Disparate Training Data
+arXiv:2410.13787,adjacent,Looking Inward: Language Models Can Learn About Themselves by Introspection
+arXiv:2501.11120,adjacent,Tell me about yourself: LLMs are aware of their learned behaviors
+arXiv:2505.14943,core,Soft Prompts for Evaluation: Measuring Conditional Distance of Capabilities
+arXiv:2605.02269,core,Towards Understanding Specification Gaming in Reasoning Models
+arXiv:2604.15224,core,Context Over Content: Exposing Evaluation Faking in Automated Judges
+arXiv:2506.01926,adjacent,Large language models can learn and generalize steganographic chain-of-thought under process su
+arXiv:2507.02737,adjacent,Early Signs of Steganographic Capabilities in Frontier LLMs
+arXiv:2602.14095,adjacent,NEST: Nascent Encoded Steganographic Thoughts
+arXiv:2509.20393,adjacent,The Secret Agenda: LLMs Strategically Lie and Our Current Safety Tools Are Blind
+doi:10.48550/arxiv.2407.00948,adjacent,The House Always Wins: A Framework for Evaluating Strategic Deception in LLMs
+grey:apollo2025gpt5,core,Apollo's GPT-5 evaluations (for OpenAI's system card)
+grey:openai2025gpt5,core,GPT-5 System Card
+arXiv:2507.06261,core,"Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next"
+grey:gdm2025gemini3fsf,core,Gemini 3 Pro Frontier Safety Framework Report
+grey:xai2025grok4,core,Grok 4 Model Card
+grey:xai2026grok420,core,Grok 4.20 Model Card
+arXiv:2606.12429,core,Muse Spark Safety & Preparedness Report
+arXiv:2601.03267,core,OpenAI GPT-5 System Card
+arXiv:2412.16720,core,OpenAI o1 System Card
+grey:openai2025o3card,core,OpenAI o3 and o4-mini System Card
+grey:anthropic2025opus4,core,System Card: Claude Opus 4 & Claude Sonnet 4
+grey:anthropic2025opus45,core,System Card: Claude Opus 4.5
+grey:anthropic2026opus46,core,System Card: Claude Opus 4.6
+grey:anthropic2025sonnet45,core,System Card: Claude Sonnet 4.5
+arXiv:2604.22119,core,Emergent Strategic Reasoning Risks in AI: A Taxonomy-Driven Evaluation Framework
+arXiv:2604.03121,core,An Independent Safety Evaluation of Kimi K2.5
+grey:metr2025gpt5,core,Details about METR's evaluation of OpenAI GPT-5
+grey:metr2025o3,core,Details about METR's preliminary evaluation of OpenAI's o3 and o4-mini
+grey:openai2025crosslab,core,Findings from a pilot Anthropic–OpenAI alignment evaluation exercise
+arXiv:2602.14457,core,Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report v1.5
+grey:aisi2024sonnet35,core,Pre-deployment evaluation of Anthropic's upgraded Claude 3.5 Sonnet (joint US AISI & UK AISI)
+grey:aisi2024o1,core,Pre-deployment evaluation of OpenAI's o1 model (joint US AISI & UK AISI)
+arXiv:2512.08093,adjacent,Training LLMs for Honesty via Confessions
+arXiv:2609.36316,core,Training LLMs to Verbalize Evaluation Awareness
+arXiv:2606.30252,adjacent,Inoculation Adapters: Improved Selective Generalization of Capabilities with Fewer Surprising B
+arXiv:2609.15886,adjacent,Inoculation Midtraining with Learned Neologisms
+arXiv:2510.04340,adjacent,Inoculation Prompting: Eliciting traits from LLMs during training can suppress them at test-tim
+arXiv:2510.05024,adjacent,Inoculation Prompting: Instructing LLMs to misbehave at train-time improves test-time alignment
+arXiv:2610.03055,core,hacktrace: behavior-supervised detection of reward hacking during code generation
+arXiv:2606.10747,adjacent,The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalign
+arXiv:2608.27512,core,Quantization-Triggered Backdoors in Language Models: Cross-Quantizer Transferability and the Va
+arXiv:2604.24618,core,Evaluating whether AI models would sabotage AI safety research
+arXiv:2604.00788,core,UK AISI Alignment Evaluation Case-Study
+arXiv:2506.22777,core,Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning
+arXiv:2604.15149,core,LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking
+icml2026:saesanity,adjacent,Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?
+arXiv:2607.23379,adjacent,When Activation Oracles Learn Not to Read: Concept-Specific Blind Spots in Fine-Tuned Oracles

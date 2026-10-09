@@ -6,9 +6,14 @@ sys.path.insert(0, str(HERE))
 from references import REFS
 
 def sort_key(entry):
+    """Springer author-year order: first author, then year (with its letter), then the rest of the entry."""
     s = entry.lstrip("*").lower()
-    s = s.replace("ł", "l").replace("ö", "o").replace("ı", "i").replace("van der weij", "weij")
-    return s
+    s = s.replace("ł", "l").replace("ö", "o").replace("ı", "i").replace("é", "e").replace("van der weij", "weij")
+    m = re.match(r"^(.*?)\s\((\d{4}[a-z]?)\)", s)
+    if not m:
+        return (s, "", s)
+    first = m.group(1).split(",")[0]
+    return (first, m.group(2), s)
 
 body = "\n\n".join(p.read_text() for p in sorted((HERE / "sections").glob("*.md")))
 refs = sorted(REFS.values(), key=sort_key)

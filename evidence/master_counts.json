@@ -1,88 +1,97 @@
 {
-  "n": 315,
+  "n_all_charted": 315,
+  "n_adjacent": 148,
+  "adjacent_by_type": {
+    "Preprint": 114,
+    "Peer-reviewed (archival)": 21,
+    "Workshop paper": 5,
+    "Grey literature": 8
+  },
+  "n": 167,
   "by_identified_via": {
-    "both": 78,
-    "other-methods": 149,
-    "databases": 88
+    "both": 66,
+    "other-methods": 53,
+    "databases": 48
   },
   "by_layer": {
-    "L3 Behavioural divergence": 98,
-    "L4 Validity consequence and response": 176,
-    "L2 Awareness": 33,
-    "L1 Context signal": 8
+    "L3 Behavioural divergence": 60,
+    "L4 Validity consequence and response": 82,
+    "L2 Awareness": 19,
+    "L1 Context signal": 6
   },
   "by_method": {
-    "Behavioural contrast (black-box)": 92,
-    "Training- or weight-based (elicitation, organisms)": 48,
-    "White-box (probes, steering, features)": 56,
-    "Benchmark / environment construction": 46,
-    "Reasoning-trace / transcript monitoring": 49,
+    "Behavioural contrast (black-box)": 53,
+    "Training- or weight-based (elicitation, organisms)": 26,
+    "White-box (probes, steering, features)": 22,
+    "Benchmark / environment construction": 30,
+    "Reasoning-trace / transcript monitoring": 12,
     "Developer or third-party audit": 24
   },
   "by_type": {
-    "Peer-reviewed": 46,
-    "Preprint": 236,
-    "Grey literature": 33
+    "Peer-reviewed (archival)": 22,
+    "Preprint": 107,
+    "Workshop paper": 13,
+    "Grey literature": 25
   },
   "by_year": {
-    "2025": 114,
-    "2024": 28,
-    "2023": 6,
-    "2026": 166,
+    "2025": 48,
+    "2024": 14,
+    "2023": 2,
+    "2026": 102,
     "2022": 1
   },
   "by_year_type": {
     "2022": {
-      "Peer-reviewed": 1
+      "Peer-reviewed (archival)": 1
     },
     "2023": {
-      "Preprint": 5,
-      "Peer-reviewed": 1
+      "Preprint": 2
     },
     "2024": {
-      "Peer-reviewed": 8,
-      "Preprint": 16,
-      "Grey literature": 4
+      "Peer-reviewed (archival)": 3,
+      "Preprint": 8,
+      "Grey literature": 3
     },
     "2025": {
-      "Peer-reviewed": 19,
-      "Preprint": 73,
-      "Grey literature": 22
+      "Peer-reviewed (archival)": 9,
+      "Preprint": 20,
+      "Workshop paper": 3,
+      "Grey literature": 16
     },
     "2026": {
-      "Peer-reviewed": 17,
-      "Preprint": 142,
-      "Grey literature": 7
+      "Peer-reviewed (archival)": 9,
+      "Preprint": 77,
+      "Workshop paper": 10,
+      "Grey literature": 6
     }
   },
   "layer_x_method": {
     "L1 Context signal": {
-      "Benchmark / environment construction": 5,
+      "Benchmark / environment construction": 4,
       "White-box (probes, steering, features)": 1,
-      "Training- or weight-based (elicitation, organisms)": 1,
       "Behavioural contrast (black-box)": 1
     },
     "L2 Awareness": {
-      "Behavioural contrast (black-box)": 16,
-      "White-box (probes, steering, features)": 9,
-      "Benchmark / environment construction": 3,
+      "Behavioural contrast (black-box)": 5,
+      "White-box (probes, steering, features)": 8,
+      "Benchmark / environment construction": 2,
       "Reasoning-trace / transcript monitoring": 3,
-      "Training- or weight-based (elicitation, organisms)": 2
+      "Training- or weight-based (elicitation, organisms)": 1
     },
     "L3 Behavioural divergence": {
-      "Behavioural contrast (black-box)": 45,
-      "Reasoning-trace / transcript monitoring": 10,
-      "White-box (probes, steering, features)": 6,
-      "Benchmark / environment construction": 25,
-      "Training- or weight-based (elicitation, organisms)": 12
+      "Behavioural contrast (black-box)": 32,
+      "Reasoning-trace / transcript monitoring": 4,
+      "White-box (probes, steering, features)": 2,
+      "Benchmark / environment construction": 15,
+      "Training- or weight-based (elicitation, organisms)": 7
     },
     "L4 Validity consequence and response": {
-      "Training- or weight-based (elicitation, organisms)": 33,
-      "White-box (probes, steering, features)": 40,
-      "Reasoning-trace / transcript monitoring": 36,
+      "Training- or weight-based (elicitation, organisms)": 18,
+      "White-box (probes, steering, features)": 11,
+      "Reasoning-trace / transcript monitoring": 5,
       "Developer or third-party audit": 24,
-      "Behavioural contrast (black-box)": 30,
-      "Benchmark / environment construction": 13
+      "Behavioural contrast (black-box)": 15,
+      "Benchmark / environment construction": 9
     }
   },
   "context_n": 288
