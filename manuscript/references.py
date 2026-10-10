@@ -7,6 +7,11 @@ three followed by "et al.". Keys are the exact in-text citation strings.
 """
 
 REFS = {
+    "Nageshwaran et al. 2026": "Nageshwaran V, Ezekiel S, Tran TT, Lakshmi Narasimhan V (2026) Large language model agent evaluation and benchmarking: a systematic survey, meta-taxonomy, and critical research roadmap. Artif Intell Rev. https://doi.org/10.1007/s10462-026-11678-4",
+    "Jones and Bergen 2026": "Jones C, Bergen B (2026) Lies, damned lies, and language statistics: a comprehensive review of risks from manipulation, persuasion, and deception with large language models. Artif Intell Rev 59(4):116. https://doi.org/10.1007/s10462-026-11517-6",
+    "Navaie 2026": "Navaie K (2026) Epistemic norms for AI safety and alignment research. Artif Intell Rev. https://doi.org/10.1007/s10462-026-11666-8",
+    "Kehkashan et al. 2026": "Kehkashan T, Abdullah M, Al-Shamayleh AS et al. (2026) From benchmarks to deployment: a comprehensive review of agentic AI evaluation. Artif Intell Rev 59(8):167. https://doi.org/10.1007/s10462-026-11571-0",
+    "Nadăş 2026": "Nadăş MD (2026) Large language models as judges: recent advances in LLM-based evaluation, critique, preference modeling, and feedback for text and code. Artif Intell Rev. https://doi.org/10.1007/s10462-026-11652-0",
     "Abdelnabi and Salem 2025": "Abdelnabi S, Salem A (2025) The Hawthorne effect in reasoning models: evaluating and steering test awareness. In: Advances in Neural Information Processing Systems (NeurIPS 2025). arXiv preprint arXiv:2505.14617. https://arxiv.org/abs/2505.14617",
     "Ahmed et al. 2025": "Ahmed N, Zaman MI, Saleem G, Hassan A (2025) Do LLMs know they are being tested? Evaluation awareness and incentive-sensitive failures in GPT-OSS-20B. arXiv preprint arXiv:2510.08624. https://arxiv.org/abs/2510.08624",
     "Andriushchenko et al. 2025": "Andriushchenko M, Souly A, Dziemian M et al. (2025) AgentHarm: a benchmark for measuring harmfulness of LLM agents. In: International Conference on Learning Representations (ICLR 2025). arXiv preprint arXiv:2410.09024. https://arxiv.org/abs/2410.09024",

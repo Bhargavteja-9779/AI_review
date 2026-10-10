@@ -14,7 +14,7 @@ for k in REFS:
         used.add(k)
 unused = sorted(set(REFS) - used)
 # find citation-like strings and check each maps to a key
-pat = re.compile(r"([A-ZŁÖÜ][\w'’ıłöüé\-]+(?: [A-Z])?(?: et al\.| and [A-ZŁÖÜ][\w'’ıłöüé\-]+)?) \(?(\d{4}[a-c]?)\)?")
+pat = re.compile(r"([A-ZŁÖÜN][\w'’ıłöüé\-]+(?: [A-Z])?(?: et al\.| and [A-ZŁÖÜ][\w'’ıłöüé\-]+)?) \(?(\d{4}[a-c]?)\)?")
 cands = set()
 for m in pat.finditer(plain):
     s = f"{m.group(1)} {m.group(2)}"
